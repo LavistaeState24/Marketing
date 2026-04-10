@@ -55,18 +55,16 @@ function SuccessModal({ open, onOpenChange }) {
         <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm" />
         <DialogPrimitive.Content className="fixed left-1/2 top-1/2 z-50 w-[calc(100%-1.5rem)] max-w-md -translate-x-1/2 -translate-y-1/2 rounded-[28px] border border-border bg-card p-6 text-foreground shadow-2xl sm:p-8">
           <DialogPrimitive.Title className="sr-only">Enquiry submitted</DialogPrimitive.Title>
-          <DialogPrimitive.Close className="absolute right-4 top-4 rounded-full border border-border p-2 text-muted-foreground transition-colors hover:text-foreground">
+          <DialogPrimitive.Close className="absolute right-4 top-9 rounded-full border border-border p-2 text-muted-foreground transition-colors hover:text-foreground">
             <X className="size-4" />
             <span className="sr-only">Close</span>
           </DialogPrimitive.Close>
 
-          <div className="flex flex-col items-start gap-5">
-            <div className="flex size-14 items-center justify-center rounded-full border border-primary/20 bg-primary/10 text-primary">
-              <CheckCircle2 className="size-7" />
-            </div>
+          <div className="flex flex-col items-end gap-4">
+
             <div>
-              <h2 className="font-serif text-3xl text-foreground sm:text-4xl">Enquiry sent successfully.</h2>
-              <p className="mt-3 text-sm leading-7 text-muted-foreground sm:text-base">
+              <h2 className="font-serif text-2xl text-foreground sm:text-xl lg:text-2xl">Enquiry sent successfully</h2>
+              <p className="mt-8 text-sm leading-7 text-muted-foreground sm:text-base">
                 Thanks for sharing your project details. The Lavista team will review your enquiry and get back to you
                 with the next step.
               </p>
@@ -126,37 +124,43 @@ export function ContactPage() {
 
   return (
     <div className="pt-32">
-      <section className=" py-24">
+      <section className="py-1">
         <div className="container-shell">
           <Badge>Contact</Badge>
-          <div className="mt-6 grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+          <div className="mt-6 grid gap-10 lg:grid-cols-1 lg:items-start">
             <div>
-              <h1 className="font-serif text-4xl leading-tight text-balance text-surface-light sm:text-6xl">
+              <h3 className="mt-5 font-serif text-4xl leading-tight text-balance text-surface-light sm:text-4xl lg:text-5xl">
                 Let&apos;s design a sharper growth system for your next project.
-              </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--color-surface-copy)]">
+              </h3>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
                 Share the project stage, city, ticket size, and current funnel challenge. We&apos;ll respond with the
                 right next step.
               </p>
 
-              <div className="mt-10 flex flex-col gap-4">
+              <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
                 {contactDetails.map((detail) => (
-                  <div key={detail.label} className="bg-surface rounded-[24px] p-5">
-                    <p className="text-xs uppercase tracking-[0.22em] text-accent-foreground">{detail.label}</p>
-                    <p className="mt-2 text-lg text-surface-foreground">{detail.value}</p>
+                  <div
+                    key={detail.label}
+                    className="bg-surface rounded-[24px] h-28 p-6 hover:shadow-lg transition-all"
+                  >
+                    <a href={detail.link} target="_blank" rel="noreferrer">
+                      <p className="text-xs uppercase tracking-[0.22em] text-accent-foreground">
+                        {detail.label}
+                      </p>
+
+                      <p className="mt-2 text-lg text-surface-foreground cursor-pointer">
+                        {detail.value}
+                      </p>
+                    </a>
                   </div>
                 ))}
-                <a
-                  href="https://maps.app.goo.gl/qD2wM9ZQUZvTM3Gv6"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex w-fit items-center rounded-full border border-primary/20 bg-primary/10 px-5 py-3 text-sm font-semibold text-primary transition-transform hover:-translate-y-0.5"
-                >
-                  View on Google Maps
-                </a>
+
               </div>
             </div>
+          </div>
 
+
+          <div className="mt-10 mb-10 grid grid-cols-1 gap-5 md:grid-cols-2">
             <div className="surface-panel rounded-[34px] p-6 sm:p-8">
               <form className="flex flex-col gap-4" noValidate onSubmit={handleSubmit}>
                 <div>
@@ -224,18 +228,20 @@ export function ContactPage() {
                   Send enquiry
                 </Button>
               </form>
+            </div>
 
-              <div className="mt-8 overflow-hidden rounded-[28px] border border-border/70">
-                <iframe
-                  title="Lavista map"
-                  src="https://www.google.com/maps?q=Lavista+Estate+and+Imperial&output=embed"
-                  className="h-[240px] w-full grayscale sm:h-[280px]"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
+            <div className="overflow-hidden rounded-[28px] border border-border/70 min-h-[320px]">
+              <iframe
+                title="Lavista map"
+                src="https://www.google.com/maps?q=Lavista+Estate+and+Imperial&output=embed"
+                className="h-full min-h-[320px] w-full grayscale"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
+
+
         </div>
       </section>
 

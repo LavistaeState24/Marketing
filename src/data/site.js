@@ -275,9 +275,9 @@ export const aboutValues = [
 ];
 
 export const contactDetails = [
-  { label: "Phone", value: "+91 9213684966" },
-  { label: "Email", value: "lavistaimperial@gmail.com" },
-  { label: "Office", value: "Lavista Estate and Imperial" },
+  { label: "Phone", value: "+91 9213684966", link: "tel:+919213684966" },
+  { label: "Email", value: "lavistaimperial@gmail.com", link: "mailto:lavistaimperial@gmail.com" },
+  { label: "Office", value: "Lavista Estate and Imperial", link: "https://maps.app.goo.gl/qD2wM9ZQUZvTM3Gv6" },
 ];
 
 export const trustPillars = [
@@ -349,25 +349,6 @@ export const FooterSocials = [
   },
 ];
 
-// export const footerLinks = [
-//   {
-//     title: "Services",
-//     links: services.slice(0, 4).map((service) => ({
-//       label: service.title,
-//       href: "/services",
-//     })),
-//   },
-//   {
-//     title: "Company",
-//     links: [
-//       { label: "About Lavista", href: "/about" },
-//       { label: "Case Studies", href: "/portfolio" },
-//       { label: "Contact", href: "/contact" },
-//     ],
-//   },
-
-// ];
-
 export const ctaButtons = [
   { label: "Book Strategy Call", href: "/contact", icon: ArrowUpRight },
   { label: "View Portfolio", href: "/portfolio" },
@@ -378,3 +359,4 @@ export const marqueeQuotes = [
   { icon: MessageSquareQuote, text: "Positioning that supports premium pricing" },
   { icon: MapPinned, text: "Local market clarity, not generic media buying" },
 ];
+

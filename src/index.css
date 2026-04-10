@@ -3,29 +3,63 @@
 @theme {
   --font-sans: "Inter", sans-serif;
   --font-serif: "Playfair Display", serif;
+
+  /* Main dark site background used for body and dark sections */
   --color-background: #0d0c0a;
+  /* Primary text color on dark backgrounds, headings, and key dark-section copy */
   --color-foreground: #f3ede3;
+
+  /* Dark card/panel background for glass panels and elevated content blocks */
   --color-card: #151311;
+  /* Text color used on dark card backgrounds */
   --color-card-foreground: #f3ede3;
+
+  /* Background for overlays, popovers, and mobile sheet surfaces */
   --color-popover: #171411;
+  /* Text color placed on popovers and overlay panels */
   --color-popover-foreground: #f3ede3;
+
+  /* Main brand gold used for buttons, highlights, icons, and eyebrow accents */
   --color-primary: #d4b483;
+  /* Text/icon color placed on primary gold buttons */
   --color-primary-foreground: #171411;
+
+  /* Soft warm light tone for supporting text chips and secondary UI fills */
   --color-secondary: #e7dcc9;
+  /* Text color used when secondary is the background */
   --color-secondary-foreground: #211d18;
+
+  /* Muted dark tone for subtle dark surfaces and layered backgrounds */
   --color-muted: #1c1815;
+  /* Paragraph/supporting text color on dark sections */
   --color-muted-foreground: #b8aa95;
+
+  /* Deeper gold accent used for hover states and secondary brand emphasis */
   --color-accent: #b89562;
+  /* Text color placed on accent backgrounds */
   --color-accent-foreground: #130f0b;
+
+  /* Standard border color on dark UI */
   --color-border: rgba(228, 211, 183, 0.14);
+  /* Input border and field outline color */
   --color-input: rgba(228, 211, 183, 0.16);
+  /* Focus ring color for interactive fields and buttons */
   --color-ring: rgba(212, 180, 131, 0.5);
+
+  /* Main light section background */
   --color-surface: #f5efe5;
+  /* Main heading/text color on light sections */
   --color-surface-foreground: #1b1712;
+  /* Softer warm fill for light section elements */
   --color-surface-muted: #e7dcc9;
+
+  /* Alternate light section background for section-to-section contrast */
   --color-surface-alt: #ede1cf;
+  /* Eyebrow/accent text color on light sections */
   --color-surface-accent: #8f6d3e;
+  /* Paragraph/body copy color on light sections */
   --color-surface-copy: #5d4f3d;
+  /* Border color for cards and panels on light sections */
   --color-surface-border: rgba(27, 23, 18, 0.1);
 }
 
