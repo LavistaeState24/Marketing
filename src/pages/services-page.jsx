@@ -10,10 +10,10 @@ import { Reveal } from "@/components/common/reveal";
 export function ServicesPage() {
   return (
     <div className="pt-32">
-      <section className="pb-20">
+      <section className="section-dark pb-20">
         <div className="container-shell">
           <Badge>Services</Badge>
-          <h3 className="mt-5 font-serif text-4xl leading-tight text-balance text-surface-light sm:text-4xl lg:text-5xl">
+          <h3 className="mt-5 font-serif text-4xl leading-tight text-balance text-foreground sm:text-4xl lg:text-5xl">
             Marketing services designed around high-value real estate conversion.
           </h3>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
