@@ -5,14 +5,14 @@ import { Reveal } from "@/components/common/reveal";
 export function AboutPage() {
   return (
     <div className="pt-32">
-      <section className="pb-24">
+      <section className="pb-20">
         <div className="container-shell">
           <Badge>About</Badge>
           <div className="mt-6 grid gap-12 lg:grid-cols-[0.94fr_1.06fr] lg:items-start">
             <div>
-              <h1 className="font-serif text-4xl leading-tight text-balance text-surface-light sm:text-5xl">
+              <h3 className="font-serif text-4xl leading-tight text-balance text-surface-light sm:text-4xl lg:text-5xl">
                 Lavista was built for real estate brands that need premium trust and measurable demand at the same time.
-              </h1>
+              </h3>
             </div>
             <div className="flex flex-col gap-6 text-lg leading-8 text-muted-foreground">
               <p>
@@ -24,6 +24,37 @@ export function AboutPage() {
                 confidence, cleaner lead flow, more site visits, and better conversion readiness.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-dark-alt py-24">
+        <div className="container-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div className="overflow-hidden rounded-[34px]">
+            <img
+              src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80"
+              alt="Premium residential architecture"
+              className="h-full min-h-[420px] w-full object-cover"
+            />
+          </div>
+          <div>
+            <p className="section-eyebrow">Why Lavista</p>
+            <h2 className="mt-4 font-serif text-5xl leading-tight text-balance text-foreground">
+              Redefining Real Estate Marketing
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-muted-foreground">
+              Founded in 2018, Lavista emerged from a simple observation: real estate marketing needed a transformation. Traditional methods were failing to deliver qualified leads, and digital strategies lacked the sophistication that luxury properties demand.
+            </p>
+
+            <p className="mt-6 text-lg leading-8 text-muted-foreground">
+              We built Lavista to bridge this gap - combining premium creative with data-driven performance marketing. Our approach has helped over 50 real estate developers generate millions in qualified leads and achieve unprecedented growth.
+            </p>
+
+            <p className="mt-6 text-lg leading-8 text-muted-foreground">
+              Today, we're recognized as a leading real estate marketing agency, trusted by the industry's most prestigious developers to position their brands and drive conversions.
+            </p>
+
+
           </div>
         </div>
       </section>
@@ -50,27 +81,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="section-dark-alt py-24">
-        <div className="container-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <div className="overflow-hidden rounded-[34px]">
-            <img
-              src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80"
-              alt="Premium residential architecture"
-              className="h-full min-h-[420px] w-full object-cover"
-            />
-          </div>
-          <div>
-            <p className="section-eyebrow">Why Lavista</p>
-            <h2 className="mt-4 font-serif text-5xl leading-tight text-balance text-foreground">
-              We shape attention, trust, and buyer intent around the actual sales process.
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-muted-foreground">
-              That means strategy is informed by sales capacity, creative is informed by buyer hesitation, and media is
-              informed by the neighborhoods where conversion is strongest.
-            </p>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 }

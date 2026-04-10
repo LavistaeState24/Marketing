@@ -9,9 +9,9 @@ export function PortfolioPage() {
       <section className=" pb-20">
         <div className="container-shell">
           <Badge>Portfolio</Badge>
-          <h1 className="mt-6 max-w-4xl font-serif text-5xl leading-tight text-balance text-foreground sm:text-6xl">
+          <h3 className=" mt-5 font-serif text-4xl leading-tight text-balance text-surface-light sm:text-4xl lg:text-5xl">
             Selected launches, repositioning work, and campaign systems for premium real estate.
-          </h1>
+          </h3>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground">
             These case-study style examples show how Lavista brings together luxury storytelling and channel performance.
           </p>
