@@ -1,20 +1,17 @@
 import {
   ArrowUpRight,
   BadgePercent,
-  Building2,
   ChartNoAxesCombined,
   CirclePlay,
   Globe,
   Layers3,
   LayoutPanelTop,
-  MapPinned,
   Megaphone,
   MessageSquareQuote,
   PanelsTopLeft,
   RadioTower,
   SearchCheck,
   ShieldCheck,
-  Sparkles,
   UsersRound,
   Facebook,
   Instagram,
@@ -23,6 +20,14 @@ import {
   MapPin,
   Phone,
   Mail,
+  Compass,
+  LayoutTemplate,
+  Filter,
+  Building2,
+  Handshake,
+  MapPinned,
+  Sparkles,
+  BadgeCheck,
 } from "lucide-react";
 
 export const siteNavigation = [
@@ -271,6 +276,166 @@ export const aboutValues = [
     icon: UsersRound,
     title: "Sales alignment",
     text: "Marketing without handoff discipline wastes budget. We build around the actual workflow of the sales team.",
+  },
+];
+
+export const aboutHero = {
+  eyebrow: "About Lavista",
+  title: "Real estate marketing built to make premium projects easier to trust and easier to choose.",
+  description:
+    "Lavista helps builders and developers grow through stronger branding, sharper ad systems, and conversion-focused real estate marketing shaped for serious buyer intent.",
+  image:
+    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80",
+  imageAlt: "Luxury real estate skyline and modern commercial architecture",
+};
+
+export const aboutBrandIntro = {
+  eyebrow: "Brand Introduction",
+  title: "Lavista is a real estate-focused growth partner with premium creative discipline and performance depth.",
+  description:
+    "We combine Ahmedabad market understanding, luxury-first visual direction, and conversion-led media execution to help projects look stronger and sell smarter.",
+  image:
+    "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80",
+  imageAlt: "Lavista brand and strategy discussion in a premium office setting",
+  highlights: [
+    {
+      title: "Market Context",
+      text: "Ahmedabad buyers respond to trust, locality fit, aspiration, and clarity. Our messaging is shaped around those realities.",
+    },
+    {
+      title: "Execution Standard",
+      text: "Campaigns are planned with sales alignment, cleaner lead flow, and a premium presentation standard across every touchpoint.",
+    },
+  ],
+};
+
+export const aboutStory = {
+  eyebrow: "Our Story",
+  title: "Lavista was created to solve the gaps that keep too many real estate campaigns looking active but converting poorly.",
+  description:
+    "We saw projects spending heavily on branding and ads without the systems needed to build trust or improve buyer quality.",
+  paragraphs: [
+    "Weak branding made premium projects feel interchangeable. Random lead generation flooded sales teams with enquiries that looked good in reports but lacked seriousness on the ground.",
+    "Builders and developers needed more than ads. They needed positioning, better creative, clearer lead qualification, and a structured path from first click to site visit.",
+    "Lavista was built around that need: a real estate growth system where brand perception, campaign performance, and conversion quality work together instead of separately.",
+  ],
+  image:
+    "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=80",
+  imageAlt: "Real estate campaign planning and team collaboration",
+};
+
+export const aboutWorkProcess = [
+  {
+    icon: Compass,
+    title: "Research & Positioning",
+    text: "We study project type, buyer profile, micro-market demand, and pricing context before shaping the campaign angle.",
+  },
+  {
+    icon: LayoutTemplate,
+    title: "Creative Strategy",
+    text: "Brand language, campaign visuals, landing pages, and content systems are aligned to premium buyer expectations.",
+  },
+  {
+    icon: Megaphone,
+    title: "Meta & Google Ads",
+    text: "We launch disciplined media systems across active demand and discovery channels with faster testing loops.",
+  },
+  {
+    icon: Filter,
+    title: "Lead Qualification",
+    text: "Forms, routing logic, and follow-up structure are built to reduce noise and improve conversation quality.",
+  },
+  {
+    icon: Building2,
+    title: "Site Visit Push",
+    text: "Retargeting, reminders, and trust-building content help move buyers from curiosity to scheduled visits.",
+  },
+  {
+    icon: Handshake,
+    title: "Closing Support",
+    text: "Marketing and sales signals stay connected so campaigns support better follow-through closer to decision time.",
+  },
+];
+
+export const aboutStrengths = [
+  {
+    icon: Building2,
+    title: "Real estate focused expertise",
+    text: "Lavista is built around launches, inventories, site visits, and buyer intent rather than generic agency playbooks.",
+  },
+  {
+    icon: MapPinned,
+    title: "Ahmedabad market understanding",
+    text: "We understand the local buyer pulse, catchment behavior, premium positioning needs, and project communication style.",
+  },
+  {
+    icon: Sparkles,
+    title: "Premium branding approach",
+    text: "Creative is designed to build trust, justify value perception, and make a project feel more credible from first contact.",
+  },
+  {
+    icon: ChartNoAxesCombined,
+    title: "Data-driven campaigns",
+    text: "We test demand angles, channel mix, and conversion paths with reporting that points back to commercial outcomes.",
+  },
+  {
+    icon: Filter,
+    title: "Filtered leads",
+    text: "Lead capture is shaped to reduce weak enquiries and improve the quality of conversations reaching the sales team.",
+  },
+  {
+    icon: BadgeCheck,
+    title: "Full-funnel growth system",
+    text: "From first impression to site visit reminders, every touchpoint is designed as part of one conversion system.",
+  },
+];
+
+export const aboutMissionVision = [
+  {
+    title: "Mission",
+    description:
+      "Build real estate marketing systems that raise trust, improve lead quality, and support better closing outcomes.",
+    text: "Our mission is to help builders, developers, and broker teams move beyond scattered campaigns and into a more premium, measurable, and conversion-led growth model.",
+  },
+  {
+    title: "Vision",
+    description:
+      "Become the most trusted premium real estate marketing partner for growth-minded projects in Gujarat and beyond.",
+    text: "We want every serious project launch to feel sharper, more intentional, and more commercially aligned than the category standard currently allows.",
+  },
+];
+
+export const aboutStats = [
+  { value: "8+", label: "Years of real estate marketing experience" },
+  { value: "320+", label: "Campaigns launched and optimized" },
+  { value: "18K+", label: "Qualified leads generated" },
+  { value: "50+", label: "Developers, builders, and broker teams served" },
+];
+
+export const aboutCultureBlocks = [
+  {
+    title: "Strategy",
+    text: "Market mapping, project positioning, and launch planning happen with commercial clarity, not guesswork.",
+    image:
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    title: "Creative",
+    text: "Brand decks, campaign art direction, brochures, reels, and landing experiences are built to feel premium and coherent.",
+    image:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    title: "Performance",
+    text: "Media decisions are made against buyer quality, cost efficiency, and visit intent rather than vanity reporting.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+  },
+  {
+    title: "Client Success",
+    text: "The team stays close to project realities, sales pressure, and launch timing so execution remains accountable.",
+    image:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
   },
 ];
 
