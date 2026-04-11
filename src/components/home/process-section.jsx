@@ -16,7 +16,7 @@ export function ProcessSection() {
         <div className="mt-12 grid gap-5 lg:grid-cols-5">
           {processSteps.map((step, index) => (
             <Reveal key={step.title} delay={index * 90}>
-              <div className="surface-card-light rounded-[28px] p-6">
+              <div className="surface-card-light min-h-[250px] rounded-[28px] p-6">
                 <div className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--color-surface-accent)]">
                   {String(index + 1).padStart(2, "0")}
                 </div>

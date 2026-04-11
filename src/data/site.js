@@ -32,7 +32,19 @@ import {
 
 export const siteNavigation = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
+  {
+    label: "Services",
+    href: "/services/real-estate-branding",
+    children: [
+      { label: "Real Estate Branding", href: "/services/real-estate-branding" },
+      { label: "Meta Ads", href: "/services/meta-ads" },
+      { label: "Google Ads", href: "/services/google-ads" },
+      { label: "Content Production", href: "/services/content-production" },
+      { label: "Lead Generation", href: "/services/lead-generation" },
+      { label: "CRM Solutions", href: "/services/crm-solutions" },
+    ],
+  },
+  { label: "Pricing", href: "/pricing" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -49,49 +61,42 @@ export const services = [
     icon: Megaphone,
     slug: "real-estate-branding",
     title: "Real Estate Branding",
-    description: "Luxury-first campaign systems that turn attention into qualified residential enquiries.",
-    benefits: ["High-intent audience mapping", "Creative testing cadence", "Lead quality optimization"],
+    description: "Premium brand systems that make a project feel credible, aspirational, and sales-ready.",
+    benefits: ["Positioning clarity", "Luxury visual direction", "Campaign-ready brand language"],
+  },
+  {
+    icon: Megaphone,
+    slug: "meta-ads",
+    title: "Meta Ads",
+    description: "High-intent social campaigns built around premium audiences, creative testing, and lead quality.",
+    benefits: ["Audience segmentation", "Creative testing cadence", "Retargeting for site visits"],
   },
   {
     icon: SearchCheck,
     slug: "google-ads",
     title: "Google Ads",
-    description: "Search and performance campaigns built around active demand, local catchments, and project urgency.",
+    description: "Search campaigns that capture active real estate demand across location, price, and intent signals.",
     benefits: ["Location-led keywords", "Call and form conversion focus", "Budget efficiency for launches"],
   },
   {
-    icon: Sparkles,
-    slug: "branding",
-    title: "Branding",
-    description: "Positioning and premium visual systems that make a project feel credible before the first site visit.",
-    benefits: ["Brand story architecture", "Luxury identity direction", "Consistent launch collateral"],
-  },
-  {
-    icon: RadioTower,
-    slug: "social-media",
-    title: "Social Media",
-    description: "Editorial content calendars that keep projects visible, aspirational, and buyer-relevant.",
-    benefits: ["Channel-specific planning", "Community storytelling", "Engagement to enquiry journeys"],
-  },
-  {
     icon: CirclePlay,
-    slug: "reels-content",
-    title: "Reels / Content",
-    description: "Short-form videos, launch films, and visual storytelling tailored for premium real estate buyers.",
-    benefits: ["Script-to-shoot planning", "Property lifestyle angles", "Performance-ready edits"],
+    slug: "content-production",
+    title: "Content Production",
+    description: "Premium reels, launch films, walkthroughs, and campaign assets tailored for property buyers.",
+    benefits: ["Script-to-shoot planning", "Project storytelling", "Performance-ready edits"],
   },
   {
-    icon: LayoutPanelTop,
-    slug: "landing-pages",
-    title: "Landing Pages",
-    description: "Conversion-focused campaign pages with stronger trust signals, faster paths to action, and cleaner UX.",
-    benefits: ["Mobile-first structure", "Lead capture UX", "Premium visual hierarchy"],
+    icon: UsersRound,
+    slug: "lead-generation",
+    title: "Lead Generation",
+    description: "Lead systems built to reduce weak enquiries and increase serious sales conversations.",
+    benefits: ["High-intent audience mapping", "Lead quality optimization", "Site visit push"],
   },
   {
     icon: PanelsTopLeft,
-    slug: "crm-funnels",
-    title: "CRM / Funnels",
-    description: "Lead routing and nurture workflows that move prospects from first touch to booking-ready conversations.",
+    slug: "crm-solutions",
+    title: "CRM Solutions",
+    description: "Routing, follow-up, and nurture workflows that help sales teams respond faster and close cleaner.",
     benefits: ["Source attribution clarity", "Automated follow-up logic", "Sales-ready handoff systems"],
   },
 ];
@@ -439,6 +444,427 @@ export const aboutCultureBlocks = [
   },
 ];
 
+export const servicePages = [
+  {
+    slug: "real-estate-branding",
+    navLabel: "Real Estate Branding",
+    eyebrow: "Real Estate Branding",
+    title: "Branding that makes premium projects feel trusted before the first site visit.",
+    description:
+      "We shape the positioning, identity direction, campaign language, and buyer-facing presentation that help builders and developers command stronger attention.",
+    image:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=80",
+    what:
+      "Real estate branding is the strategic foundation of how a project is understood, remembered, and trusted. For Lavista, it is not just logos or brochures; it is the full perception system around a property launch.",
+    start:
+      "We begin by understanding the project category, buyer profile, pricing logic, micro-market, inventory pressure, and the emotional reason a buyer should believe in the project.",
+    process: [
+      "Audit the existing brand, competitor set, and local buyer expectations.",
+      "Define the positioning, promise, project story, and communication hierarchy.",
+      "Create the visual direction for campaign assets, landing pages, brochures, and social content.",
+      "Build launch-ready brand messaging for ads, sales teams, and digital touchpoints.",
+      "Refine the brand system using buyer feedback, enquiry quality, and campaign response.",
+    ],
+    provides: [
+      "Project positioning framework",
+      "Campaign messaging direction",
+      "Premium creative art direction",
+      "Brochure and landing page copy guidance",
+      "Brand consistency system for launch assets",
+    ],
+    outcome:
+      "Your project enters the market with stronger perceived value, clearer buyer trust, and a premium presentation that supports better lead quality.",
+  },
+  {
+    slug: "meta-ads",
+    navLabel: "Meta Ads",
+    eyebrow: "Meta Ads",
+    title: "Meta campaigns built to turn attention into qualified real estate enquiries.",
+    description:
+      "We create and optimize Meta ad systems for builders, brokers, and developers who need premium reach, sharper filtering, and stronger site-visit movement.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1800&q=80",
+    what:
+      "Meta Ads help real estate brands build demand through Facebook and Instagram using audience segmentation, creative testing, retargeting, and conversion-focused lead journeys.",
+    start:
+      "We begin with the project stage, buyer ticket size, location radius, creative bank, offer strength, and sales team feedback on what counts as a qualified enquiry.",
+    process: [
+      "Map audience groups by location, income intent, lifestyle signals, and project fit.",
+      "Create campaign architecture for awareness, enquiry capture, and retargeting.",
+      "Test premium creatives, hooks, formats, and lead form friction.",
+      "Track lead quality with sales feedback and source-level performance signals.",
+      "Scale winning segments while tightening weak enquiries and wasted spend.",
+    ],
+    provides: [
+      "Meta campaign setup and optimization",
+      "Audience and retargeting structure",
+      "Creative testing plan",
+      "Lead form and landing flow recommendations",
+      "Performance reporting tied to lead quality",
+    ],
+    outcome:
+      "You get cleaner campaign learning, stronger lead quality, and better movement from social attention to site visit conversations.",
+  },
+  {
+    slug: "google-ads",
+    navLabel: "Google Ads",
+    eyebrow: "Google Ads",
+    title: "Search-led campaigns for buyers already looking for property options.",
+    description:
+      "We structure Google Ads around active demand, local search behavior, project category, and high-intent conversion paths.",
+    image:
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1800&q=80",
+    what:
+      "Google Ads captures active real estate demand from buyers searching by location, property type, price range, developer name, and purchase intent.",
+    start:
+      "We start by reviewing the project location, competitor terms, buyer search patterns, budget range, landing page quality, and conversion actions.",
+    process: [
+      "Research high-intent keywords, exclusions, and local search demand.",
+      "Build campaigns around project category, location clusters, and buyer urgency.",
+      "Create ad copy that filters casual traffic and attracts serious enquiries.",
+      "Optimize landing page actions, call tracking, forms, and conversion signals.",
+      "Refine bids, search terms, and budgets using quality and visit-readiness feedback.",
+    ],
+    provides: [
+      "Keyword and competitor search research",
+      "Search campaign structure",
+      "Ad copy and extension planning",
+      "Landing page conversion recommendations",
+      "Weekly optimization and quality reporting",
+    ],
+    outcome:
+      "Your project captures buyers with active intent and converts more search demand into qualified calls, forms, and site visit opportunities.",
+  },
+  {
+    slug: "content-production",
+    navLabel: "Content Production",
+    eyebrow: "Content Production",
+    title: "Premium property content that makes a project easier to imagine, trust, and enquire about.",
+    description:
+      "We plan reels, launch films, walkthroughs, location stories, and campaign creatives around real buyer hesitation and aspiration.",
+    image:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80",
+    what:
+      "Content production turns property features, location value, lifestyle cues, and developer credibility into visual assets that support campaigns and sales conversations.",
+    start:
+      "We begin with the project story, target buyer, shoot requirements, available property visuals, sales objections, and the formats needed for each channel.",
+    process: [
+      "Define the content pillars: trust, lifestyle, location, amenities, and urgency.",
+      "Plan scripts, shot lists, hooks, captions, and ad-ready formats.",
+      "Produce reels, short videos, walkthrough clips, static creatives, and campaign assets.",
+      "Adapt each asset for Meta, Google, landing pages, WhatsApp, and sales follow-up.",
+      "Review performance signals and refine future content around enquiry quality.",
+    ],
+    provides: [
+      "Creative concepts and scripts",
+      "Reels and short-form video assets",
+      "Launch campaign creatives",
+      "Location and amenity storytelling",
+      "Ad-ready formats for multiple platforms",
+    ],
+    outcome:
+      "Your marketing gets a more premium visual language, stronger buyer engagement, and content that supports both advertising and sales follow-up.",
+  },
+  {
+    slug: "lead-generation",
+    navLabel: "Lead Generation",
+    eyebrow: "Lead Generation",
+    title: "Lead generation systems designed for serious enquiries, not just higher volume.",
+    description:
+      "We build real estate lead systems around buyer intent, qualification, site visit readiness, and cleaner sales handoff.",
+    image:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1800&q=80",
+    what:
+      "Lead generation for real estate should connect targeting, creative, landing friction, qualification logic, and sales workflow into one demand system.",
+    start:
+      "We start by defining what a qualified lead means for your project: budget, location preference, purchase timeline, property type, and ability to visit.",
+    process: [
+      "Clarify lead quality criteria with the sales team.",
+      "Build audience, creative, and channel plans around high-intent segments.",
+      "Create conversion paths that filter weak enquiries without hurting volume unnecessarily.",
+      "Track lead source, response time, buyer seriousness, and site visit movement.",
+      "Optimize campaigns based on quality, not just CPL.",
+    ],
+    provides: [
+      "Lead generation campaign strategy",
+      "Qualification-focused forms and flows",
+      "Meta and Google demand routing",
+      "Lead quality feedback structure",
+      "Site visit push and retargeting logic",
+    ],
+    outcome:
+      "Your team receives fewer random enquiries, more serious buyer conversations, and a clearer path from lead capture to booked site visit.",
+  },
+  {
+    slug: "crm-solutions",
+    navLabel: "CRM Solutions",
+    eyebrow: "CRM Solutions",
+    title: "CRM systems that stop good real estate leads from going cold.",
+    description:
+      "We design lead routing, follow-up, source tracking, and nurture workflows so sales teams can respond faster and convert cleaner.",
+    image:
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1800&q=80",
+    what:
+      "CRM solutions connect marketing sources with sales action. They help teams track, prioritize, follow up, and nurture enquiries instead of losing them after the first call attempt.",
+    start:
+      "We begin by reviewing current lead flow, response time, sales stages, team responsibilities, WhatsApp usage, and where enquiries currently leak.",
+    process: [
+      "Map the current lead journey from ad source to sales follow-up.",
+      "Define pipeline stages, owner rules, priority tags, and source attribution.",
+      "Set up routing, reminders, nurture messages, and follow-up sequences.",
+      "Connect CRM reporting with campaign quality and sales feedback.",
+      "Refine automations based on missed calls, visit status, and closing signals.",
+    ],
+    provides: [
+      "CRM workflow planning",
+      "Lead routing and tagging structure",
+      "Follow-up and reminder automation",
+      "WhatsApp and nurture sequence guidance",
+      "Source-to-sales reporting framework",
+    ],
+    outcome:
+      "Your sales team responds faster, tracks every enquiry better, and converts more marketing demand into visits, callbacks, and closing opportunities.",
+  },
+];
+
+export const pricingPackageGroups = [
+  {
+    id: "social-media-management",
+    title: "Social Media Management Packages",
+    description:
+      "For builders and developers who need consistent premium visibility, stronger project storytelling, and a polished social presence.",
+    plans: [
+      {
+        duration: "4 Months",
+        price: "₹80,000",
+        features: [
+          "Monthly content calendar",
+          "Premium static creatives and reels planning",
+          "Project positioning captions",
+          "Basic profile hygiene and posting support",
+        ],
+        cta: "Start Social Management",
+      },
+      {
+        duration: "8 Months",
+        price: "₹1,50,000",
+        featured: true,
+        features: [
+          "Extended content calendar",
+          "Reels, carousel, and story direction",
+          "Launch and inventory communication themes",
+          "Monthly content performance review",
+        ],
+        cta: "Choose 8 Month Plan",
+      },
+      {
+        duration: "12 Months",
+        price: "₹2,10,000",
+        features: [
+          "Annual project visibility system",
+          "Campaign-led creative planning",
+          "Festival and launch content support",
+          "Quarterly brand consistency review",
+        ],
+        cta: "Build Annual Presence",
+      },
+    ],
+  },
+  {
+    id: "social-media-ads-leads",
+    title: "Social Media + Ads Lead Generation Packages",
+    description:
+      "For real estate teams that need social visibility plus Meta-led lead generation, retargeting, and enquiry quality improvement.",
+    plans: [
+      {
+        duration: "4 Months",
+        price: "₹1,40,000",
+        features: [
+          "Social media content management",
+          "Meta lead campaign setup",
+          "Audience and creative testing",
+          "Lead quality feedback loop",
+        ],
+        cta: "Start Lead Campaigns",
+      },
+      {
+        duration: "8 Months",
+        price: "₹2,60,000",
+        featured: true,
+        features: [
+          "Content and lead generation system",
+          "Retargeting for interested buyers",
+          "Monthly lead source review",
+          "Creative iteration based on CPL and quality",
+        ],
+        cta: "Choose Growth Plan",
+      },
+      {
+        duration: "12 Months",
+        price: "₹3,80,000",
+        features: [
+          "Long-term social and lead pipeline",
+          "Launch, nurture, and remarketing campaigns",
+          "Performance reporting cadence",
+          "Site-visit push creative support",
+        ],
+        cta: "Scale Lead System",
+      },
+    ],
+  },
+  {
+    id: "premium-real-estate-system",
+    title: "Full Premium Real Estate Marketing",
+    description:
+      "For premium launches and growth-focused projects that need branding, content, ads, lead systems, and conversion support working together.",
+    plans: [
+      {
+        duration: "4 Months",
+        price: "₹2,40,000",
+        features: [
+          "Brand and campaign positioning",
+          "Content production direction",
+          "Meta and Google campaign support",
+          "Lead qualification and follow-up structure",
+        ],
+        cta: "Start Premium System",
+      },
+      {
+        duration: "8 Months",
+        price: "₹4,80,000",
+        featured: true,
+        features: [
+          "Full-funnel marketing system",
+          "Premium creative and content calendar",
+          "Ads, retargeting, and lead optimization",
+          "CRM and site-visit push support",
+        ],
+        cta: "Choose Premium Growth",
+      },
+      {
+        duration: "12 Months",
+        price: "₹7,20,000",
+        features: [
+          "Annual real estate growth partnership",
+          "Launch and inventory campaign planning",
+          "Brand, content, ads, and CRM coordination",
+          "Quarterly strategy and conversion reviews",
+        ],
+        cta: "Build Annual System",
+      },
+    ],
+  },
+];
+
+export const portfolioHero = {
+  eyebrow: "Portfolio",
+  title: "Portfolio work shaped for premium projects, sharper buyer quality, and stronger site-visit momentum.",
+  description:
+    "Lavista builds real estate campaign systems that help apartments, villas, plots, commercial assets, and luxury residences look stronger and convert cleaner.",
+  image:
+    "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1800&q=80",
+  imageAlt: "Premium high-rise portfolio showcase",
+};
+
+export const portfolioPageFilters = [
+  "All",
+  "Apartments",
+  "Villas",
+  "Plots",
+  "Commercial",
+  "Weekend Homes",
+  "Luxury Residences",
+];
+
+export const portfolioPageGallery = [
+  {
+    title: "Skyline Arc",
+    type: "Apartments",
+    location: "Ahmedabad",
+    result: "3.2x stronger qualified enquiry flow in 60 days",
+    image:
+      "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1400&q=80",
+  },
+  {
+    title: "Verdant Courtyard Villas",
+    type: "Villas",
+    location: "Sanand",
+    result: "41% lower cost per site-visit-ready lead",
+    image:
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80",
+  },
+  {
+    title: "Terra District",
+    type: "Plots",
+    location: "Dholera",
+    result: "Launch weekend inventory demand filled ahead of schedule",
+    image:
+      "https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1400&q=80",
+  },
+  {
+    title: "Axis Trade Square",
+    type: "Commercial",
+    location: "Prahlad Nagar",
+    result: "Premium positioning improved investor enquiry quality",
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
+  },
+  {
+    title: "Aranya Weekend Estates",
+    type: "Weekend Homes",
+    location: "Thol",
+    result: "High-intent leisure buyer campaigns lifted visit bookings by 2.9x",
+    image:
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
+  },
+  {
+    title: "Aureum Residences",
+    type: "Luxury Residences",
+    location: "Bodakdev",
+    result: "Sharper creative direction improved premium lead quality within 4 weeks",
+    image:
+      "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1400&q=80",
+  },
+];
+
+export const portfolioApproachBlocks = [
+  {
+    title: "Position the project with market intelligence",
+    text: "Each portfolio engagement begins with demand context, pricing psychology, and buyer-fit positioning so the communication lands with more certainty.",
+  },
+  {
+    title: "Build premium campaign language",
+    text: "We shape imagery, landing structure, ad narrative, and trust signals to make the property feel credible before the sales team takes over.",
+  },
+  {
+    title: "Push for movement, not vanity metrics",
+    text: "Media decisions are measured against enquiry quality, visit intent, and conversion progression rather than report inflation.",
+  },
+];
+
+export const portfolioPerformanceHighlights = [
+  {
+    icon: ChartNoAxesCombined,
+    value: "320+",
+    label: "Campaign variations tested across premium launches",
+  },
+  {
+    icon: UsersRound,
+    value: "18K+",
+    label: "Qualified leads generated for real estate brands",
+  },
+  {
+    icon: MapPinned,
+    value: "11",
+    label: "Micro-markets studied across high-value project categories",
+  },
+  {
+    icon: ShieldCheck,
+    value: "4.7x",
+    label: "Average improvement in lead quality systems and visit readiness",
+  },
+];
+
 export const contactDetails = [
   { label: "Phone", value: "+91 9213684966", link: "tel:+919213684966" },
   { label: "Email", value: "lavistaimperial@gmail.com", link: "mailto:lavistaimperial@gmail.com" },
@@ -468,12 +894,12 @@ export const FooterLinks = [
   {
     title: "Our Services",
     links: [
-      { label: "Real Estate Branding", href: "/services" },
-      { label: "Meta Ads", href: "/services" },
-      { label: "Google Ads", href: "/services" },
-      { label: "Content Production", href: "/services" },
-      { label: "Lead Generation", href: "/services" },
-      { label: "CRM Solutions", href: "/services" },
+      { label: "Real Estate Branding", href: "/services/real-estate-branding" },
+      { label: "Meta Ads", href: "/services/meta-ads" },
+      { label: "Google Ads", href: "/services/google-ads" },
+      { label: "Content Production", href: "/services/content-production" },
+      { label: "Lead Generation", href: "/services/lead-generation" },
+      { label: "CRM Solutions", href: "/services/crm-solutions" },
     ],
   },
 ];

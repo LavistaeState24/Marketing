@@ -23,7 +23,7 @@ export function ServicesSection() {
 
             return (
               <Reveal key={service.title} delay={index * 80}>
-                <Card className="surface-card-light group h-full rounded-[30px] transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/25">
+                <Card className="surface-card-light group h-full min-h-[330px] rounded-[30px] transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/25">
                   <CardHeader>
                     <div className="flex size-12 items-center justify-center rounded-2xl border border-primary/15 bg-primary/10 text-primary transition-transform duration-300 group-hover:-translate-y-1">
                       <Icon className="size-5" />

@@ -63,7 +63,7 @@ export function AboutPage() {
               />
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
                 {aboutBrandIntro.highlights.map((item) => (
-                  <div key={item.title} className="surface-card-light rounded-[24px] p-5">
+                  <div key={item.title} className="surface-card-light min-h-[190px] rounded-[24px] p-5">
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-surface-accent)]">
                       {item.title}
                     </p>
@@ -112,7 +112,7 @@ export function AboutPage() {
 
               return (
                 <Reveal key={item.title} delay={index * 70}>
-                  <div className="surface-card-light group h-full rounded-[28px] p-6 transition-all duration-300 hover:-translate-y-1">
+                  <div className="surface-card-light group h-full min-h-[270px] rounded-[28px] p-6 transition-all duration-300 hover:-translate-y-1">
                     <div className="flex size-12 items-center justify-center rounded-2xl border border-primary/15 bg-primary/10 text-primary transition-transform duration-300 group-hover:-translate-y-0.5">
                       <Icon className="size-5" />
                     </div>
@@ -140,7 +140,7 @@ export function AboutPage() {
 
               return (
                 <Reveal key={item.title} delay={index * 70}>
-                  <div className="rounded-[28px] border border-border/80 bg-card/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/25">
+                  <div className="min-h-[250px] rounded-[28px] border border-border/80 bg-card/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/25">
                     <div className="flex size-12 items-center justify-center rounded-2xl border border-primary/15 bg-primary/10 text-primary">
                       <Icon className="size-5" />
                     </div>
@@ -158,7 +158,7 @@ export function AboutPage() {
         <div className="container-shell grid gap-5 lg:grid-cols-2">
           {aboutMissionVision.map((item, index) => (
             <Reveal key={item.title} delay={index * 100}>
-              <div className="surface-card-light rounded-[32px] p-7 sm:p-8">
+              <div className="surface-card-light min-h-[360px] rounded-[32px] p-7 sm:p-8">
                 <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--color-surface-accent)]">
                   {item.title}
                 </p>
@@ -175,7 +175,7 @@ export function AboutPage() {
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {aboutStats.map((item, index) => (
               <Reveal key={item.label} delay={index * 70}>
-                <div className="rounded-[30px] border border-border/80 bg-black/15 p-6">
+                <div className="min-h-[210px] rounded-[30px] border border-border/80 bg-black/15 p-6">
                   <p className="font-serif text-5xl text-foreground sm:text-6xl">{item.value}</p>
                   <p className="mt-3 text-sm leading-7 text-muted-foreground">{item.label}</p>
                 </div>
@@ -197,7 +197,7 @@ export function AboutPage() {
           <div className="mt-12 grid gap-5 md:grid-cols-2">
             {aboutCultureBlocks.map((item, index) => (
               <Reveal key={item.title} delay={index * 80}>
-                <div className="overflow-hidden rounded-[30px] border border-[var(--color-surface-border)] bg-white/80 shadow-[0_20px_40px_rgba(15,12,10,0.06)]">
+                <div className="min-h-[430px] overflow-hidden rounded-[30px] border border-[var(--color-surface-border)] bg-white/80 shadow-[0_20px_40px_rgba(15,12,10,0.06)]">
                   <div className="h-64 overflow-hidden">
                     <img
                       src={item.image}
