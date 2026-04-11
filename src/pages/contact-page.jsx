@@ -1,11 +1,15 @@
 import { useState } from "react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
-import { CheckCircle2, X } from "lucide-react";
+import { X } from "lucide-react";
 import { contactDetails } from "@/data/site";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import {
+  isGoogleSheetSubmissionConfigured,
+  submitContactFormToGoogleSheet,
+} from "@/lib/google-sheet";
 
 const initialForm = {
   fullName: "",
@@ -89,6 +93,8 @@ export function ContactPage() {
   const [formValues, setFormValues] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [successOpen, setSuccessOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -105,9 +111,13 @@ export function ContactPage() {
       delete next[name];
       return next;
     });
+
+    if (submitError) {
+      setSubmitError("");
+    }
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
     const nextErrors = validateForm(formValues);
@@ -118,8 +128,24 @@ export function ContactPage() {
     }
 
     setErrors({});
-    setSuccessOpen(true);
-    setFormValues(initialForm);
+    setSubmitError("");
+
+    if (!isGoogleSheetSubmissionConfigured()) {
+      setSubmitError("Google Sheet is not connected yet. Add the Apps Script URL in your environment file.");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      await submitContactFormToGoogleSheet(formValues);
+      setSuccessOpen(true);
+      setFormValues(initialForm);
+    } catch {
+      setSubmitError("We could not send your enquiry right now. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -224,8 +250,14 @@ export function ContactPage() {
                   <FieldError message={errors.message} />
                 </div>
 
-                <Button type="submit" className="mt-2 w-full sm:w-fit">
-                  Send enquiry
+                {submitError ? (
+                  <p className="text-sm leading-6 text-[#f1b8b2]" role="alert">
+                    {submitError}
+                  </p>
+                ) : null}
+
+                <Button type="submit" className="mt-2 w-full sm:w-fit" disabled={isSubmitting}>
+                  {isSubmitting ? "Sending..." : "Send enquiry"}
                 </Button>
               </form>
             </div>
@@ -240,8 +272,6 @@ export function ContactPage() {
               />
             </div>
           </div>
-
-
         </div>
       </section>
 
