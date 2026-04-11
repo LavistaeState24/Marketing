@@ -153,24 +153,6 @@
   }
 }
 
-@keyframes lavista-loader-line {
-  0% {
-    transform: scaleX(0);
-    transform-origin: left;
-    opacity: 0.4;
-  }
-
-  50% {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scaleX(1);
-    opacity: 0;
-  }
-}
-
 @keyframes lavista-float {
 
   0%,

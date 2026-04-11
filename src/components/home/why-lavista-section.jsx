@@ -20,7 +20,7 @@ export function WhyLavistaSection() {
 
             return (
               <Reveal key={item.title} delay={index * 90}>
-                <div className="rounded-[28px] border border-border/80 bg-black/15 p-6 transition-transform duration-300 hover:-translate-y-1">
+                <div className="min-h-[250px] rounded-[28px] border border-border/80 bg-black/15 p-6 transition-transform duration-300 hover:-translate-y-1">
                   <div className="flex size-12 items-center justify-center rounded-2xl border border-primary/15 bg-primary/10 text-primary">
                     <Icon className="size-5" />
                   </div>

@@ -132,7 +132,7 @@ export function ContactPage() {
               <h3 className="mt-5 font-serif text-4xl leading-tight text-balance text-surface-light sm:text-4xl lg:text-5xl">
                 Let&apos;s design a sharper growth system for your next project.
               </h3>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
+              <p className="mt-6 max-w-xl text-lg leading-8 text-muted-foreground">
                 Share the project stage, city, ticket size, and current funnel challenge. We&apos;ll respond with the
                 right next step.
               </p>

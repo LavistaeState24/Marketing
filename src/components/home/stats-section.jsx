@@ -6,7 +6,7 @@ function StatCard({ label, value, suffix, active }) {
   const animated = useCountUp(value, active);
 
   return (
-    <div className="surface-card-light rounded-[30px] p-6">
+    <div className="surface-card-light min-h-[210px] rounded-[30px] p-6">
       <div className="font-serif text-5xl text-surface-foreground sm:text-6xl">
         {animated.toLocaleString()}
         {suffix}

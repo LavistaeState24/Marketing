@@ -30,7 +30,7 @@ export function TestimonialsSection() {
         <div className="flex">
           {testimonials.map((item) => (
             <div key={item.name} className="min-w-0 flex-[0_0_100%] pl-0 md:flex-[0_0_50%] md:pl-5">
-              <div className="h-full rounded-[32px] border border-border/80 bg-card/85 p-7 shadow-[0_20px_50px_rgba(0,0,0,0.16)]">
+              <div className="h-full min-h-[330px] rounded-[32px] border border-border/80 bg-card/85 p-7 shadow-[0_20px_50px_rgba(0,0,0,0.16)]">
                 <Quote className="size-8 text-primary" />
                 <p className="mt-6 text-lg leading-8 text-foreground">{item.quote}</p>
                 <div className="mt-8">
