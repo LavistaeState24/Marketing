@@ -637,38 +637,67 @@ export const pricingPackageGroups = [
       {
         duration: "4 Months",
         price: "₹80,000",
+        tag: "Starter",
+        description:
+          "Best for builders who want strong social media presence and consistent brand visibility without running ads.",
         features: [
-          "Monthly content calendar",
-          "Premium static creatives and reels planning",
+          "Instagram + Facebook + LinkedIn + GMB handling",
+          "12–15 posts per month",
+          "Reels-focused content planning",
+          "Content calendar support",
+          "Daily engagement guidance",
+          "Monthly performance report",
           "Project positioning captions",
-          "Basic profile hygiene and posting support",
+          "Follower growth improvement",
         ],
+        result:
+          "Builds a clean and professional brand presence with steady audience growth and better engagement.",
         cta: "Start Social Management",
       },
+
       {
         duration: "8 Months",
         price: "₹1,50,000",
+        tag: "Most Popular",
         featured: true,
+        description:
+          "Ideal for projects that need consistent growth, stronger engagement, and better long-term visibility.",
         features: [
-          "Extended content calendar",
-          "Reels, carousel, and story direction",
-          "Launch and inventory communication themes",
-          "Monthly content performance review",
+          "Full management across all 4 platforms",
+          "12–15 posts per month",
+          "More reels with trending content strategy",
+          "Audience interaction strategy",
+          "Daily engagement support",
+          "Monthly reporting and growth tracking",
+          "Content calendar + campaign alignment",
+          "Better long-term organic presence",
         ],
+        result:
+          "Improves engagement, builds stronger audience connection, and creates consistent organic growth.",
         cta: "Choose 8 Month Plan",
       },
+
       {
         duration: "12 Months",
         price: "₹2,10,000",
+        tag: "Long Term",
+        description:
+          "Perfect for developers focused on long-term branding, authority building, and sustained digital presence.",
         features: [
-          "Annual project visibility system",
-          "Campaign-led creative planning",
-          "Festival and launch content support",
-          "Quarterly brand consistency review",
+          "Consistent content and platform handling",
+          "Stronger page authority building",
+          "Reels + graphics growth strategy",
+          "Detailed reporting and optimization",
+          "Long-term content positioning",
+          "Brand consistency planning",
+          "Better trust building with audience",
+          "Ideal for long-term organic visibility",
         ],
+        result:
+          "Creates strong brand trust, authority, and a stable long-term digital presence.",
         cta: "Build Annual Presence",
       },
-    ],
+    ]
   },
   {
     id: "social-media-ads-leads",
@@ -679,38 +708,64 @@ export const pricingPackageGroups = [
       {
         duration: "4 Months",
         price: "₹1,40,000",
+        tag: "Starter",
+        description:
+          "Ideal for projects starting lead generation with structured campaigns and high-intent audience targeting.",
         features: [
-          "Social media content management",
-          "Meta lead campaign setup",
-          "Audience and creative testing",
-          "Lead quality feedback loop",
+          "12–15 posts per month",
+          "Reels-focused social media planning",
+          "Meta Ads setup + targeting",
+          "Google Ads search campaign setup",
+          "Lead + retargeting campaign funnel",
+          "A/B testing support",
+          "High-intent audience targeting",
+          "Basic GMB optimization + local SEO basics",
         ],
+        result:
+          "Generates consistent enquiries with structured campaigns and better lead intent.",
         cta: "Start Lead Campaigns",
       },
+
       {
         duration: "8 Months",
         price: "₹2,60,000",
+        tag: "Most Popular",
         featured: true,
+        description:
+          "Best for developers looking to improve lead quality, optimize funnels, and build a stronger conversion system.",
         features: [
-          "Content and lead generation system",
-          "Retargeting for interested buyers",
-          "Monthly lead source review",
-          "Creative iteration based on CPL and quality",
+          "Better quality lead optimization",
+          "Landing page optimization",
+          "Website guidance / setup support",
+          "Stronger campaign refinement",
+          "Improved retargeting strategy",
+          "Website development at 50% cost",
         ],
+        result:
+          "Improves lead quality, reduces CPL, and creates a more conversion-focused funnel.",
         cta: "Choose Growth Plan",
       },
+
       {
         duration: "12 Months",
         price: "₹3,80,000",
+        tag: "Long Term",
+        description:
+          "Designed for projects that want long-term scaling, strong funnel systems, and complete growth-focused execution.",
         features: [
-          "Long-term social and lead pipeline",
-          "Launch, nurture, and remarketing campaigns",
-          "Performance reporting cadence",
-          "Site-visit push creative support",
+          "Everything in lead generation system",
+          "Long-term optimization and scaling",
+          "Advanced campaign performance tracking",
+          "Website development completely free",
+          "CRM setup at 50% cost",
+          "Full support for growth-focused campaigns",
+          "Better lead nurturing and follow-up strategy",
         ],
+        result:
+          "Builds a scalable lead generation engine with higher conversions and long-term growth.",
         cta: "Scale Lead System",
       },
-    ],
+    ]
   },
   {
     id: "premium-real-estate-system",
@@ -721,38 +776,66 @@ export const pricingPackageGroups = [
       {
         duration: "4 Months",
         price: "₹2,40,000",
+        tag: "Best Value",
+        description:
+          "Perfect for projects that need a complete marketing foundation with branding, ads, and lead systems working together.",
         features: [
-          "Brand and campaign positioning",
-          "Content production direction",
-          "Meta and Google campaign support",
-          "Lead qualification and follow-up structure",
+          "Social media handling",
+          "Premium reels and graphics",
+          "Paid ad campaign setup (Meta + Google)",
+          "Lead system and campaign management",
+          "SEO + GMB support",
+          "Basic funnel setup for enquiries",
         ],
-        cta: "Start Premium System",
+        result:
+          "Creates a strong marketing base with consistent visibility and structured lead generation.",
+        cta: "Start Full System",
       },
+
       {
         duration: "8 Months",
         price: "₹4,80,000",
+        tag: "Most Popular",
         featured: true,
+        description:
+          "Ideal for developers looking for deeper campaign optimization, stronger content integration, and better conversion flow.",
         features: [
-          "Full-funnel marketing system",
-          "Premium creative and content calendar",
-          "Ads, retargeting, and lead optimization",
-          "CRM and site-visit push support",
+          "Everything in 4 Months Plan",
+          "Better campaign consistency and optimization",
+          "Stronger content + ad integration",
+          "Website development at 50% cost",
+          "1 professional cinematic video",
+          "2 drone shoots (construction + site)",
+          "Full execution support by Lavista Imperial",
         ],
-        cta: "Choose Premium Growth",
+        result:
+          "Improves campaign performance, strengthens brand positioning, and drives better quality enquiries.",
+        cta: "Choose Growth System",
       },
+
       {
         duration: "12 Months",
         price: "₹7,20,000",
+        tag: "Long Term",
+        description:
+          "Built for developers who want complete dominance across branding, ads, content, and conversion systems.",
         features: [
-          "Annual real estate growth partnership",
-          "Launch and inventory campaign planning",
-          "Brand, content, ads, and CRM coordination",
-          "Quarterly strategy and conversion reviews",
+          "15+ high-quality graphics & reels per month",
+          "4 professional cinematic videos",
+          "4 drone shoots (construction + site)",
+          "Complete social media management",
+          "Influencer marketing strategy",
+          "Meta + Google high-converting campaigns",
+          "Filtered lead generation system",
+          "Walking client strategy",
+          "Complete website SEO + GMB domination",
+          "Website free + CRM at 50% cost",
         ],
-        cta: "Build Annual System",
+        result:
+          "Builds a full-scale growth engine with high-quality leads, strong brand authority, and maximum conversions.",
+        cta: "Scale Full Marketing System",
       },
-    ],
+    ]
   },
 ];
 
