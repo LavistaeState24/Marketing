@@ -8,10 +8,12 @@ import { cn } from "@/lib/utils";
 
 export function PricingPackagesSection({
   groupIds,
-  eyebrow = "Pricing Packages",
+  eyebrow = "Packages",
   title = "Premium real estate marketing packages built for visibility, lead quality, and conversion support.",
   description = "Choose the package depth that matches your project stage, campaign urgency, and sales follow-up capacity.",
   tone = "light",
+  showPrices = true,
+  showPlanDetails = false,
   className,
 }) {
   const selectedGroups = groupIds?.length
@@ -69,9 +71,30 @@ export function PricingPackagesSection({
                           >
                             {plan.duration}
                           </p>
-                          <p className={cn("mt-5 font-serif text-5xl", isLight ? "text-surface-foreground" : "text-foreground")}>
-                            {plan.price}
-                          </p>
+                          {showPrices ? (
+                            <p className={cn("mt-5 font-serif text-5xl", isLight ? "text-surface-foreground" : "text-foreground")}>
+                              {plan.price}
+                            </p>
+                          ) : null}
+                          {showPlanDetails ? (
+                            <div className="mt-5 space-y-3">
+                              {plan.tag ? (
+                                <span className="inline-flex rounded-full border border-primary/35 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                                  {plan.tag}
+                                </span>
+                              ) : null}
+                              {plan.description ? (
+                                <p
+                                  className={cn(
+                                    "text-sm leading-6",
+                                    isLight ? "text-[var(--color-surface-copy)]" : "text-muted-foreground",
+                                  )}
+                                >
+                                  {plan.description}
+                                </p>
+                              ) : null}
+                            </div>
+                          ) : null}
                         </div>
 
                         <div className="mt-8 flex flex-1 flex-col gap-4">
@@ -84,6 +107,19 @@ export function PricingPackagesSection({
                             </div>
                           ))}
                         </div>
+
+                        {showPlanDetails && plan.result ? (
+                          <div
+                            className={cn(
+                              "mt-6 rounded-[18px] border p-4 text-sm leading-6",
+                              isLight
+                                ? "border-[var(--color-surface-border)] bg-white/60 text-[var(--color-surface-copy)]"
+                                : "border-border/80 bg-black/15 text-muted-foreground",
+                            )}
+                          >
+                            {plan.result}
+                          </div>
+                        ) : null}
 
                         <Button asChild className="mt-8 w-full">
                           <Link to="/contact">
