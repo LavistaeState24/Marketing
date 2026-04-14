@@ -44,7 +44,7 @@ export const siteNavigation = [
       { label: "CRM Solutions", href: "/services/crm-solutions" },
     ],
   },
-  { label: "Pricing", href: "/pricing" },
+  { label: "Packages", href: "/packages" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },

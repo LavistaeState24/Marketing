@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { PricingPackagesSection } from "@/components/common/pricing-packages-section";
 import { Reveal } from "@/components/common/reveal";
 
-export function PricingPage() {
+export function PackagesPage() {
   return (
     <div>
       <section className="relative flex min-h-[78svh] items-end overflow-hidden">
@@ -38,11 +38,11 @@ export function PricingPage() {
       </section>
 
       <PricingPackagesSection
-        eyebrow="Pricing"
-        title="Complete pricing details for every real estate marketing package."
-        description="Review plan duration, package amount, inclusions, best-fit context, and expected outcome before choosing the right engagement."
+        eyebrow="Packages"
+        title="Three package systems designed for real estate brands at different growth stages."
+        description="From social presence to full premium marketing systems, each package is structured for builders, developers, and brokers who need sharper execution."
         tone="light"
-        showPlanDetails
+        showPrices={false}
         className="section-light"
       />
 
