@@ -64,13 +64,23 @@ export function AboutPage() {
                 description={aboutBrandIntro.description}
                 tone="light"
               />
+              <div className="mt-4">
+                <p className="font-serif text-3xl text-[var(--color-surface-foreground)]">
+                  {aboutBrandIntro.personName}
+                </p>
+                <p className="mt-2 text-lg font-semibold text-[var(--color-surface-accent)]">
+                  {aboutBrandIntro.position}
+                </p>
+              </div>
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
                 {aboutBrandIntro.highlights.map((item) => (
                   <div key={item.title} className="surface-card-light min-h-[100px] rounded-[24px] p-5">
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-surface-accent)]">
                       {item.title}
                     </p>
-                    <p className="mt-3 text-sm leading-7 text-[var(--color-surface-copy)]">{item.text}</p>
+                    <p className="mt-3 text-sm leading-7 text-[var(--color-surface-copy)]">
+                      {item.text}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -83,11 +93,24 @@ export function AboutPage() {
         <div className="container-shell grid gap-12 lg:grid-cols-[0.98fr_1.02fr] lg:items-center">
           <Reveal>
             <div>
-              <SectionHeading eyebrow={aboutStory.eyebrow} title={aboutStory.title} description={aboutStory.description} />
+              <SectionHeading
+                eyebrow={aboutStory.eyebrow}
+                title={aboutStory.title}
+
+                description={aboutStory.description} />
               <div className="mt-8 space-y-5 text-base leading-8 text-muted-foreground sm:text-lg">
                 {aboutStory.paragraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
+              </div>
+
+              <div className="mt-4">
+                <p className="font-serif text-3xl text-foreground">
+                  {aboutStory.personName}
+                </p>
+                <p className="mt-2 text-lg font-semibold text-primary">
+                  {aboutStory.position}
+                </p>
               </div>
             </div>
           </Reveal>
