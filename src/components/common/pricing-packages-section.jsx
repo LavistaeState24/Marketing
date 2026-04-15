@@ -145,11 +145,29 @@ export function PricingPackagesSection({
                 : "border border-border/80 bg-black/15 text-muted-foreground",
             )}
           >
-            <p>
-              Notes: Advertising media budget is separate from the package fee. Final scope, shoot requirements, CRM
-              setup, content volume, and reporting cadence can vary based on project stage, city, inventory pressure,
-              and campaign complexity.
-            </p>
+            <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
+
+              {/* LEFT NOTE */}
+              <div className="rounded-2xl border border-border bg-foreground/50 p-6">
+                <p className="leading-relaxed text-sm text-muted-foreground">
+                  <span className="font-bold text-primary">Note:</span> Advertising media budget is separate from the package fee.
+                  Final scope, shoot requirements, CRM setup, content volume, and reporting cadence can vary based on project stage,
+                  city, inventory pressure, and campaign complexity.
+                </p>
+              </div>
+
+              {/* RIGHT NOTE */}
+              <div className="rounded-2xl border border-border bg-foreground/50 p-6">
+                <p className="leading-relaxed text-sm text-muted-foreground">
+                  <span className="font-semibold text-primary">Note:</span> If we are unable to deliver
+                  <span className="text-accent font-bold"> 3 client closures</span>,
+                  we will continue working
+                  <span className="text-accent font-bold"> at no additional cost</span> — including complete Social Media Marketing, Ads, and Campaign Execution —
+                  until we you 3 client closures commitment is fulfilled.
+                </p>
+              </div>
+
+            </div>
           </div>
         </Reveal>
       </div>
