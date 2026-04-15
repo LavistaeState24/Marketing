@@ -9,11 +9,11 @@ import Meet from "./Meet.jpeg";
 import Nita from "./Nita.jpeg";
 import Nisha from "./Nisha.jpeg";
 import Khushi from "./khushi.jpeg";
-import Krutika from "./krutika.png";
-import Piyush from "./Piyush.png";
+import Krutika from "./Krutika.jpeg";
+import Piyush from "./Piyush.jpeg";
 import Krunal from "./krunal.jpeg"
 // import Utsav From "./Utsav.png";
-import Vaishali from "./vaishali.jpeg";
+import Vaishali from "./Vaishali.jpeg";
 
 
 export const AmanImg = Aman;
