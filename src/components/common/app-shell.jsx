@@ -6,6 +6,8 @@ import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/s
 import { Footer } from "@/components/common/footer";
 import { FloatingWhatsApp } from "@/components/common/floating-whatsapp";
 import { cn } from "@/lib/utils";
+import LogoDefault from "@/assets/Logo.png";
+import LogoScrolled from "@/assets/Logo 2.png";
 
 function Navbar({ navigation }) {
   const location = useLocation();
@@ -33,12 +35,21 @@ function Navbar({ navigation }) {
           className={cn(
             "grid grid-cols-[auto_1fr_auto] items-center gap-4 rounded-full border px-4 py-3 transition-all duration-300 sm:px-6",
             scrolled
-              ? "border-border bg-card/90 shadow-[0_18px_60px_rgba(0,0,0,0.25)] backdrop-blur-xl"
-              : "border-white/10 bg-black/20 backdrop-blur-md",
+              ? "border-border bg-card/50 shadow-[0_18px_60px_rgba(0,0,0,0.25)] backdrop-blur-xl"
+              : "border-white/10 bg-foreground/10 backdrop-blur-lg",
           )}
         >
-          <Link to="/" className="font-serif text-2xl tracking-wide text-foreground">
-            Lavista
+          <Link to="/" className="flex items-center shrink-0" aria-label="Lavista Home">
+            <img
+              src={scrolled ? LogoScrolled : LogoDefault}
+              alt="Lavista Logo"
+              className="
+                h-10 w-auto object-contain transition-all duration-300
+                sm:h-11
+                md:h-12
+                lg:h-14
+              "
+            />
           </Link>
 
           <nav className="hidden items-center justify-center gap-5 xl:gap-7 lg:flex">
@@ -191,6 +202,7 @@ function Navbar({ navigation }) {
     </header>
   );
 }
+
 
 export function AppShell({ navigation, children }) {
   return (

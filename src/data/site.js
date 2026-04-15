@@ -29,6 +29,24 @@ import {
   Sparkles,
   BadgeCheck,
 } from "lucide-react";
+import {
+  AmanImg,
+  AnnuImg,
+  DevarshImg,
+  DeepImg,
+  DipikaImg,
+  DharaImg,
+  HarshImg,
+  KhushiImg,
+  KrutikaImg,
+  MeetImg,
+  NitaImg,
+  NishaImg,
+  PiyushImg,
+  VaishaliImg,
+} from "@/assets";
+import { KrunalImg } from "../assets";
+
 
 export const siteNavigation = [
   { label: "Home", href: "/" },
@@ -295,13 +313,22 @@ export const aboutHero = {
 };
 
 export const aboutBrandIntro = {
-  eyebrow: "Brand Introduction",
-  title: "Lavista is a real estate-focused growth partner with premium creative discipline and performance depth.",
-  description:
-    "We combine Ahmedabad market understanding, luxury-first visual direction, and conversion-led media execution to help projects look stronger and sell smarter.",
-  image:
-    "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80",
-  imageAlt: "Lavista brand and strategy discussion in a premium office setting",
+  eyebrow: "Founder Story",
+  position:"Deep Thakkar",
+  title:
+    "Lavista is a real estate-focused growth partner with premium creative discipline and performance depth.",
+
+  description: [
+  "“Lavista is not just about running ads or posting content. It is about building trust before the first call and maintaining that trust until the final closing.” — Deep Thakkar, Founder.",
+
+  "We combine deep Ahmedabad market understanding, luxury-first visual direction, and conversion-led media execution to help projects not just look premium, but actually convert into serious buyers. Every campaign we build is designed with one goal — turning attention into site visits and site visits into confident decisions.",
+],
+
+  image: DeepImg,
+  imageAlt: "Owner of Lavista",
+  ownerLabel: "Founder & Growth Strategist",
+  ownerName: "Deep Thakkar",
+
   highlights: [
     {
       title: "Market Context",
@@ -316,16 +343,24 @@ export const aboutBrandIntro = {
 
 export const aboutStory = {
   eyebrow: "Our Story",
-  title: "Lavista was created to solve the gaps that keep too many real estate campaigns looking active but converting poorly.",
+  position:"Devarsh Thakkar",
+  title:
+    "Lavista was created to solve the gaps that keep too many real estate campaigns looking active but converting poorly.",
+
   description:
     "We saw projects spending heavily on branding and ads without the systems needed to build trust or improve buyer quality.",
+
   paragraphs: [
     "Weak branding made premium projects feel interchangeable. Random lead generation flooded sales teams with enquiries that looked good in reports but lacked seriousness on the ground.",
+
     "Builders and developers needed more than ads. They needed positioning, better creative, clearer lead qualification, and a structured path from first click to site visit.",
+
     "Lavista was built around that need: a real estate growth system where brand perception, campaign performance, and conversion quality work together instead of separately.",
+
+    "“From a creator’s perspective, Lavista stands out because it doesn’t treat marketing as noise. Every campaign has clarity, intent, and a premium feel that connects with real buyers, not just views.” — Devarsh Thakkar, Marketing Influencer\n\nLavista works with a clear system: understanding the project, positioning it correctly, building premium visual communication, targeting the right audience, and ensuring that every lead generated has a higher probability of turning into a site visit. It is not about more leads — it is about better buyers.",
   ],
-  image:
-    "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=80",
+
+  image: DevarshImg,
   imageAlt: "Real estate campaign planning and team collaboration",
 };
 
@@ -442,6 +477,129 @@ export const aboutCultureBlocks = [
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
   },
+];
+
+export const teamDepartments = [
+  "All",
+  "Web Development",
+  "Social Media Marketing",
+  "Sales",
+  // "Telecalling",
+  "Video Editor",
+  "Graphic Designer",
+  "Field Sales Executive",
+  "Human Resources",
+];
+
+export const teamMembers = [
+  {
+    name: "Piyush Malviya",
+    role: " Sr Digital Marketing Manager",
+    department: "Social Media Marketing",
+    description: "Plans premium social calendars that keep projects visible and credible.",
+    image: PiyushImg,
+  },
+  {
+    name: "Annu Roy",
+    role: "Marketing Sales Manager",
+    department: "Social Media Marketing",
+    description: "Turns brand direction into fast, polished digital buyer journeys.",
+    image: AnnuImg,
+  },
+  
+  {
+    name: "Khushi Khatri",
+    role: " Marketing & Sales Manager",
+    department: "Social Media Marketing",
+    description: "Turns market insights into social content that feels sharp and useful.",
+    image: KhushiImg,
+  },
+  {
+    name: "Dipika Dutta",
+    role: "Influencer & Sales",
+    department: "Social Media Marketing",
+    description: "Turns market insights into social content that feels sharp and useful.",
+    image: DipikaImg,
+  },
+   
+  {
+    name: "Aman Solanki",
+    role: " Sr Mern Stack Developer",
+    department: "Web Development",
+    description: "Builds conversion-led websites and landing systems for premium launches.",
+    image: AmanImg,
+  },
+
+  {
+    name: "Vaishali Movaliya",
+    role: "Web Designer",
+    department: "Web Development",
+    description: "Keeps qualified leads moving from enquiry to meaningful sales action.",
+    image: VaishaliImg,
+  },
+
+  {
+    name: "Harsh Kirad",
+    role: "Graphic Designer",
+    department: "Graphic Designer",
+    description: "Creates refined campaign visuals, brochures, and project identity assets.",
+    image: HarshImg,
+  },
+  
+  // {
+  //   name: "Utsav Patel",
+  //   role: "Video Editor & Maker",
+  //   department: "Video Editor",
+  //   description: "Shapes reels, walkthroughs, and launch films with a premium visual pace.",
+  //   image: VaishaliImg,
+  // },
+  {
+    name: "Krunal Patel",
+    role: " Sr Sales Lead Manager",
+    department: "Sales Manager",
+    description: "Connects real estate stories with trusted local creator voices.",
+    image: KrunalImg,
+  },
+  {
+    name: "Neeta Trivedi",
+    role:"Sales HR",
+    department: "Human Resources",
+    description: "Manages team operations and ensures smooth internal coordination.",
+    image: NitaImg,
+  },
+   {
+    name: "Nisha Gajjar",
+    role: " Sr Sales Lead Manager",
+    department: "Sales",
+    description: "Filters enquiries with careful follow-up and buyer-intent checks.",
+    image: NishaImg,
+  },
+
+  {
+    name: "Kruti Vaghasiya",
+    role: "Sales Coordinator",
+    department: "Sales",
+    description: "Supports project visits, ground coordination, and buyer movement.",
+    image: KrutikaImg,
+  },
+
+  {
+    name: "Dhara",
+    role: " Sr Telecalling Executive & Sales",
+    department: "Tellcalling",
+    description: "Maintains response discipline so warm enquiries do not go cold.",
+    image: DharaImg,
+  },
+
+  {
+    name: "Meet Parmar",
+    role: " Jr Sales Executive",
+    department: "Sales",
+    description: "Aligns marketing demand with site-visit-ready sales conversations.",
+    image: MeetImg,
+  },
+
+  
 ];
 
 export const servicePages = [
@@ -781,6 +939,7 @@ export const pricingPackageGroups = [
           "Perfect for projects that need a complete marketing foundation with branding, ads, and lead systems working together.",
         features: [
           "Social media handling",
+           "160 plus Visit",
           "Premium reels and graphics",
           "Paid ad campaign setup (Meta + Google)",
           "Lead system and campaign management",
@@ -801,6 +960,7 @@ export const pricingPackageGroups = [
           "Ideal for developers looking for deeper campaign optimization, stronger content integration, and better conversion flow.",
         features: [
           "Everything in 4 Months Plan",
+          "200 plus Visit",
           "Better campaign consistency and optimization",
           "Stronger content + ad integration",
           "Website development at 50% cost",
@@ -821,6 +981,7 @@ export const pricingPackageGroups = [
           "Built for developers who want complete dominance across branding, ads, content, and conversion systems.",
         features: [
           "15+ high-quality graphics & reels per month",
+          "350 plus Visit",
           "4 professional cinematic videos",
           "4 drone shoots (construction + site)",
           "Complete social media management",
@@ -927,24 +1088,24 @@ export const portfolioApproachBlocks = [
 
 export const portfolioPerformanceHighlights = [
   {
-    icon: ChartNoAxesCombined,
-    value: "320+",
-    label: "Campaign variations tested across premium launches",
-  },
-  {
     icon: UsersRound,
     value: "18K+",
-    label: "Qualified leads generated for real estate brands",
+    label: "Qualified Leads",
   },
   {
     icon: MapPinned,
-    value: "11",
-    label: "Micro-markets studied across high-value project categories",
+    value: "4.5K+",
+    label: "Site Visits",
   },
   {
     icon: ShieldCheck,
+    value: "320+",
+    label: "Closures",
+  },
+  {
+    icon: ChartNoAxesCombined,
     value: "4.7x",
-    label: "Average improvement in lead quality systems and visit readiness",
+    label: "Conversion Growth",
   },
 ];
 

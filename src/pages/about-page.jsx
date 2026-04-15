@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { TeamSection } from "@/components/about/team-section";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Reveal } from "@/components/common/reveal";
 import {
@@ -13,6 +14,8 @@ import {
   aboutStory,
   aboutStrengths,
   aboutWorkProcess,
+  teamDepartments,
+  teamMembers,
 } from "@/data/site";
 
 export function AboutPage() {
@@ -42,13 +45,13 @@ export function AboutPage() {
       </section>
 
       <section className="section-light py-24 sm:py-28">
-        <div className="container-shell grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
+        <div className="container-shell grid gap-10 lg:grid-cols-2 lg:items-center">
           <Reveal>
-            <div className="overflow-hidden rounded-[34px] ">
+            <div className=" overflow-hidden rounded-[34px] p-3">
               <img
                 src={aboutBrandIntro.image}
                 alt={aboutBrandIntro.imageAlt}
-                className="h-full min-h-[360px] w-full object-cover"
+                className="h-[500px] sm:h-[300px] md:h-[500px] lg:h-[800px] w-full rounded-[26px] object-cover"
               />
             </div>
           </Reveal>
@@ -63,7 +66,7 @@ export function AboutPage() {
               />
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
                 {aboutBrandIntro.highlights.map((item) => (
-                  <div key={item.title} className="surface-card-light min-h-[190px] rounded-[24px] p-5">
+                  <div key={item.title} className="surface-card-light min-h-[100px] rounded-[24px] p-5">
                     <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-surface-accent)]">
                       {item.title}
                     </p>
@@ -215,6 +218,8 @@ export function AboutPage() {
           </div>
         </div>
       </section>
+
+      <TeamSection departments={teamDepartments} members={teamMembers} />
 
       <section className="section-dark py-24 sm:py-28">
         <div className="container-shell">
