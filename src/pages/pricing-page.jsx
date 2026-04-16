@@ -24,7 +24,7 @@ export function PricingPage() {
               <Badge className="mb-6 w-fit">Packages</Badge>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="font-serif text-5xl leading-[1.02] text-balance text-foreground sm:text-6xl lg:text-7xl">
+              <h1 className="font-serif text-5xl leading-[1.02] text-balance text-foreground sm:text-6xl lg:text-5xl">
                 Premium real estate marketing packages for visibility, leads, and full-funnel growth.
               </h1>
             </Reveal>

@@ -3,21 +3,41 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { siteNavigation } from "@/data/site";
 import { AppShell } from "@/components/common/app-shell";
 
-const HomePage = lazy(() => import("@/pages/home-page").then((module) => ({ default: module.HomePage })));
+const HomePage = lazy(() => 
+  import("@/pages/home-page").then((module) =>
+({ default: module.HomePage })));
+
 const ServiceDetailPage = lazy(() =>
-  import("@/pages/service-detail-page").then((module) => ({ default: module.ServiceDetailPage })),
+  import("@/pages/service-detail-page").then((module) =>
+  ({ default: module.ServiceDetailPage })),
 );
 const PortfolioPage = lazy(() =>
-  import("@/pages/portfolio-page").then((module) => ({ default: module.PortfolioPage })),
+  import("@/pages/portfolio-page").then((module) => 
+     ({ default: module.PortfolioPage })),
 );
-const PricingPage = lazy(() => import("@/pages/pricing-page").then((module) => ({ default: module.PricingPage })));
-const PackagesPage = lazy(() => import("@/pages/packages-page").then((module) => ({ default: module.PackagesPage })));
-const AboutPage = lazy(() => import("@/pages/about-page").then((module) => ({ default: module.AboutPage })));
+const PricingPage = lazy(() =>
+   import("@/pages/pricing-page").then((module) =>
+     ({ default: module.PricingPage })));
+
+const PackagesPage = lazy(() =>
+   import("@/pages/packages-page").then((module) =>
+     ({ default: module.PackagesPage
+      })));
+
+const AboutPage = lazy(() =>
+  import("@/pages/about-page").then((module) =>
+    ({ default: module.AboutPage
+     })));
+
 const ContactPage = lazy(() =>
-  import("@/pages/contact-page").then((module) => ({ default: module.ContactPage })),
+  import("@/pages/contact-page").then((module) =>
+    ({ default: module.ContactPage
+     })),
 );
 const FaqPage = lazy(() =>
-  import("@/pages/faq-page").then((module) => ({ default: module.FaqPage })),
+  import("@/pages/faq-page").then((module) =>
+    ({ default: module.FaqPage
+     })),
 );
 
 const PrivacyPolicyPage = lazy(() =>

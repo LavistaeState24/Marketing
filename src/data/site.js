@@ -786,76 +786,75 @@ export const servicePages = [
 
 export const pricingPackageGroups = [
   {
-    id: "social-media-management",
-    title: "Social Media Management Packages",
-    description:
-      "For builders and developers who need consistent premium visibility, stronger project storytelling, and a polished social presence.",
-    plans: [
-      {
-        duration: "4 Months",
-        price: "₹80,000",
-        tag: "Starter",
-        description:
-          "Best for builders who want strong social media presence and consistent brand visibility without running ads.",
-        features: [
-          "Instagram + Facebook + LinkedIn + GMB handling",
-          "12–15 posts per month",
-          "Reels-focused content planning",
-          "Content calendar support",
-          "Daily engagement guidance",
-          "Monthly performance report",
-          "Project positioning captions",
-          "Follower growth improvement",
-        ],
-        result:
-          "Builds a clean and professional brand presence with steady audience growth and better engagement.",
-        cta: "Start Social Management",
-      },
+  id: "social-media-management",
+  title: "Social Media Management Packages",
+  description:
+    "For builders and developers who need consistent premium visibility, stronger project storytelling, and a polished social presence.",
+  plans: [
+    {
+      duration: "4 Months",
+      price: "₹100,000",
+      tag: "Starter",
+      description:
+        "Best for builders who want strong social media presence and consistent brand visibility without running ads.",
+      features: [
+        "Instagram + Facebook + LinkedIn + GMB handling",
+        "8–10 posts per month",
+        "Reels-focused content planning",
+        "Content calendar support",
+        "Audience interaction strategy",
+        "Daily engagement guidance",
+        "Monthly performance report",
+        "Project positioning captions",
+        "Follower growth improvement",
+      ],
+      cta: "Start Social Management",
+    },
 
-      {
-        duration: "8 Months",
-        price: "₹1,50,000",
-        tag: "Most Popular",
-        featured: true,
-        description:
-          "Ideal for projects that need consistent growth, stronger engagement, and better long-term visibility.",
-        features: [
-          "Full management across all 4 platforms",
-          "12–15 posts per month",
-          "More reels with trending content strategy",
-          "Audience interaction strategy",
-          "Daily engagement support",
-          "Monthly reporting and growth tracking",
-          "Content calendar + campaign alignment",
-          "Better long-term organic presence",
-        ],
-        result:
-          "Improves engagement, builds stronger audience connection, and creates consistent organic growth.",
-        cta: "Choose 8 Month Plan",
-      },
+    {
+      duration: "8 Months",
+      price: "₹180,000",
+      originalPrice: "₹200,000",
+      tag: "Most Popular",
+      featured: true,
+      description:
+        "Ideal for projects that need consistent growth, stronger engagement, and better long-term visibility.",
+      features: [
+        "Instagram + Facebook + LinkedIn + GMB handling",
+        "12–15 posts per month",
+        "Reels-focused content planning",
+        "Content calendar support",
+        "Audience interaction strategy",
+        "Daily engagement support",
+        "Monthly performance report",
+        "Project positioning captions",
+        "Follower growth improvement",
+      ],
+      cta: "Choose 8 Month Plan",
+    },
 
-      {
-        duration: "12 Months",
-        price: "₹2,10,000",
-        tag: "Long Term",
-        description:
-          "Perfect for developers focused on long-term branding, authority building, and sustained digital presence.",
-        features: [
-          "Consistent content and platform handling",
-          "Stronger page authority building",
-          "Reels + graphics growth strategy",
-          "Detailed reporting and optimization",
-          "Long-term content positioning",
-          "Brand consistency planning",
-          "Better trust building with audience",
-          "Ideal for long-term organic visibility",
-        ],
-        result:
-          "Creates strong brand trust, authority, and a stable long-term digital presence.",
-        cta: "Build Annual Presence",
-      },
-    ]
-  },
+    {
+      duration: "12 Months",
+      price: "₹2,60,000",
+      originalPrice: "₹3,60,000",
+      tag: "Long Term",
+      description:
+        "Perfect for developers focused on long-term branding, authority building, and sustained digital presence.",
+      features: [
+        "Instagram + Facebook + LinkedIn + GMB handling",
+        "15+ posts per month",
+        "Reels-focused content planning",
+        "Content calendar support",
+        "Audience interaction strategy",
+        "Priority engagement support",
+        "Monthly performance report",
+        "Project positioning captions",
+        "Follower growth improvement",
+      ],
+      cta: "Build Annual Presence",
+    },
+  ]
+},
   {
     id: "social-media-ads-leads",
     title: "Social Media + Ads Lead Generation Packages",
@@ -864,7 +863,7 @@ export const pricingPackageGroups = [
     plans: [
       {
         duration: "4 Months",
-        price: "₹1,40,000",
+        price: "₹200,000",
         tag: "Starter",
         description:
           "Ideal for projects starting lead generation with structured campaigns and high-intent audience targeting.",
@@ -878,14 +877,13 @@ export const pricingPackageGroups = [
           "High-intent audience targeting",
           "Basic GMB optimization + local SEO basics",
         ],
-        result:
-          "Generates consistent enquiries with structured campaigns and better lead intent.",
         cta: "Start Lead Campaigns",
       },
 
       {
         duration: "8 Months",
-        price: "₹2,60,000",
+        price: "₹370,000",
+        originalPrice: "₹400,000",
         tag: "Most Popular",
         featured: true,
         description:
@@ -898,14 +896,13 @@ export const pricingPackageGroups = [
           "Improved retargeting strategy",
           "Website development at 50% cost",
         ],
-        result:
-          "Improves lead quality, reduces CPL, and creates a more conversion-focused funnel.",
         cta: "Choose Growth Plan",
       },
 
       {
         duration: "12 Months",
-        price: "₹3,80,000",
+        price: "₹5,40,000",
+        originalPrice: "₹6,00,000",
         tag: "Long Term",
         description:
           "Designed for projects that want long-term scaling, strong funnel systems, and complete growth-focused execution.",
@@ -918,8 +915,6 @@ export const pricingPackageGroups = [
           "Full support for growth-focused campaigns",
           "Better lead nurturing and follow-up strategy",
         ],
-        result:
-          "Builds a scalable lead generation engine with higher conversions and long-term growth.",
         cta: "Scale Lead System",
       },
     ]
@@ -932,27 +927,26 @@ export const pricingPackageGroups = [
     plans: [
       {
         duration: "4 Months",
-        price: "₹2,40,000",
+        price: "₹300,000",
         tag: "Best Value",
         description:
           "Perfect for projects that need a complete marketing foundation with branding, ads, and lead systems working together.",
         features: [
           "Social media handling",
-          "160 plus Visit",
+          "100 plus Visit",
           "Premium reels and graphics",
           "Paid ad campaign setup (Meta + Google)",
           "Lead system and campaign management",
           "SEO + GMB support",
           "Basic funnel setup for enquiries",
         ],
-        result:
-          "Creates a strong marketing base with consistent visibility and structured lead generation.",
+        
         cta: "Start Full System",
       },
 
       {
         duration: "8 Months",
-        price: "₹4,80,000",
+        price: "₹6,00,000",
         tag: "Most Popular",
         featured: true,
         description:
@@ -967,14 +961,13 @@ export const pricingPackageGroups = [
           "2 drone shoots (construction + site)",
           "Full execution support by Lavista Imperial",
         ],
-        result:
-          "Improves campaign performance, strengthens brand positioning, and drives better quality enquiries.",
         cta: "Choose Growth System",
       },
 
       {
         duration: "12 Months",
-        price: "₹7,20,000",
+        price: "₹8,50,000",
+        originalPrice: "₹9,00,000",
         tag: "Long Term",
         description:
           "Built for developers who want complete dominance across branding, ads, content, and conversion systems.",
@@ -991,8 +984,6 @@ export const pricingPackageGroups = [
           "Complete website SEO + GMB domination",
           "Website Charges + CRM for Free",
         ],
-        result:
-          "Builds a full-scale growth engine with high-quality leads, strong brand authority, and maximum conversions.",
         cta: "Scale Full Marketing System",
       },
     ]
