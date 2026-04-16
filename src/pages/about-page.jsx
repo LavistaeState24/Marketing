@@ -65,7 +65,7 @@ export function AboutPage() {
                 tone="light"
               />
               <div className="mt-4">
-                <p className="font-serif text-3xl text-[var(--color-surface-foreground)]">
+                <p className="font-serif text-xl text-[var(--color-surface-foreground)]">
                   {aboutBrandIntro.personName}
                 </p>
                 <p className="mt-2 text-lg font-semibold text-[var(--color-surface-accent)]">
@@ -105,7 +105,7 @@ export function AboutPage() {
               </div>
 
               <div className="mt-4">
-                <p className="font-serif text-3xl text-foreground">
+                <p className="font-serif text-xl text-foreground">
                   {aboutStory.personName}
                 </p>
                 <p className="mt-2 text-lg font-semibold text-primary">

@@ -78,12 +78,25 @@ export function HeroSection() {
             <div className="surface-panel gold-stroke rounded-[32px] p-6 sm:p-7">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm uppercase tracking-[0.24em] text-primary/80">Campaign snapshot</p>
-                  <h2 className="mt-3 font-serif text-3xl text-foreground">Lead to closing focus</h2>
+                  <p className="text-sm uppercase tracking-[0.24em] text-primary/80">
+                    Campaign snapshot
+                  </p>
+                  <h2 className="mt-3 font-serif text-3xl text-foreground">
+                    Lead to closing focus
+                  </h2>
                 </div>
-                <div className="flex size-12 items-center justify-center rounded-full border border-primary/20 bg-primary/10 text-primary">
+
+                <a
+                  href="https://www.instagram.com/reel/DWWh0X8kvwq/?hl=ens"
+                  target="_blank"
+                  title="Click to Open Video"
+                  rel="noopener noreferrer"
+                  aria-label="Open campaign snapshot video"
+                  className="flex size-12 items-center justify-center rounded-full border border-primary/20 bg-primary/10 text-primary transition
+                  hover:bg-primary/20"
+                >
                   <Play className="size-4 fill-current" />
-                </div>
+                </a>
               </div>
 
               <div className="mt-8 grid gap-5">

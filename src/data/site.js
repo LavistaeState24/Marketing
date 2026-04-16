@@ -5,11 +5,9 @@ import {
   CirclePlay,
   Globe,
   Layers3,
-  LayoutPanelTop,
   Megaphone,
   MessageSquareQuote,
   PanelsTopLeft,
-  RadioTower,
   SearchCheck,
   ShieldCheck,
   UsersRound,
@@ -69,14 +67,14 @@ export const siteNavigation = [
 ];
 
 export const heroMetrics = [
-  { value: "180Cr+", label: "Inventory marketed across premium launches" },
-  { value: "4.7x", label: "Average improvement in qualified lead flow" },
-  { value: "11 Cities", label: "Campaign intelligence across key markets" },
+  { value: "300Cr+", label: "Inventory marketed across premium launches" },
+  { value: "60 - 70%", label: "Average improvement in qualified lead flow" },
+  { value: "Ahmedabad", label: "Our Vision is to Operate Globally" },
 ];
 
 export const services = [
   {
-    icon: Megaphone,
+    icon: Building2,
     slug: "real-estate-branding",
     title: "Real Estate Branding",
     description: "Premium brand systems that make a project feel credible, aspirational, and sales-ready.",
@@ -143,10 +141,10 @@ export const differentiators = [
 ];
 
 export const stats = [
-  { value: 8, suffix: "+", label: "Years shaping premium project launches" },
-  { value: 96, suffix: "+", label: "Projects across residential and plotted developments" },
-  { value: 18000, suffix: "+", label: "Qualified leads generated for real estate brands" },
-  { value: 320, suffix: "+", label: "Campaign experiments run and optimized" },
+  { value: 1500, suffix: "+", label: "Average Leads Generated" },
+  { value: 120, suffix: "+", label: "Projects Handled in Pipeline" },
+  { value: 72, suffix: "+", label: "Positive Lead Quality" },
+  { value: 25, suffix: "+", label: "Campaign Optimizations" },
 ];
 
 export const portfolioFilters = ["All", "Launch", "Luxury Villas", "Apartments", "Plots"];
@@ -991,7 +989,7 @@ export const pricingPackageGroups = [
           "Filtered lead generation system",
           "Walking client strategy",
           "Complete website SEO + GMB domination",
-          "Website free + CRM at 50% cost",
+          "Website Charges + CRM for Free",
         ],
         result:
           "Builds a full-scale growth engine with high-quality leads, strong brand authority, and maximum conversions.",
