@@ -8,10 +8,10 @@ import Harsh from "./Harsh.jpeg";
 import Meet from "./Meet.jpeg";
 import Nita from "./Nita.jpeg";
 import Nisha from "./Nisha.jpeg";
-import Khushi from "./khushi.jpeg";
+import Khushi from "./Khushi.jpeg";
 import Krutika from "./Krutika.jpeg";
 import Piyush from "./Piyush.jpeg";
-import Krunal from "./krunal.jpeg"
+import Krunal from "./Krunal.jpeg";
 // import Utsav From "./Utsav.png";
 import Vaishali from "./Vaishali.jpeg";
 
