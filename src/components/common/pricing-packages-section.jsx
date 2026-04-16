@@ -72,9 +72,18 @@ export function PricingPackagesSection({
                             {plan.duration}
                           </p>
                           {showPrices ? (
-                            <p className={cn("mt-5 font-serif text-5xl", isLight ? "text-surface-foreground" : "text-foreground")}>
-                              {plan.price}
-                            </p>
+                            <div className="mt-4 flex flex-col">
+                              {plan.originalPrice && (
+                                <span className="text-md text-muted-foreground line-through">
+                                  {plan.originalPrice}
+                                </span>
+                              )}
+
+                              <span className="text-2xl font-bold">
+                                {plan.price}
+                              </span>
+                            </div>
+
                           ) : null}
                           {showPlanDetails ? (
                             <div className="mt-5 space-y-3">
