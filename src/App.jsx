@@ -16,7 +16,21 @@ const AboutPage = lazy(() => import("@/pages/about-page").then((module) => ({ de
 const ContactPage = lazy(() =>
   import("@/pages/contact-page").then((module) => ({ default: module.ContactPage })),
 );
+const FaqPage = lazy(() =>
+  import("@/pages/faq-page").then((module) => ({ default: module.FaqPage })),
+);
 
+const PrivacyPolicyPage = lazy(() =>
+  import("@/pages/privacy-policy-page").then((module) => ({
+    default: module.PrivacyPolicyPage,
+  })),
+);
+
+const TermsConditionPage = lazy(() =>
+  import("@/pages/terms-condition-page").then((module) => ({
+    default: module.TermsConditionPage,
+  })),
+);
 function RouteFallback() {
   return (
     <div className="container-shell flex min-h-[60vh] items-center justify-center pt-32">
@@ -40,6 +54,9 @@ function App() {
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/faq" element={<FaqPage />} />
+          <Route path="/policy" element={<PrivacyPolicyPage />} />
+          <Route path="/condition" element={<TermsConditionPage />} />
         </Routes>
       </Suspense>
     </AppShell>

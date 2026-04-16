@@ -318,11 +318,11 @@ export const aboutBrandIntro = {
     "Lavista is a real estate-focused growth partner with premium creative discipline and performance depth.",
 
   description: [
-  "“Lavista is not just about running ads or posting content. It is about building trust before the first call and maintaining that trust until the final closing.” — Deep Thakkar, Founder.",
+    "“Lavista is not just about running ads or posting content. It is about building trust before the first call and maintaining that trust until the final closing.” — Deep Thakkar, Founder.",
 
-  "We combine deep Ahmedabad market understanding, luxury-first visual direction, and conversion-led media execution to help projects not just look premium, but actually convert into serious buyers. Every campaign we build is designed with one goal — turning attention into site visits and site visits into confident decisions.",
-  
-],
+    "We combine deep Ahmedabad market understanding, luxury-first visual direction, and conversion-led media execution to help projects not just look premium, but actually convert into serious buyers. Every campaign we build is designed with one goal — turning attention into site visits and site visits into confident decisions.",
+
+  ],
 
   image: DeepImg,
   imageAlt: "Owner of Lavista",
@@ -505,7 +505,7 @@ export const teamMembers = [
     description: "Turns brand direction into fast, polished digital buyer journeys.",
     image: AnnuImg,
   },
-  
+
   {
     name: "Khushi Khatri",
     role: " Marketing & Sales Manager",
@@ -520,7 +520,7 @@ export const teamMembers = [
     description: "Turns market insights into social content that feels sharp and useful.",
     image: DipikaImg,
   },
-   
+
   {
     name: "Aman Solanki",
     role: " Sr Mern Stack Developer",
@@ -544,7 +544,7 @@ export const teamMembers = [
     description: "Creates refined campaign visuals, brochures, and project identity assets.",
     image: HarshImg,
   },
-  
+
   // {
   //   name: "Utsav Patel",
   //   role: "Video Editor & Maker",
@@ -560,13 +560,13 @@ export const teamMembers = [
     image: KrunalImg,
   },
   {
-    name: "Neeta Trivedi",
-    role:"Sales HR",
+    name: "Nita Trivedi",
+    role: "Sales HR",
     department: "Human Resources",
     description: "Manages team operations and ensures smooth internal coordination.",
     image: NitaImg,
   },
-   {
+  {
     name: "Nisha Gajjar",
     role: " Sr Sales Lead Manager",
     department: "Sales",
@@ -598,7 +598,7 @@ export const teamMembers = [
     image: MeetImg,
   },
 
-  
+
 ];
 
 export const servicePages = [
@@ -938,7 +938,7 @@ export const pricingPackageGroups = [
           "Perfect for projects that need a complete marketing foundation with branding, ads, and lead systems working together.",
         features: [
           "Social media handling",
-           "160 plus Visit",
+          "160 plus Visit",
           "Premium reels and graphics",
           "Paid ad campaign setup (Meta + Google)",
           "Lead system and campaign management",
@@ -1132,6 +1132,9 @@ export const FooterLinks = [
       { label: "Portfolio", href: "/portfolio" },
       { label: "About", href: "/about" },
       { label: "Contact", href: "/contact" },
+      { label: "Privacy Policy", href: "/policy" },
+      { label: "Terms & Condition", href: "/condition" },
+      { label: "Faq", href: "/faq" },
     ],
   },
   {
@@ -1143,6 +1146,7 @@ export const FooterLinks = [
       { label: "Content Production", href: "/services/content-production" },
       { label: "Lead Generation", href: "/services/lead-generation" },
       { label: "CRM Solutions", href: "/services/crm-solutions" },
+
     ],
   },
 ];
@@ -1163,6 +1167,7 @@ export const FooterContact = [
     value: "lavistaimperial@gmail.com",
     link: "mailto:lavistaimperial@gmail.com",
   },
+
 ];
 
 export const FooterSocials = [
@@ -1194,3 +1199,157 @@ export const marqueeQuotes = [
   { icon: MapPinned, text: "Local market clarity, not generic media buying" },
 ];
 
+export const contentPages = {
+  faq: {
+    eyebrow: "FAQ",
+    title: "Frequently asked questions",
+    variant: "accordion",
+    description:
+      "Answers to common questions about Lavista services, process, timelines, and real estate marketing support.",
+    sections: [
+      {
+        title: "What services does Lavista provide?",
+        paragraphs: [
+          "Lavista provides real estate branding, Meta ads, Google ads, content production, lead generation, CRM solutions, and full-funnel marketing systems for builders, developers, and brokers.",
+        ],
+      },
+      {
+        title: "Do you work only with real estate clients?",
+        paragraphs: [
+          "Yes. Lavista is focused on real estate marketing, so our strategy, creatives, campaigns, and lead systems are built around property launches, site visits, buyer trust, and sales follow-up.",
+        ],
+      },
+      {
+        title: "How do you improve lead quality?",
+        paragraphs: [
+          "We improve lead quality through sharper audience targeting, better campaign messaging, qualification-focused forms, landing page improvements, retargeting, and sales feedback loops.",
+        ],
+      },
+      {
+        title: "Can Lavista manage both branding and performance ads?",
+        paragraphs: [
+          "Yes. Lavista can support brand positioning, creative direction, social media content, paid campaigns, lead generation, and CRM workflows as one connected marketing system.",
+        ],
+      },
+      {
+        title: "How can I start working with Lavista?",
+        paragraphs: [
+          "You can contact the team with your project location, property type, ticket size, current marketing challenge, and launch stage. Lavista will review the details and suggest the right next step.",
+        ],
+      },
+    ],
+  },
+  privacyPolicy: {
+    eyebrow: "Privacy Policy",
+    title: "Privacy Policy",
+    updatedAt: "Last updated: April 16, 2026",
+    description:
+      "This policy explains how Lavista collects, uses, and protects information submitted through this website.",
+    sections: [
+      {
+        title: "Information We Collect",
+        items: [
+          "At Lavista Estate, we collect information such as your name, phone number, email address, company name, and project details when you interact with our website, fill out enquiry forms, or engage with our campaigns.",
+          "We may also collect basic usage data such as device type, browser information, and website interaction behavior to improve user experience and campaign performance.",
+        ],
+      },
+      {
+        title: "How We Use Your Information",
+        items: [
+          "Your information is used to understand your requirements, provide real estate marketing consultation, and offer tailored services including lead generation, campaign strategy, and project promotion.",
+          "We may contact you via call, WhatsApp, email, or SMS for follow-ups, project discussions, or service-related communication.",
+        ],
+      },
+      {
+        title: "Lead & Campaign Data Usage",
+        items: [
+          "As a real estate growth partner, we run marketing campaigns across platforms like Meta Ads and Google Ads. The data collected through these campaigns is used strictly for lead qualification, nurturing, and improving campaign performance.",
+          "We do not sell or distribute your personal data to unauthorized third parties.",
+        ],
+      },
+      {
+        title: "Data Protection & Security",
+        items: [
+          "We implement industry-standard security practices to protect your data from unauthorized access, misuse, or disclosure.",
+          "All sensitive information shared with us is handled with strict confidentiality and used only for intended business purposes.",
+        ],
+      },
+      {
+        title: "Third-Party Services",
+        items: [
+          "Our website and campaigns may use third-party tools such as analytics platforms, CRM systems, and advertising networks. These platforms may collect limited data as per their own privacy policies.",
+        ],
+      },
+      {
+        title: "Your Consent",
+        items: [
+          "By using our website or submitting your information, you consent to the collection and use of your data as outlined in this policy.",
+        ],
+      },
+      {
+        title: "Updates to This Policy",
+        items: [
+          "Lavista Estate reserves the right to update this Privacy Policy at any time. Any changes will be reflected on this page with an updated date.",
+        ],
+      },
+    ],
+  },
+  termsConditions: {
+    eyebrow: "Terms & Conditions",
+    title: "Terms & Conditions",
+    updatedAt: "Last updated: April 16, 2026",
+    description:
+      "These terms outline the basic rules for using the Lavista website and engaging with our service information.",
+    sections: [
+      {
+        title: "Acceptance of Terms",
+        items: [
+          "By accessing or using this website, you agree to be bound by these Terms & Conditions. If you do not agree, please do not use our website or services.",
+        ],
+      },
+      {
+        title: "Website Use",
+        items: [
+          "You agree to use this website only for lawful purposes and not engage in any activity that may harm, disrupt, or misuse the platform, its content, or its services.",
+        ],
+      },
+      {
+        title: "Service Scope",
+        items: [
+          "Lavista Estate provides real estate marketing, lead generation, branding, and consulting services. The scope of services may vary depending on client requirements and agreed proposals.",
+          "We act as a growth partner and marketing facilitator. Final property transactions, pricing, and legal processes remain the responsibility of the respective developers, sellers, or buyers.",
+        ],
+      },
+      {
+        title: "Lead Generation Disclaimer",
+        items: [
+          "While we focus on delivering high-quality and filtered leads, we do not guarantee conversions, bookings, or sales outcomes, as these depend on multiple external factors including project offering, pricing, and market conditions.",
+        ],
+      },
+      {
+        title: "Payments & Commitments",
+        items: [
+          "All service fees, campaign budgets, and deliverables are defined in the final agreement with the client. Advertising budgets are typically borne by the client unless explicitly stated otherwise.",
+        ],
+      },
+      {
+        title: "Intellectual Property",
+        items: [
+          "All content, creatives, branding materials, and strategies developed by Lavista Estate remain our intellectual property unless otherwise agreed upon in writing.",
+        ],
+      },
+      {
+        title: "Limitation of Liability",
+        items: [
+          "Lavista Estate shall not be held liable for any direct or indirect losses arising from the use of our website, services, or reliance on any information provided.",
+        ],
+      },
+      {
+        title: "Changes to Terms",
+        items: [
+          "We reserve the right to modify these Terms & Conditions at any time. Continued use of the website implies acceptance of the updated terms.",
+        ],
+      },
+    ],
+  },
+};
