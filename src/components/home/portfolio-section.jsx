@@ -35,7 +35,7 @@ export function PortfolioSection() {
           </TabsList>
           {portfolioFilters.map((filter) => (
             <TabsContent key={filter} value={filter}>
-              <div className="mt-8 grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
+              <div className="mt-8 grid gap-8  md:grid-cols-2 lg:grid-cols-2">
                 {filteredProjects.map((project, index) => (
                   <Reveal key={project.title} delay={index * 90}>
                     <article className="group relative overflow-hidden rounded-[34px] border border-border/80 bg-card">
@@ -56,7 +56,7 @@ export function PortfolioSection() {
                         </div>
                         <div>
                           <p className="text-sm uppercase tracking-[0.22em] text-primary/90">{project.metrics}</p>
-                          <h3 className="mt-4 font-serif text-4xl text-foreground">{project.title}</h3>
+                          <h3 className="mt-4 font-serif text-3xl text-foreground">{project.title}</h3>
                           <div className="mt-5 flex flex-wrap gap-2">
                             {project.tags.map((tag) => (
                               <span

@@ -147,49 +147,61 @@ export const differentiators = [
 ];
 
 export const stats = [
-  { value: 1500, suffix: "+", label: "Average Leads Generated" },
-  { value: 120, suffix: "+", label: "Projects Handled in Pipeline" },
-  { value: 72, suffix: "+", label: "Positive Lead Quality" },
-  { value: 25, suffix: "+", label: "Campaign Optimizations" },
+  { value: 2500, suffix: "+", label: "Average Leads Generated" },
+  { value: 5, suffix: "+", label: "Projects Handled in Pipeline" },
+  { value: 1605, suffix: "+", label: "Positive Lead Quality" },
+  { value: 50, suffix: "+", label: "Campaign Optimizations" },
 ];
 
 export const portfolioFilters = ["All", "Launch", "Luxury Villas", "Apartments", "Plots"];
 
 export const portfolioProjects = [
   {
-    title: "Aurelia Residences",
+    title: "Aarvi 119",
     category: "Launch",
-    location: "Gurugram",
-    image:
-      "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80",
-    metrics: "3.9x site visit uplift in 45 days",
-    tags: ["High-rise", "Meta + Google", "Launch Film"],
+    location: "Shilaj",
+    image: Port1Img,
+    tags: ["Luxury Launch", "Meta Ads", "Google Ads"],
   },
   {
-    title: "Westcourt Villas",
+    title: "Festival Vibes",
     category: "Luxury Villas",
-    location: "Goa",
+    location: "Gota",
     image:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
-    metrics: "78% of leads converted to assisted viewings",
+      Port2Img,
     tags: ["Luxury", "Branding", "Buyer Nurture"],
   },
   {
-    title: "Skylane One",
+    title: "Swam Residency",
     category: "Apartments",
-    location: "Pune",
+    location: "Science City",
     image:
-      "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80",
-    metrics: "2.8x lower CPL from search-led restructuring",
+      Port3Img,
     tags: ["Apartments", "Search", "Landing Pages"],
   },
   {
-    title: "Terra Parc",
+    title: "Saundrya Eline",
     category: "Plots",
-    location: "Hyderabad",
+    location: "Gota",
     image:
-      "https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1200&q=80",
-    metrics: "11-day sales event filled through funnel automation",
+      Port4Img,
+    
+    tags: ["Plots", "CRM", "WhatsApp"],
+  },
+  {
+    title: "Satyam Vista 2",
+    category: "Plots",
+    location: "Science City",
+    image:
+      Port5Img,
+    tags: ["Plots", "CRM", "WhatsApp"],
+  },
+  {
+    title: "The Amber by Dobriya Group",
+    category: "Plots",
+    location: "Gota",
+    image:
+      Port6Img,
     tags: ["Plots", "CRM", "WhatsApp"],
   },
 ];
@@ -1083,23 +1095,23 @@ export const portfolioApproachBlocks = [
 export const portfolioPerformanceHighlights = [
   {
     icon: UsersRound,
-    value: "18K+",
+    value: "5000+",
     label: "Qualified Leads",
   },
   {
     icon: MapPinned,
-    value: "4.5K+",
-    label: "Site Visits",
+    value: "3075+",
+    label: "Postive Clients",
   },
   {
     icon: ShieldCheck,
-    value: "320+",
-    label: "Closures",
+    value: "1607+",
+    label: "Visit",
   },
   {
     icon: ChartNoAxesCombined,
-    value: "4.7x",
-    label: "Conversion Growth",
+    value: "52.7%",
+    label: "Closures",
   },
 ];
 
