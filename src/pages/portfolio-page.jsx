@@ -80,7 +80,7 @@ export function PortfolioPage() {
           <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {filteredProjects.map((project, index) => (
               <Reveal key={`${activeFilter}-${project.title}`} delay={index * 70}>
-                <article className="group min-h-[320px] overflow-hidden rounded-[30px] border border-[var(--color-surface-border)] bg-white/82 shadow-[0_20px_40px_rgba(15,12,10,0.06)] transition-all duration-300 hover:-translate-y-1.5">
+                <article className="group min-h-[320px] overflow-hidden rounded-3xl border border-[var(--color-surface-border)] bg-white/82 shadow-[0_20px_40px_rgba(15,12,10,0.06)] transition-all duration-300 hover:-translate-y-1.2">
                   <div className="relative h-[320px] overflow-hidden">
                     <img
                       src={project.image}

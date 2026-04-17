@@ -13,13 +13,12 @@ import krutika from "./krutika.jpeg";
 import piyush from "./Piyush.jpeg";
 import krunal from "./krunal.jpeg";
 import vaishali from "./Vaishali.jpeg";
-import Port1 from "./1.jpeg";
-import Port2 from "./2.jpeg";
-import Port3 from "./3.jpeg";
-import Port4 from "./4.jpeg";
-import Port5 from "./5.jpeg";
-import Port6 from "./6.jpeg";
-import Port7 from "./7.jpeg";
+import Port1 from "./1.png";
+import Port2 from "./2.png";
+import Port3 from "./3.png";
+import Port4 from "./4.png";
+import Port5 from "./5.png";
+import Port6 from "./6.png";
 
 
 export const AmanImg = aman;
@@ -43,5 +42,4 @@ export const Port3Img = Port3;
 export const Port4Img = Port4;
 export const Port5Img = Port5;
 export const Port6Img = Port6;
-export const Port7Img = Port7;
 

@@ -48,7 +48,6 @@ import {
   Port4Img,
   Port5Img,
   Port6Img,
-  Port7Img,
 } from "@/assets";
 import { KrunalImg } from "../assets";
 
@@ -1016,60 +1015,52 @@ export const portfolioPageFilters = [
 
 export const portfolioPageGallery = [
   {
-    title: "Skyline Arc",
+    title: "Aarvi 119",
     type: "FLats",
-    location: "Ahmedabad",
+    location: "Shilaj",
     result: "3.2x stronger qualified enquiry flow in 60 days",
     image:
       Port1Img,
   },
   {
-    title: "Verdant Courtyard Villas",
+    title: "Festival Vibes",
     type: "FLats",
-    location: "Sanand",
+    location: "Gota",
     result: "41% lower cost per site-visit-ready lead",
     image:
       Port2Img,
   },
   {
-    title: "Terra District",
+    title: "Swam Residency",
     type: "FLats",
-    location: "Dholera",
-    result: "Launch weekend inventory demand filled ahead of schedule",
+    location: "Science City",
+    result: "Launch weekend",
     image:
       Port3Img,
   },
   {
-    title: "Axis Trade Square",
+    title: "Saundrya Eline",
     type: "FLats",
-    location: "Prahlad Nagar",
+    location: "Gota",
     result: "Premium positioning improved investor enquiry quality",
     image:
       Port4Img,
   },
   {
-    title: "Aureum Residences",
+    title: "Satyam Vista 2",
     type: "FLats",
-    location: "Bodakdev",
+    location: "Science City",
     result: "Sharper creative direction improved premium lead quality within 4 weeks",
     image:
       Port5Img,
   },
   {
-    title: "Aranya Weekend Estates",
+    title: "The Amber by Dobriya Group",
     type: "FLats",
-    location: "Thol",
+    location: "Gota",
     result: "High-intent leisure buyer campaigns lifted visit bookings by 2.9x",
     image:
       Port6Img,
-  },
-  {
-    title: "Aureum Residences",
-    type: "FLats",
-    location: "Bodakdev",
-    result: "Sharper creative direction improved premium lead quality within 4 weeks",
-    image:
-      Port7Img,
   },
   
 ];
