@@ -7,7 +7,7 @@ import { Footer } from "@/components/common/footer";
 import { FloatingWhatsApp } from "@/components/common/floating-whatsapp";
 import { cn } from "@/lib/utils";
 import LogoDefault from "@/assets/Logo.png";
-import LogoScrolled from "@/assets/Logo 2.png";
+
 
 function Navbar({ navigation }) {
   const location = useLocation();
@@ -41,13 +41,13 @@ function Navbar({ navigation }) {
         >
           <Link to="/" className="flex items-center shrink-0" aria-label="Lavista Home">
             <img
-              src={scrolled ? LogoScrolled : LogoDefault}
+              src={LogoDefault}
               alt="Lavista Logo"
               className="
                 h-10 w-auto object-contain transition-all duration-300
                 sm:h-11
                 md:h-12
-                lg:h-14
+                lg:h-12
               "
             />
           </Link>

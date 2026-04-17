@@ -42,6 +42,13 @@ import {
   NishaImg,
   PiyushImg,
   VaishaliImg,
+  Port1Img,
+  Port2Img,
+  Port3Img,
+  Port4Img,
+  Port5Img,
+  Port6Img,
+  Port7Img,
 } from "@/assets";
 import { KrunalImg } from "../assets";
 
@@ -318,9 +325,11 @@ export const aboutBrandIntro = {
     "Lavista is a real estate-focused growth partner with premium creative discipline and performance depth.",
 
   description: [
-    "“Lavista is not just about running ads or posting content. It is about building trust before the first call and maintaining that trust until the final closing.” — Deep Thakkar, Founder.",
+   "Lavista is not just about running ads or posting content. It is about building trust before the first call and maintaining that trust until the final closing.",
 
-    "We combine deep Ahmedabad market understanding, luxury-first visual direction, and conversion-led media execution to help projects not just look premium, but actually convert into serious buyers. Every campaign we build is designed with one goal — turning attention into site visits and site visits into confident decisions.",
+  "We combine deep Ahmedabad market understanding, luxury-first visual direction, and conversion-led media execution to help projects not just look premium, but actually convert into serious buyers.",
+
+  "Every campaign we build is designed with one goal — turning attention into site visits and site visits into confident decisions."
 
   ],
 
@@ -1002,63 +1011,67 @@ export const portfolioHero = {
 
 export const portfolioPageFilters = [
   "All",
-  "Apartments",
-  "Villas",
-  "Plots",
-  "Commercial",
-  "Weekend Homes",
-  "Luxury Residences",
+  "FLats",
 ];
 
 export const portfolioPageGallery = [
   {
     title: "Skyline Arc",
-    type: "Apartments",
+    type: "FLats",
     location: "Ahmedabad",
     result: "3.2x stronger qualified enquiry flow in 60 days",
     image:
-      "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1400&q=80",
+      Port1Img,
   },
   {
     title: "Verdant Courtyard Villas",
-    type: "Villas",
+    type: "FLats",
     location: "Sanand",
     result: "41% lower cost per site-visit-ready lead",
     image:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80",
+      Port2Img,
   },
   {
     title: "Terra District",
-    type: "Plots",
+    type: "FLats",
     location: "Dholera",
     result: "Launch weekend inventory demand filled ahead of schedule",
     image:
-      "https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1400&q=80",
+      Port3Img,
   },
   {
     title: "Axis Trade Square",
-    type: "Commercial",
+    type: "FLats",
     location: "Prahlad Nagar",
     result: "Premium positioning improved investor enquiry quality",
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
-  },
-  {
-    title: "Aranya Weekend Estates",
-    type: "Weekend Homes",
-    location: "Thol",
-    result: "High-intent leisure buyer campaigns lifted visit bookings by 2.9x",
-    image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80",
+      Port4Img,
   },
   {
     title: "Aureum Residences",
-    type: "Luxury Residences",
+    type: "FLats",
     location: "Bodakdev",
     result: "Sharper creative direction improved premium lead quality within 4 weeks",
     image:
-      "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1400&q=80",
+      Port5Img,
   },
+  {
+    title: "Aranya Weekend Estates",
+    type: "FLats",
+    location: "Thol",
+    result: "High-intent leisure buyer campaigns lifted visit bookings by 2.9x",
+    image:
+      Port6Img,
+  },
+  {
+    title: "Aureum Residences",
+    type: "FLats",
+    location: "Bodakdev",
+    result: "Sharper creative direction improved premium lead quality within 4 weeks",
+    image:
+      Port7Img,
+  },
+  
 ];
 
 export const portfolioApproachBlocks = [

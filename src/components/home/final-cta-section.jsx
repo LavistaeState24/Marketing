@@ -12,7 +12,7 @@ export function FinalCtaSection() {
         <Reveal>
           <div className="relative overflow-hidden rounded-[36px] border border-primary/20 bg-[linear-gradient(135deg,#1a1611_0%,#0f0d0b_55%,#16110c_100%)] px-6 py-10 sm:px-10 sm:py-14">
             <div className="absolute inset-0 bg-grid-fade opacity-30" />
-            <div className="relative grid gap-10 lg:grid-cols-[1fr_380px] lg:items-end">
+            <div className="relative grid gap-10 lg:grid-cols-[1fr_500px] lg:items-center">
               <div className="max-w-3xl">
                 <SectionHeading
                   eyebrow="Final CTA"
