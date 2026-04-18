@@ -34,7 +34,7 @@ export function HeroSection() {
               <Badge className="mb-6 w-fit">Real Estate Marketing Agency</Badge>
             </Reveal>
             <Reveal delay={100}>
-              <h1 className="max-w-4xl font-serif text-5xl leading-[1.02] text-balance text-foreground sm:text-6xl lg:text-5xl">
+              <h1 className="max-w-4xl font-serif text-2xl sm:text-4xl md:text-5xl lg:text-5xl leading-[1.1] tracking-tight text-balance text-foreground">
                 Marketing systems that make premium properties feel impossible to ignore.
               </h1>
             </Reveal>

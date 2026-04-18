@@ -29,6 +29,7 @@ import {
 } from "lucide-react";
 import {
   AmanImg,
+  AmitImg,
   AnnuImg,
   DevarshImg,
   DeepImg,
@@ -580,6 +581,13 @@ export const teamMembers = [
     image: KrunalImg,
   },
   {
+    name: "Amit",
+    role: "Sr Sales Lead Manager",
+    department: "Sales",
+    description: "Aligns marketing demand with site-visit-ready sales conversations",
+    image: AmitImg,
+  },
+  {
     name: "Nita Trivedi",
     role: "Sales HR",
     department: "Human Resources",
@@ -609,7 +617,6 @@ export const teamMembers = [
     description: "Maintains response discipline so warm enquiries do not go cold.",
     image: DharaImg,
   },
-
   {
     name: "Meet Parmar",
     role: " Jr Sales Executive",
@@ -617,6 +624,7 @@ export const teamMembers = [
     description: "Aligns marketing demand with site-visit-ready sales conversations.",
     image: MeetImg,
   },
+  
 
 
 ];

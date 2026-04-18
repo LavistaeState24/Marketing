@@ -21,7 +21,7 @@ import {
 export function AboutPage() {
   return (
     <div>
-      <section className="relative flex min-h-[92svh] items-end overflow-hidden">
+      <section className="relative flex min-h-[80svh] items-end overflow-hidden">
         <div className="absolute inset-0">
           <img src={aboutHero.image} alt={aboutHero.imageAlt} className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,9,8,0.28)_0%,rgba(10,9,8,0.58)_44%,rgba(10,9,8,0.92)_100%)]" />
@@ -33,12 +33,12 @@ export function AboutPage() {
               <Badge className="mb-6 w-fit">{aboutHero.eyebrow}</Badge>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="max-w-3xl font-serif text-5xl leading-[1.02] text-balance text-foreground sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-3xl font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-balance text-foreground">
                 {aboutHero.title}
               </h1>
             </Reveal>
             <Reveal delay={160}>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-secondary sm:text-xl">{aboutHero.description}</p>
+              <p className="mt-6 max-w-2xl text-md leading-8 text-secondary sm:text-xl">{aboutHero.description}</p>
             </Reveal>
           </div>
         </div>

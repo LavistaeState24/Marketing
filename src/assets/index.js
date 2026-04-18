@@ -1,4 +1,5 @@
 import aman from "./Aman.webp";
+import amit from "./Amit.webp";
 import annu from "./Annu.webp";
 import deep from "./Deep.webp";
 import devarsh from "./Devarsh.webp";
@@ -22,6 +23,7 @@ import Port6 from "./6.webp";
 
 
 export const AmanImg = aman;
+export const AmitImg = amit;
 export const AnnuImg = annu;
 export const DeepImg = deep;
 export const DevarshImg = devarsh;
