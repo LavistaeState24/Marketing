@@ -51,6 +51,13 @@ const TermsConditionPage = lazy(() =>
     default: module.TermsConditionPage,
   })),
 );
+
+const NotFoundPage = lazy(() =>
+  import("@/pages/not-found-page").then((module) => ({
+    default: module.NotFoundPage,
+  })),
+);
+
 function RouteFallback() {
   return (
     <div className="container-shell flex min-h-[60vh] items-center justify-center pt-32">
@@ -77,6 +84,7 @@ function App() {
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/policy" element={<PrivacyPolicyPage />} />
           <Route path="/condition" element={<TermsConditionPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
     </AppShell>
