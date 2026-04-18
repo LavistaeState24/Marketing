@@ -16,19 +16,19 @@ export function ServiceDetailPage() {
 
   return (
     <div>
-      <section className="relative flex min-h-[88svh] items-end overflow-hidden">
+      <section className="relative flex min-h-[80svh] items-end overflow-hidden">
         <div className="absolute inset-0">
           <img src={service.image} alt={service.title} className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,9,8,0.24)_0%,rgba(10,9,8,0.58)_20%,rgba(10,9,8,0.94)_100%)]" />
         </div>
 
-        <div className="container-shell relative flex min-h-[88svh] w-full flex-col justify-end pb-14 pt-32 sm:pb-16 lg:pb-20">
+        <div className="container-shell relative flex min-h-[92svh] w-full flex-col justify-end pb-14 pt-32 sm:pb-16 lg:pb-20">
           <div className="max-w-3xl">
             <Reveal>
               <Badge className="mb-6 w-fit">{service.eyebrow}</Badge>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="font-serif text-5xl leading-[1.02] text-balance text-foreground sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-3xl font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-balance text-foreground">
                 {service.title}
               </h1>
             </Reveal>
@@ -138,7 +138,7 @@ export function ServiceDetailPage() {
                   <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--color-surface-accent)]">
                     Final CTA
                   </p>
-                  <h2 className="mt-4 font-serif text-4xl leading-tight text-balance text-surface-foreground sm:text-5xl">
+                  <h2 className="mt-4 font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-balance text-surface-foreground">
                     Ready to build a sharper {service.navLabel.toLowerCase()} system for your next project?
                   </h2>
                   <p className="mt-5 max-w-2xl text-base leading-8 text-[var(--color-surface-copy)] sm:text-lg">

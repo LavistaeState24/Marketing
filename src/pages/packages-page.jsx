@@ -8,7 +8,7 @@ import { Reveal } from "@/components/common/reveal";
 export function PackagesPage() {
   return (
     <div>
-      <section className="relative flex min-h-[78svh] items-end overflow-hidden">
+      <section className="relative flex min-h-[80svh] items-end overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1800&q=80"
@@ -18,13 +18,13 @@ export function PackagesPage() {
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,9,8,0.26)_0%,rgba(10,9,8,0.62)_48%,rgba(10,9,8,0.95)_100%)]" />
         </div>
 
-        <div className="container-shell relative flex min-h-[78svh] w-full flex-col justify-end pb-14 pt-32 sm:pb-16 lg:pb-20">
+        <div className="container-shell relative flex min-h-[92svh] w-full flex-col justify-end pb-14 pt-32 sm:pb-16 lg:pb-20">
           <div className="max-w-3xl">
             <Reveal>
               <Badge className="mb-6 w-fit">Packages</Badge>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="font-serif text-5xl leading-[1.02] text-balance text-foreground sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-3xl font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-balance text-foreground">
                 Premium real estate marketing packages for visibility, leads, and full-funnel growth.
               </h1>
             </Reveal>
