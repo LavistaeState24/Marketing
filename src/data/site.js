@@ -581,13 +581,6 @@ export const teamMembers = [
     image: KrunalImg,
   },
   {
-    name: "Amit",
-    role: "Sr Sales Lead Manager",
-    department: "Sales",
-    description: "Aligns marketing demand with site-visit-ready sales conversations",
-    image: AmitImg,
-  },
-  {
     name: "Nita Trivedi",
     role: "Sales HR",
     department: "Human Resources",
@@ -616,6 +609,13 @@ export const teamMembers = [
     department: "Tellcalling",
     description: "Maintains response discipline so warm enquiries do not go cold.",
     image: DharaImg,
+  },
+  {
+    name: "Amit",
+    role: "Sales Lead Manager",
+    department: "Sales",
+    description: "Aligns marketing demand with site-visit-ready sales conversations",
+    image: AmitImg,
   },
   {
     name: "Meet Parmar",
