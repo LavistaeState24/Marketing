@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { PricingPackagesSection } from "@/components/common/pricing-packages-section";
 import { Reveal } from "@/components/common/reveal";
+import { SiteCtaSection } from "@/components/common/site-cta-section";
 
 export function PricingPage() {
   return (
@@ -46,56 +44,10 @@ export function PricingPage() {
         className="section-light"
       />
 
-      <section className="section-dark py-24 sm:py-28">
-        <div className="container-shell">
-          <Reveal>
-            <div className="relative flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-
-              <div className="max-w-3xl">
-
-                {/* Eyebrow */}
-                <p className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-primary/80">
-                  Need Custom Scope?
-                </p>
-
-                {/* Heading */}
-                <h2 className="mt-4 font-serif 
-                 text-xl 
-                 sm:text-2xl 
-                 md:text-3xl 
-                 lg:text-4xl 
-                 xl:text-5xl 
-                 leading-[1.15] 
-                 tracking-[-0.01em] 
-                 text-balance 
-                 text-foreground">
-                  Not sure which package fits your project stage?
-                </h2>
-
-                {/* Paragraph */}
-                <p className="mt-5 max-w-2xl 
-                 text-sm 
-                 sm:text-base 
-                 md:text-lg 
-                 leading-relaxed 
-                 text-muted-foreground">
-                  Share your location, inventory, ticket size, and current marketing challenge. We&apos;ll recommend the right package depth.
-                </p>
-
-              </div>
-
-              {/* Button */}
-              <Button asChild size="lg">
-                <Link to="/contact">
-                  Book a Strategy Call
-                  <ArrowUpRight className="size-4" />
-                </Link>
-              </Button>
-
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      <SiteCtaSection
+        image="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80"
+        imageAlt="Premium real estate marketing package consultation"
+      />
     </div>
   );
 }

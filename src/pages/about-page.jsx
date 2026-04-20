@@ -1,10 +1,8 @@
-import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { TeamSection } from "@/components/about/team-section";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Reveal } from "@/components/common/reveal";
+import { SiteCtaSection } from "@/components/common/site-cta-section";
 import {
   aboutBrandIntro,
   aboutCultureBlocks,
@@ -33,7 +31,7 @@ export function AboutPage() {
               <Badge className="mb-6 w-fit">{aboutHero.eyebrow}</Badge>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="max-w-3xl font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-balance text-foreground">
+              <h1 className="max-w-3xl font-serif text-2xl sm:text-3xl md:text-4xl lg:text-4xl leading-tight text-balance text-foreground">
                 {aboutHero.title}
               </h1>
             </Reveal>
@@ -181,18 +179,39 @@ export function AboutPage() {
       </section>
 
       <section className="section-light py-24 sm:py-28">
-        <div className="container-shell grid gap-5 lg:grid-cols-2">
-          {aboutMissionVision.map((item, index) => (
-            <Reveal key={item.title} delay={index * 100}>
-              <div className="surface-card-light min-h-[360px] rounded-[32px] p-7 sm:p-8">
-                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--color-surface-accent)]">
-                  {item.title}
-                </p>
-                <h2 className="mt-5 font-serif text-4xl leading-tight text-surface-foreground">{item.description}</h2>
-                <p className="mt-5 text-base leading-8 text-[var(--color-surface-copy)]">{item.text}</p>
-              </div>
-            </Reveal>
-          ))}
+        <div className="container-shell grid gap-5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+          {aboutMissionVision.map((item, index) => {
+            const Icon = item.icon;
+
+            return (
+              <Reveal key={item.title} delay={index * 100}>
+                <div className="surface-card-light min-h-[430px] rounded-[32px] p-7 sm:p-8">
+
+                  {/* Icon + Title */}
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                      <Icon className="size-5 text-[var(--color-surface-accent)]" />
+                    </div>
+
+                    <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--color-surface-accent)]">
+                      {item.title}
+                    </p>
+                  </div>
+
+                  {/* Description */}
+                  <h2 className="mt-5 font-serif text-2xl leading-tight text-surface-foreground">
+                    {item.description}
+                  </h2>
+
+                  {/* Text */}
+                  <p className="mt-5 text-base leading-8 text-[var(--color-surface-copy)]">
+                    {item.text}
+                  </p>
+
+                </div>
+              </Reveal>
+            );
+          })}
         </div>
       </section>
 
@@ -244,39 +263,7 @@ export function AboutPage() {
 
       <TeamSection departments={teamDepartments} members={teamMembers} />
 
-      <section className="section-dark py-24 sm:py-28">
-        <div className="container-shell">
-          <Reveal>
-            <div className="relative overflow-hidden rounded-[36px] border border-primary/20 bg-[linear-gradient(135deg,#1a1611_0%,#0f0d0b_55%,#16110c_100%)] px-6 py-10 sm:px-10 sm:py-14">
-              <div className="absolute inset-0 bg-grid-fade opacity-25" />
-              <div className="relative flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-                <div className="max-w-4xl">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary/80">Work With Lavista</p>
-                  <h2 className="mt-4 font-serif text-2xl  sm:text-3xl  md:text-4xl lg:text-4xl xl:text-4xl leading-tight tracking-tight text-balance text-foreground">
-                    If you are building, broking, or launching a project, let&apos;s design a cleaner path from visibility to site visits.
-                  </h2>
-                  <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
-                    We bring premium brand thinking, disciplined ad execution, and conversion structure into one real
-                    estate growth system.
-                  </p>
-                </div>
-
-                <div className="flex flex-col gap-4 sm:flex-row">
-                  <Button asChild size="lg">
-                    <Link to="/contact">
-                      Book a Strategy Call
-                      <ArrowUpRight className="size-4" />
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg">
-                    <Link to="/portfolio">View Portfolio</Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      <SiteCtaSection image={aboutHero.image} imageAlt={aboutHero.imageAlt} />
     </div>
   );
 }
