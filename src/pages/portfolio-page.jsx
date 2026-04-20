@@ -1,10 +1,8 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Reveal } from "@/components/common/reveal";
+import { SiteCtaSection } from "@/components/common/site-cta-section";
 import {
   portfolioApproachBlocks,
   portfolioHero,
@@ -35,7 +33,7 @@ export function PortfolioPage() {
               <Badge className="mb-6 w-fit">{portfolioHero.eyebrow}</Badge>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="max-w-4xl font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[1.3] tracking-tight text-balance text-foreground">
+              <h1 className="max-w-4xl font-serif text-2xl sm:text-3xl md:text-4xl lg:text-4xl leading-[1.3] tracking-tight text-balance text-foreground">
                 {portfolioHero.title}
               </h1>
             </Reveal>
@@ -160,38 +158,7 @@ export function PortfolioPage() {
         </div>
       </section>
 
-      <section className="section-dark py-24 sm:py-28">
-        <div className="container-shell">
-          <Reveal>
-            <div className="relative overflow-hidden rounded-[36px] border border-primary/20 bg-[linear-gradient(135deg,#1a1611_0%,#0f0d0b_55%,#16110c_100%)] px-6 py-10 sm:px-10 sm:py-14">
-              <div className="absolute inset-0 bg-grid-fade opacity-25" />
-              <div className="relative flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-                <div className="max-w-3xl">
-                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary/80">Final CTA</p>
-                  <h2 className="mt-4 font-serif text-2xl  sm:text-3xl  md:text-4xl lg:text-4xl xl:text-4xl leading-tight tracking-tight text-balance text-foreground">
-  Need a portfolio-grade campaign system for your next launch, inventory push, or premium repositioning?
-</h2>
-                  <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
-                    Let&apos;s build the positioning, creative, media, and conversion journey around the commercial goals of your project.
-                  </p>
-                </div>
-
-                <div className="flex flex-col gap-4 sm:flex-row">
-                  <Button asChild size="lg">
-                    <Link to="/contact">
-                      Book a Strategy Call
-                      <ArrowUpRight className="size-4" />
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg">
-                    <Link to="/services">Explore Services</Link>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      <SiteCtaSection image={portfolioHero.image} imageAlt={portfolioHero.imageAlt} />
     </div>
   );
 }

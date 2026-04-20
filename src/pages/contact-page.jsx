@@ -155,7 +155,7 @@ export function ContactPage() {
           <Badge>Contact</Badge>
           <div className="mt-6 grid gap-10 lg:grid-cols-1 lg:items-start">
             <div>
-              <h3 className="mt-5 font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-[1.3] tracking-tight text-balance text-surface-light">
+              <h3 className="mt-5 font-serif text-2xl sm:text-3xl md:text-4xl lg:text-4xl leading-[1.3] tracking-tight text-balance text-surface-light">
                 Let&apos;s design a sharper growth system for your next project.
               </h3>
               <p className="mt-6 max-w-xl text-md leading-8 text-muted-foreground">

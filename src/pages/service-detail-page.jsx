@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/common/section-heading";
 import { Reveal } from "@/components/common/reveal";
+import { SiteCtaSection } from "@/components/common/site-cta-section";
 
 const {
   images: redesignImages,
@@ -42,6 +43,15 @@ const serviceOutcomeCards = [
   },
 ];
 
+const redesignedServiceSlugs = new Set([
+  "real-estate-branding",
+  "meta-ads",
+  "google-ads",
+  "content-production",
+  "lead-generation",
+  "crm-solutions",
+]);
+
 export function ServiceDetailPage() {
   const { slug } = useParams();
   const service = servicePages.find((item) => item.slug === slug);
@@ -50,8 +60,12 @@ export function ServiceDetailPage() {
     return <Navigate to="/services/real-estate-branding" replace />;
   }
 
-  if (service.slug === "real-estate-branding") {
-    return <RealEstateBrandingRedesign service={service} />;
+  if (redesignedServiceSlugs.has(service.slug)) {
+    return service.slug === "real-estate-branding" ? (
+      <RealEstateBrandingRedesign service={service} />
+    ) : (
+      <GenericServiceRedesign service={service} />
+    );
   }
 
   return (
@@ -68,7 +82,7 @@ export function ServiceDetailPage() {
               <Badge className="mb-6 w-fit">{service.eyebrow}</Badge>
             </Reveal>
             <Reveal delay={80}>
-              <h1 className="max-w-3xl font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight text-balance text-foreground">
+              <h1 className="max-w-3xl font-serif text-2xl sm:text-3xl md:text-4xl lg:text-4xl leading-tight text-balance text-foreground">
                 {service.title}
               </h1>
             </Reveal>
@@ -212,20 +226,20 @@ export function ServiceDetailPage() {
       <section className="section-light py-24 sm:py-28">
         <div className="container-shell">
           <Reveal>
-            <div className="relative overflow-hidden rounded-[36px] border border-[var(--color-surface-border)] bg-white/80 px-6 py-10 shadow-[0_20px_40px_rgba(15,12,10,0.06)] sm:px-10 sm:py-14">
+            <div className="relative overflow-hidden rounded-lg border border-[var(--color-surface-border)] bg-white/80 px-6 py-10 shadow-[0_20px_40px_rgba(15,12,10,0.06)] sm:px-10 sm:py-14">
               <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
                 <div className="max-w-3xl">
                   <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-surface-accent)]">
                     Final CTA
                   </p>
-                  <h2 className="mt-4 section-heading text-2xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-4xl leading-tight tracking-tight text-balance text-surface-foreground">
-                    Ready to build a sharper {service.navLabel.toLowerCase()} system for your next project?
+                  <h2 className="mt-5 max-w-3xl font-serif text-2xl leading-tight text-balance text-surface-foreground sm:text-4xl lg:text-4xl">
+                    Ready to build a sharper real estate growth system for your next project?
                   </h2>
                   <p className="mt-5 max-w-2xl text-base leading-8 text-[var(--color-surface-copy)] sm:text-lg">
-                    Share your project stage, location, and current growth challenge. We&apos;ll map the right next step.
+                    Share your project stage, location, and current growth challenge. Lavista will map the right next move.
                   </p>
                 </div>
-                <Button asChild size="lg">
+                <Button asChild size="lg" className="rounded-lg">
                   <Link to="/contact">
                     Book a Strategy Call
                     <ArrowUpRight className="size-4" />
@@ -254,6 +268,361 @@ function RealEstateBrandingRedesign({ service }) {
       <RedesignWhyLavista />
       <RedesignFinalCta />
     </div>
+  );
+}
+
+function GenericServiceRedesign({ service }) {
+  const workflow = service.process.slice(0, 4);
+  const deliverables = service.provides.map((title) => ({ title }));
+  const problemSolution = service.process.slice(0, 4).map((problem, index) => ({
+    problem,
+    solution: service.provides[index] ?? service.outcome,
+  }));
+  const beforeAfter = service.provides.slice(0, 4).map((item, index) => ({
+    before: `Unstructured ${service.navLabel.toLowerCase()} execution around ${item.toLowerCase()}.`,
+    after: service.process[index] ?? item,
+  }));
+
+  return (
+    <div>
+      <GenericRedesignHero service={service} />
+      <GenericRedesignWhat service={service} />
+      <GenericRedesignWhyMatters service={service} />
+      <GenericRedesignHowWorks service={service} workflow={workflow} />
+      <GenericRedesignProcess service={service} />
+      <GenericRedesignDeliverables service={service} deliverables={deliverables} />
+      <GenericRedesignProblemSolution service={service} items={problemSolution} />
+      <GenericRedesignResults service={service} beforeAfter={beforeAfter} />
+      <GenericRedesignWhyLavista service={service} />
+      <GenericRedesignFinalCta service={service} />
+    </div>
+  );
+}
+
+function GenericRedesignHero({ service }) {
+  return (
+    <section className="relative flex min-h-[100svh] items-end overflow-hidden bg-background">
+      <div className="absolute inset-0">
+        <img src={service.image} alt={service.title} className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(13,12,10,0.98)_0%,rgba(13,12,10,0.8)_48%,rgba(13,12,10,0.38)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(13,12,10,0.16)_0%,rgba(13,12,10,0.94)_100%)]" />
+      </div>
+
+      <div className="container-shell relative flex min-h-[100svh] items-end pb-12 pt-32 lg:pb-16">
+        <div className="max-w-4xl">
+          <Reveal>
+            <Badge className="mb-6 w-fit">{service.eyebrow}</Badge>
+          </Reveal>
+          <Reveal delay={80}>
+            <h1 className="font-serif text-2xl leading-[1.3] text-balance text-foreground sm:text-6xl md:text-4xl lg:text-4xl">
+              {service.title}
+            </h1>
+          </Reveal>
+          <Reveal delay={160}>
+            <p className="mt-7 max-w-2xl text-base leading-8 text-secondary sm:text-lg">{service.description}</p>
+          </Reveal>
+          <Reveal delay={220}>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <Button asChild size="lg" className="rounded-xl">
+                <Link to="/contact">
+                  Start {service.navLabel}
+                  <ArrowUpRight className="size-4" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="rounded-xl">
+                <Link to="/portfolio">View Portfolio</Link>
+              </Button>
+            </div>
+          </Reveal>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GenericRedesignWhat({ service }) {
+  return (
+    <section className="section-light py-24 sm:py-28">
+      <div className="container-shell grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <Reveal>
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--color-surface-accent)]">
+              What Is {service.navLabel}
+            </p>
+            <h2 className="mt-5 max-w-2xl font-serif text-2xl leading-tight text-balance text-surface-foreground sm:text-5xl lg:text-4xl">
+              A focused system for turning real estate demand into better buyer movement.
+            </h2>
+            <p className="mt-6 text-base leading-8 text-[var(--color-surface-copy)] sm:text-lg">{service.what}</p>
+          </div>
+        </Reveal>
+
+        <Reveal delay={100}>
+          <div className="relative overflow-hidden rounded-xl">
+            <img src={service.image} alt={service.title} className="h-[420px] w-full object-cover" />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_20%,rgba(13,12,10,0.76)_100%)]" />
+          </div>
+        </Reveal>
+      </div>
+
+      <div className="container-shell mt-12 grid gap-5 md:grid-cols-3">
+        {service.provides.slice(0, 3).map((item, index) => (
+          <Reveal key={item} delay={index * 70}>
+            <article className="surface-card-light min-h-[240px] rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 sm:p-7">
+              <div className="flex size-12 items-center justify-center rounded-xl border border-primary/20 bg-primary/10 text-primary">
+                <CheckCircle2 className="size-5" />
+              </div>
+              <h3 className="mt-7 font-serif text-2xl leading-tight text-surface-foreground">{item}</h3>
+              <p className="mt-4 text-sm leading-7 text-[var(--color-surface-copy)]">{service.process[index] ?? service.start}</p>
+            </article>
+          </Reveal>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function GenericRedesignWhyMatters({ service }) {
+  return (
+    <section className="section-dark-alt py-24 sm:py-28">
+      <div className="container-shell grid gap-12 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:items-center">
+        <Reveal>
+          <div className="relative overflow-hidden rounded-xl border border-border/80">
+            <img src={service.image} alt={`${service.navLabel} campaign context`} className="h-[520px] w-full object-cover" />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(13,12,10,0.14)_0%,rgba(13,12,10,0.9)_100%)]" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary/80">Why It Matters</p>
+              <h2 className="mt-4 max-w-lg font-serif text-2xl leading-tight text-foreground sm:text-3xl">
+                Better {service.navLabel.toLowerCase()} needs strategy, quality signals, and sales alignment.
+              </h2>
+            </div>
+          </div>
+        </Reveal>
+
+        <div className="grid gap-4">
+          {service.process.slice(0, 3).map((item, index) => (
+            <Reveal key={item} delay={index * 80}>
+              <article className="rounded-xl border border-border/80 bg-card/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 sm:p-7">
+                <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+                  <div className="flex size-12 shrink-0 items-center justify-center rounded-xl border border-primary/25 bg-primary/10 text-primary">
+                    <Layers3 className="size-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-2xl leading-tight text-foreground">Step 0{index + 1}</h3>
+                    <p className="mt-3 text-sm leading-7 text-muted-foreground sm:text-base">{item}</p>
+                  </div>
+                </div>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GenericRedesignHowWorks({ service, workflow }) {
+  return (
+    <section className="section-light py-24 sm:py-28">
+      <div className="container-shell grid gap-12 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:items-start">
+        <Reveal>
+          <SectionHeading
+            eyebrow="How Lavista Works"
+            title={`We start with the ${service.navLabel.toLowerCase()} reality, then build the system around buyer quality.`}
+            description={service.start}
+            tone="light"
+          />
+        </Reveal>
+
+        <div className="relative">
+          <div className="absolute bottom-4 left-5 top-4 hidden w-px bg-[var(--color-surface-border)] sm:block" />
+          {workflow.map((item, index) => (
+            <Reveal key={item} delay={index * 70}>
+              <div className="group relative grid gap-4 border-b border-[var(--color-surface-border)] py-7 last:border-b-0 sm:grid-cols-[40px_1fr] sm:gap-6 sm:py-8">
+                <div className="relative z-10 flex size-10 items-center justify-center rounded-full border border-[var(--color-surface-border)] bg-[var(--color-surface)] transition-colors duration-300 group-hover:border-[var(--color-surface-accent)]">
+                  <span className="font-serif text-base leading-none text-[var(--color-surface-accent)]">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <p className="max-w-xl text-lg leading-9 text-[var(--color-surface-copy)] transition-colors duration-300 group-hover:text-surface-foreground">
+                  {item}
+                </p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GenericRedesignProcess({ service }) {
+  return (
+    <section className="section-dark relative overflow-hidden py-24 sm:py-28">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+      <div className="container-shell">
+        <Reveal>
+          <SectionHeading
+            eyebrow="Step-by-Step Process"
+            title={`A clear process for ${service.navLabel.toLowerCase()} execution.`}
+            description="Every step is tied to buyer quality, project context, and cleaner handoff to sales."
+            align="center"
+            className="mx-start max-w-3xl"
+          />
+        </Reveal>
+
+        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+          {service.process.map((step, index) => (
+            <Reveal key={step} delay={index * 70}>
+              <article className="group min-h-[260px] rounded-xl border border-border/80 bg-card/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30">
+                <div className="flex items-center justify-between">
+                  <span className="font-serif text-4xl text-primary/90">{String(index + 1).padStart(2, "0")}</span>
+                  <Layers3 className="size-5 text-primary/60 transition-transform duration-300 group-hover:rotate-6" />
+                </div>
+                <p className="mt-8 text-sm leading-7 text-muted-foreground">{step}</p>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GenericRedesignDeliverables({ service, deliverables }) {
+  return (
+    <section className="section-light-alt py-24 sm:py-28">
+      <div className="container-shell">
+        <Reveal>
+          <SectionHeading
+            eyebrow="What We Build For You"
+            title={`Practical ${service.navLabel.toLowerCase()} deliverables shaped for real estate growth.`}
+            description="The output is designed for launch pressure, lead quality, and sales follow-through."
+            tone="light"
+            align="center"
+            className="max-w-3xl"
+          />
+        </Reveal>
+
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {deliverables.map((item, index) => (
+            <Reveal key={item.title} delay={index * 70}>
+              <article className="surface-card-light min-h-[190px] rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 sm:p-7">
+                <div className="flex size-11 items-center justify-center rounded-xl border border-primary/20 bg-accent/10 text-primary">
+                  <CheckCircle2 className="size-5" />
+                </div>
+                <h3 className="mt-8 font-serif text-2xl leading-tight text-surface-foreground">{item.title}</h3>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GenericRedesignProblemSolution({ service, items }) {
+  return (
+    <section className="section-dark-alt py-24 sm:py-28">
+      <div className="container-shell grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+        <Reveal>
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary/80">Problem / Solution</p>
+            <h2 className="mt-5 max-w-2xl font-serif text-2xl leading-tight text-balance text-foreground sm:text-5xl lg:text-4xl">
+              Common {service.navLabel.toLowerCase()} gaps, translated into cleaner execution.
+            </h2>
+            <p className="mt-6 text-base leading-8 text-muted-foreground sm:text-lg">{service.what}</p>
+          </div>
+        </Reveal>
+
+        <Reveal delay={100}>
+          <div className="overflow-hidden rounded-xl border border-border/80 bg-card/70">
+            {items.map((item, index) => (
+              <div key={`generic-problem-solution-${index}-${item.problem}`} className="grid gap-4 border-b border-border/70 p-5 last:border-b-0 sm:grid-cols-2 sm:p-6">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">Problem</p>
+                  <p className="mt-3 text-sm leading-7 text-muted-foreground">{item.problem}</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary/80">Solution</p>
+                  <p className="mt-3 text-sm leading-7 text-foreground">{item.solution}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function GenericRedesignResults({ service, beforeAfter }) {
+  return (
+    <section className="section-light py-24 sm:py-28">
+      <div className="container-shell">
+        <Reveal>
+          <div className="max-w-auto">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--color-surface-accent)]">
+              Results / Outcomes
+            </p>
+            <h2 className="mt-5 font-serif text-2xl leading-tight text-balance text-surface-foreground sm:text-3xl">
+              Outcomes shaped around {service.navLabel.toLowerCase()}, buyer quality, and sales movement.
+            </h2>
+            <p className="mt-6 text-sans leading-8 text-[var(--color-surface-copy)] sm:text-lg">{service.outcome}</p>
+          </div>
+        </Reveal>
+
+        <Reveal delay={100}>
+          <div className="mt-12">
+            <BeforeAfterSplit
+              image={service.image}
+              beforeAfter={beforeAfter}
+              beforeTitle={`Loose ${service.navLabel.toLowerCase()} execution that creates waste.`}
+              afterTitle={`A sharper ${service.navLabel.toLowerCase()} system built around serious buyers.`}
+            />
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function GenericRedesignWhyLavista({ service }) {
+  return (
+    <section className="section-dark py-24 sm:py-28">
+      <div className="container-shell">
+        <div className="grid gap-12 lg:grid-cols-[0.55fr_1.10fr] lg:items-start">
+          <Reveal>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary/80">Why Lavista</p>
+              <h2 className="mt-5 max-w-2xl font-serif text-3xl leading-tight text-balance text-foreground sm:text-5xl lg:text-4xl">
+                {service.navLabel} built with real estate sales reality in mind.
+              </h2>
+              <p className="mt-6 text-base leading-8 text-muted-foreground sm:text-lg">{service.start}</p>
+            </div>
+          </Reveal>
+
+          <div className="grid gap-5 md:grid-cols-3">
+            {service.provides.slice(0, 3).map((item, index) => (
+              <Reveal key={item} delay={index * 80}>
+                <article className="min-h-[260px] rounded-xl border border-border/80 bg-card/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 sm:p-7">
+                  <div className="flex size-12 items-center justify-center rounded-xl border border-primary/25 bg-primary/10 text-primary">
+                    <CheckCircle2 className="size-5" />
+                  </div>
+                  <h3 className="mt-8 font-serif text-2xl leading-tight text-foreground">{item}</h3>
+                  <p className="mt-4 text-sm leading-7 text-muted-foreground">{service.process[index] ?? service.outcome}</p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GenericRedesignFinalCta({ service }) {
+  return (
+    <SiteCtaSection image={service.image} imageAlt={`${service.navLabel} consultation`} />
   );
 }
 
@@ -544,7 +913,12 @@ function RedesignProblemSolution() {
 //   );
 // }
 
-function BeforeAfterSplit() {
+function BeforeAfterSplit({
+  image = redesignImages.interiors,
+  beforeAfter = redesignBeforeAfter,
+  beforeTitle = "Brand touchpoints that make buyers work harder.",
+  afterTitle = "A sharper brand system that moves serious buyers forward.",
+}) {
   const [splitPosition, setSplitPosition] = useState(52);
 
   const moveSplit = (event) => {
@@ -571,7 +945,7 @@ function BeforeAfterSplit() {
       style={{ "--split-position": `${splitPosition}%` }}
     >
       <img
-        src={redesignImages.interiors}
+        src={image}
         alt="Premium real estate interiors for buyer confidence"
         className="absolute inset-0 h-full w-full object-cover"
       />
@@ -581,13 +955,13 @@ function BeforeAfterSplit() {
         <div className="max-w-md">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary/70">Before</p>
           <h3 className="mt-4 font-serif text-3xl leading-tight text-foreground sm:text-4xl">
-            Brand touchpoints that make buyers work harder.
+            {beforeTitle}
           </h3>
         </div>
 
         <div className="absolute bottom-6 left-6 right-6 grid gap-4 sm:bottom-8 sm:left-8 sm:right-auto sm:max-w-lg lg:bottom-10 lg:left-10">
-          {redesignBeforeAfter.map((item, index) => (
-            <div key={item.before} className="grid grid-cols-[28px_1fr] gap-4 border-t border-white/15 pt-4">
+          {beforeAfter.map((item, index) => (
+            <div key={`slider-before-${index}-${item.before}`} className="grid grid-cols-[28px_1fr] gap-4 border-t border-white/15 pt-4">
               <span className="font-serif text-lg leading-none text-primary">{String(index + 1).padStart(2, "0")}</span>
               <p className="text-sm leading-7 text-secondary sm:text-base">{item.before}</p>
             </div>
@@ -599,20 +973,20 @@ function BeforeAfterSplit() {
         className="absolute inset-0 overflow-hidden"
         style={{ clipPath: "inset(0 0 0 var(--split-position))" }}
       >
-        <img src={redesignImages.interiors} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover saturate-125" />
+        <img src={image} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover saturate-125" />
         <div className="absolute inset-0 bg-black/38" />
 
         <div className="absolute inset-0 p-6 sm:p-8 lg:p-10">
           <div className="ml-auto max-w-md text-right">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-primary">After Lavista</p>
             <h3 className="mt-4 font-serif text-3xl leading-tight text-foreground sm:text-4xl">
-              A sharper brand system that moves serious buyers forward.
+              {afterTitle}
             </h3>
           </div>
 
           <div className="absolute bottom-6 left-6 right-6 grid gap-4 sm:bottom-8 sm:left-auto sm:right-8 sm:max-w-lg lg:bottom-10 lg:right-10">
-            {redesignBeforeAfter.map((item, index) => (
-              <div key={item.after} className="grid grid-cols-[28px_1fr] gap-4 border-t border-primary/25 pt-4">
+            {beforeAfter.map((item, index) => (
+              <div key={`slider-after-${index}-${item.after}`} className="grid grid-cols-[28px_1fr] gap-4 border-t border-primary/25 pt-4">
                 <span className="font-serif text-lg leading-none text-primary">{String(index + 1).padStart(2, "0")}</span>
                 <p className="text-sm leading-7 text-foreground sm:text-base">{item.after}</p>
               </div>
@@ -717,41 +1091,6 @@ function RedesignWhyLavista() {
 
 function RedesignFinalCta() {
   return (
-    <section className="section-light relative overflow-hidden py-24 sm:py-28">
-      <div className="container-shell">
-        <Reveal>
-          <div className="relative overflow-hidden rounded-xl border border-[var(--color-surface-border)] bg-white/80 shadow-[0_24px_70px_rgba(15,12,10,0.08)]">
-            <div className="grid gap-0 lg:grid-cols-2 sm:grid-cols-1 md:grid-col-2">
-              <div className="p-6 sm:p-10 lg:p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-surface-accent)]">
-                  Final CTA
-                </p>
-                <h2 className="mt-5 max-w-3xl font-serif text-2xl leading-tight text-balance text-surface-foreground sm:text-4xl lg:text-4xl">
-                  Ready to make your project look premium and convert cleaner?
-                </h2>
-                <p className="mt-6 max-w-2xl text-base leading-8 text-[var(--color-surface-copy)] sm:text-lg">
-                  Share your project stage, location, and current launch challenge. Lavista will map the right brand direction for your next move.
-                </p>
-                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                  <Button asChild size="lg" className="rounded-xl">
-                    <Link to="/contact">
-                      Book a Strategy Call
-                      <ArrowUpRight className="size-4" />
-                    </Link>
-                  </Button>
-                  <Button asChild variant="secondary" size="lg" className="rounded-xl">
-                    <Link to="/packages">View Packages</Link>
-                  </Button>
-                </div>
-              </div>
-
-              <div className="min-h-[320px] overflow-hidden lg:min-h-full">
-                <img src={redesignImages.meeting} alt="Lavista real estate branding consultation" className="h-full min-h-[320px] w-full object-cover" />
-              </div>
-            </div>
-          </div>
-        </Reveal>
-      </div>
-    </section>
+    <SiteCtaSection image={redesignImages.meeting} imageAlt="Lavista real estate branding consultation" />
   );
 }

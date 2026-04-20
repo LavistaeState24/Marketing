@@ -32,8 +32,8 @@ import {
   Landmark,
   LineChart,
   MessageSquareText,
-  Target,
   TrendingUp,
+  Target, Eye, Workflow
 } from "lucide-react";
 import {
   AmanImg,
@@ -238,24 +238,24 @@ export const processSteps = [
   },
 ];
 
-export const testimonials = [
+export const experienceInsights = [
   {
     quote:
-      "Lavista gave our launch a level of polish the local market had not seen before. The quality of leads improved within the first two weeks.",
-    name: "Arjun Mehta",
-    role: "Director, Aurelia Developers",
+      "Working across real estate projects, we’ve learned that better positioning—not more leads—is what drives serious buyer engagement.",
+    title: "Positioning Insight",
+    category: "Real Estate Branding",
   },
   {
     quote:
-      "Their team understood the difference between generating leads and generating site visits. That shift changed our sales velocity.",
-    name: "Ritika Saran",
-    role: "Marketing Head, Westcourt Estates",
+      "Campaign performance improves when messaging is built to attract the right buyers instead of speaking to everyone.",
+    title: "Campaign Insight",
+    category: "Lead Quality Strategy",
   },
   {
     quote:
-      "The creative system, reporting discipline, and funnel cleanup made our campaign look premium and perform like one.",
-    name: "Neeraj Kulkarni",
-    role: "Partner, Skylane Realty",
+      "Premium branding and consistent communication help improve buyer trust, site visit response, and overall conversion flow.",
+    title: "Conversion Insight",
+    category: "Branding & Execution",
   },
 ];
 
@@ -461,15 +461,24 @@ export const aboutStrengths = [
 export const aboutMissionVision = [
   {
     title: "Mission",
+    icon: Target,
     description:
       "Build real estate marketing systems that raise trust, improve lead quality, and support better closing outcomes.",
     text: "Our mission is to help builders, developers, and broker teams move beyond scattered campaigns and into a more premium, measurable, and conversion-led growth model.",
   },
   {
     title: "Vision",
+    icon: Eye,
     description:
       "Become the most trusted premium real estate marketing partner for growth-minded projects in Gujarat and beyond.",
     text: "We want every serious project launch to feel sharper, more intentional, and more commercially aligned than the category standard currently allows.",
+  },
+  {
+    title: "Approach",
+    icon: Workflow,
+    description:
+      "Work with a structured system that connects branding, lead generation, and conversion into one aligned process.",
+    text: "We don’t treat branding, ads, and sales as separate activities. Every campaign is built as a complete flow—from positioning to enquiry to site visit—so that marketing directly supports real business outcomes.",
   },
 ];
 
