@@ -26,6 +26,14 @@ import {
   MapPinned,
   Sparkles,
   BadgeCheck,
+  FileText,
+  Gem,
+  KeyRound,
+  Landmark,
+  LineChart,
+  MessageSquareText,
+  Target,
+  TrendingUp,
 } from "lucide-react";
 import {
   AmanImg,
@@ -628,6 +636,124 @@ export const teamMembers = [
 
 
 ];
+
+export const realEstateBrandingPageContent = {
+  images: {
+    hero: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=80",
+    strategy: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=80",
+    skyline: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
+    interiors: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+    meeting: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80",
+  },
+  heroMetrics: ["Positioning clarity", "Premium buyer perception", "Launch-ready brand assets"],
+  what: [
+    {
+      icon: Compass,
+      title: "Positioning",
+      description: "Define the buyer, project promise, location advantage, and reason the launch deserves attention.",
+    },
+    {
+      icon: Gem,
+      title: "Perception",
+      description: "Make the project feel premium, credible, and easier to choose before the buyer speaks to sales.",
+    },
+    {
+      icon: MessageSquareText,
+      title: "Communication",
+      description: "Align ads, landing pages, brochures, and sales scripts around one clear project story.",
+    },
+  ],
+  whyMatters: [
+    {
+      icon: ShieldCheck,
+      title: "Trust comes before the enquiry",
+      description:
+        "Buyers judge developer credibility, price confidence, and project seriousness through the brand experience.",
+    },
+    {
+      icon: Target,
+      title: "Better positioning improves lead quality",
+      description: "Clearer messaging attracts people who fit the location, budget, lifestyle, and purchase intent.",
+    },
+    {
+      icon: LineChart,
+      title: "Premium presentation supports conversion",
+      description:
+        "A stronger brand gives the sales team better context, stronger follow-up material, and better objection handling.",
+    },
+  ],
+  workflow: [
+    "Study project category, ticket size, buyer profile, and launch pressure.",
+    "Map local competitors, micro-market demand, and buyer aspiration triggers.",
+    "Build the positioning, messaging hierarchy, and premium creative direction.",
+    "Translate the brand system into practical launch assets and campaign language.",
+  ],
+  deliverables: [
+    { icon: Landmark, title: "Project positioning framework" },
+    { icon: MessageSquareText, title: "Campaign messaging direction" },
+    { icon: Sparkles, title: "Premium creative art direction" },
+    { icon: FileText, title: "Brochure and landing page copy guidance" },
+    { icon: Layers3, title: "Brand consistency system for launch assets" },
+    { icon: BadgeCheck, title: "Sales-ready trust and story cues" },
+  ],
+
+  ProblemSolution: [
+  {
+    problem: "Project lacks clear market positioning",
+    solution: "Defined positioning aligned with target buyers",
+  },
+  {
+    problem: "Brand fails to build trust with buyers",
+    solution: "Strong brand experience that builds credibility",
+  },
+  {
+    problem: "Marketing attracts the wrong audience",
+    solution: "Focused messaging that attracts the right buyers",
+  },
+  {
+    problem: "Sales and marketing are not aligned",
+    solution: "Unified communication across all channels",
+  },
+],
+
+  beforeAfter: [
+  {
+    before: "Generic launch language with no clear project identity",
+    after: "Clear positioning that defines the project and its value",
+  },
+  {
+    before: "Common visuals that look similar to other projects",
+    after: "Premium visuals that match the project’s value and appeal",
+  },
+  {
+    before: "Broad enquiries with low intent and weak interest",
+    after: "Targeted messaging that brings high intent buyers",
+  },
+  {
+    before: "Mixed messaging across marketing and sales channels",
+    after: "Consistent messaging across all buyer touchpoints",
+  },
+],
+  whyLavista: [
+    {
+      icon: Building2,
+      title: "Real estate focused",
+      description:
+        "Lavista builds brands around launches, inventory, site visits, and buyer confidence rather than generic agency playbooks.",
+    },
+    {
+      icon: MapPinned,
+      title: "Market-aware thinking",
+      description:
+        "Positioning is shaped around the local catchment, buyer psychology, pricing context, and competitor noise.",
+    },
+    {
+      icon: Handshake,
+      title: "Sales-aligned execution",
+      description: "The brand system is designed to help campaigns perform and help sales teams carry the story forward.",
+    },
+  ],
+};
 
 export const servicePages = [
   {
