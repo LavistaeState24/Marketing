@@ -4,7 +4,7 @@ export function SectionHeading({ eyebrow, title, description, align = "left", to
   const isLight = tone === "light";
 
   return (
-    <div className={cn("flex flex-col gap-4", align === "center" && "mx-auto items-center text-center", className)}>
+    <div className={cn("flex flex-col gap-4", align === "center" && " items-start text-start", className)}>
       {eyebrow ? (
         <span className={cn("section-eyebrow", isLight && "text-[var(--color-surface-accent)]")}>{eyebrow}</span>
       ) : null}
