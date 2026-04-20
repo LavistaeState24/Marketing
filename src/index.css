@@ -79,6 +79,25 @@
       linear-gradient(180deg, #100f0d 0%, #0d0c0a 100%);
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+
+  p,
+  li,
+  button,
+  input,
+  textarea,
+  select,
+  a {
+    @apply font-sans;
+  }
+
   a {
     @apply transition-colors;
   }
@@ -99,7 +118,7 @@
   }
 
   .section-heading {
-    @apply font-serif text-4xl leading-tight text-foreground sm:text-4xl lg:text-3xl;
+    @apply font-serif text-4xl leading-[36px] text-foreground sm:text-2xl lg:text-3xl;
   }
 
   .section-copy {
