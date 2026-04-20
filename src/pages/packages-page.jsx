@@ -52,21 +52,48 @@ export function PackagesPage() {
             <div className="relative overflow-hidden rounded-[36px] border border-primary/20 bg-[linear-gradient(135deg,#1a1611_0%,#0f0d0b_55%,#16110c_100%)] px-6 py-10 sm:px-10 sm:py-14">
               <div className="absolute inset-0 bg-grid-fade opacity-25" />
               <div className="relative flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+
                 <div className="max-w-3xl">
-                  <p className="text-2xl font-semibold uppercase tracking-[0.22em] text-primary/80">Need Custom Scope?</p>
-                  <h2 className="mt-4 font-serif text-4xl leading-tight text-balance text-foreground sm:text-3xl">
+
+                  {/* Eyebrow */}
+                  <p className="text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-[0.22em] text-primary/80">
+                    Need Custom Scope?
+                  </p>
+
+                  {/* Heading */}
+                  <h2 className="mt-4 font-serif 
+                   text-xl 
+                   sm:text-2xl 
+                   md:text-3xl 
+                   lg:text-4xl 
+                   xl:text-5xl 
+                   leading-[1.15] 
+                   tracking-[-0.01em] 
+                   text-balance 
+                   text-foreground">
                     Not sure which package fits your project stage?
                   </h2>
-                  <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
+
+                  {/* Paragraph */}
+                  <p className="mt-5 max-w-2xl 
+                   text-sm 
+                   sm:text-base 
+                   md:text-lg 
+                   leading-relaxed 
+                   text-muted-foreground">
                     Share your location, inventory, ticket size, and current marketing challenge. We&apos;ll recommend the right package depth.
                   </p>
+
                 </div>
+
+                {/* Button */}
                 <Button asChild size="lg">
                   <Link to="/contact">
                     Book a Strategy Call
                     <ArrowUpRight className="size-4" />
                   </Link>
                 </Button>
+
               </div>
             </div>
           </Reveal>

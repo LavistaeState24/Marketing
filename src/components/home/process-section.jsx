@@ -13,7 +13,7 @@ export function ProcessSection() {
           tone="light"
         />
 
-        <div className="mt-12 grid gap-5 lg:grid-cols-5">
+        <div className="mt-12 grid gap-5 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5  ">
           {processSteps.map((step, index) => (
             <Reveal key={step.title} delay={index * 90}>
               <div className="surface-card-light min-h-[250px] rounded-[28px] p-6">

@@ -95,7 +95,7 @@ export function PortfolioPage() {
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <p className="text-xs uppercase tracking-[0.18em] text-secondary">{project.location}</p>
-                      <h2 className="mt-3 font-serif text-3xl text-foreground">{project.title}</h2>
+                      <h2 className="mt-3 font-semibold text-2xl text-foreground">{project.title}</h2>
                       <p className="mt-3 text-sm leading-6 text-secondary">{project.result}</p>
                     </div>
                   </div>
@@ -167,10 +167,10 @@ export function PortfolioPage() {
               <div className="absolute inset-0 bg-grid-fade opacity-25" />
               <div className="relative flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
                 <div className="max-w-3xl">
-                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-primary/80">Final CTA</p>
-                  <h2 className="mt-4 font-serif text-4xl leading-tight text-balance text-foreground sm:text-5xl">
-                    Need a portfolio-grade campaign system for your next launch, inventory push, or premium repositioning?
-                  </h2>
+                  <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary/80">Final CTA</p>
+                  <h2 className="mt-4 font-serif text-2xl  sm:text-3xl  md:text-4xl lg:text-4xl xl:text-4xl leading-tight tracking-tight text-balance text-foreground">
+  Need a portfolio-grade campaign system for your next launch, inventory push, or premium repositioning?
+</h2>
                   <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
                     Let&apos;s build the positioning, creative, media, and conversion journey around the commercial goals of your project.
                   </p>

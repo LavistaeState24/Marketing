@@ -251,8 +251,8 @@ export function AboutPage() {
               <div className="absolute inset-0 bg-grid-fade opacity-25" />
               <div className="relative flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
                 <div className="max-w-4xl">
-                  <p className="text-sm font-semibold uppercase tracking-[0.22em] text-primary/80">Work With Lavista</p>
-                  <h2 className="mt-4 font-serif text-4xl leading-tight text-balance text-foreground sm:text-xl lg:text-4xl">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary/80">Work With Lavista</p>
+                  <h2 className="mt-4 font-serif text-2xl  sm:text-3xl  md:text-4xl lg:text-4xl xl:text-4xl leading-tight tracking-tight text-balance text-foreground">
                     If you are building, broking, or launching a project, let&apos;s design a cleaner path from visibility to site visits.
                   </h2>
                   <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">

@@ -118,8 +118,14 @@
   }
 
   .section-heading {
-    @apply font-serif text-4xl leading-[36px] text-foreground sm:text-2xl lg:text-3xl;
-  }
+  @apply font-serif font-semibold 
+         text-2xl leading-tight 
+         text-foreground
+         sm:text-3xl 
+         md:text-2xl 
+         lg:text-2xl 
+         xl:text-3xl;
+}
 
   .section-copy {
     @apply max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg;

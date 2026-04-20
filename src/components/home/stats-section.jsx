@@ -22,7 +22,7 @@ export function StatsSection() {
   return (
     <section ref={ref} className="section-light py-24 sm:py-28">
       <div className="container-shell">
-      <div className="grid gap-5 lg:grid-cols-4">
+      <div className="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat) => (
           <StatCard key={stat.label} {...stat} active={isVisible} />
         ))}

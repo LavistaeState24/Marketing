@@ -44,7 +44,7 @@ export function PricingPackagesSection({
                   </p>
                 </div>
 
-                <div className="mt-8 grid gap-5 lg:grid-cols-3">
+                <div className="mt-8 grid gap-5 sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3">
                   {group.plans.map((plan, planIndex) => (
                     <Reveal key={`${group.id}-${plan.duration}`} delay={planIndex * 80}>
                       <article
