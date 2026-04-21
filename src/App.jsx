@@ -15,14 +15,14 @@ const PortfolioPage = lazy(() =>
   import("@/pages/portfolio-page").then((module) => 
      ({ default: module.PortfolioPage })),
 );
-const PricingPage = lazy(() =>
-   import("@/pages/pricing-page").then((module) =>
-     ({ default: module.PricingPage })));
+// const PricingPage = lazy(() =>
+//    import("@/pages/pricing-page").then((module) =>
+//      ({ default: module.PricingPage })));
 
-const PackagesPage = lazy(() =>
-   import("@/pages/packages-page").then((module) =>
-     ({ default: module.PackagesPage
-      })));
+// const PackagesPage = lazy(() =>
+//    import("@/pages/packages-page").then((module) =>
+//      ({ default: module.PackagesPage
+//       })));
 
 const AboutPage = lazy(() =>
   import("@/pages/about-page").then((module) =>
@@ -83,8 +83,8 @@ function App() {
           <Route path="/services" element={<Navigate to="/services/real-estate-branding" replace />} />
           <Route path="/services/:slug" element={<ServiceDetailPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/packages" element={<PackagesPage />} />
-          <Route path="/pricing" element={<PricingPage />} />
+          {/* <Route path="/packages" element={<PackagesPage />} /> */}
+          {/* <Route path="/pricing" element={<PricingPage />} /> */}
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FaqPage />} />
