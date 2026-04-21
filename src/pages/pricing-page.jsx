@@ -6,7 +6,7 @@ import { SiteCtaSection } from "@/components/common/site-cta-section";
 export function PricingPage() {
   return (
     <div>
-      <section className="relative flex min-h-[78svh] items-end overflow-hidden">
+      <section className="relative flex min-h-[80svh] items-end overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1800&q=80"
@@ -16,7 +16,7 @@ export function PricingPage() {
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,9,8,0.26)_0%,rgba(10,9,8,0.62)_48%,rgba(10,9,8,0.95)_100%)]" />
         </div>
 
-        <div className="container-shell relative flex min-h-[78svh] w-full flex-col justify-end pb-14 pt-32 sm:pb-16 lg:pb-20">
+        <div className="container-shell relative flex min-h-[92svh] w-full flex-col justify-end pb-14 pt-32 sm:pb-16 lg:pb-20">
           <div className="max-w-3xl">
             <Reveal>
               <Badge className="mb-6 w-fit">Packages</Badge>
