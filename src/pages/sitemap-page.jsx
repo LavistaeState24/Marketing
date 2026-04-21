@@ -56,7 +56,7 @@ export function SitemapPage() {
             </div>
           </Reveal>
 
-          <div className="mt-12 grid gap-5 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 lg:grid-cols-2">
             {sitemapGroups.map((group, index) => {
               const Icon = group.icon;
 
