@@ -21,8 +21,8 @@ export function PortfolioSection() {
       <div className="container-shell">
         <SectionHeading
           eyebrow="Portfolio"
-          title="Luxury launch presentation with the discipline of a performance team."
-          description="The visual language is premium by design, but each touchpoint is still built to move a buyer toward a conversation."
+          title="Real Estate Projects Marketed with Performance Precision"
+          description="From premium apartments to plotted developments, our campaigns are built to attract the right audience and convert interest into site visits."
         />
 
         <Tabs defaultValue="All" value={activeFilter} onValueChange={setActiveFilter} className="mt-10">

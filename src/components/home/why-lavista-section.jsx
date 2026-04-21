@@ -9,7 +9,7 @@ export function WhyLavistaSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Why Choose Lavista"
-            title="A real estate specialist with a sharper eye for premium conversion."
+            title="A Real Estate Marketing System Built for Conversions"
             description="Most agencies stop at lead generation. Lavista builds the full path from first impression to site visit to sales-ready follow-up."
           />
         </Reveal>

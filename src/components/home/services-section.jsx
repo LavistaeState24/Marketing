@@ -12,8 +12,8 @@ export function ServicesSection() {
       <div className="container-shell">
         <SectionHeading
           eyebrow="Services"
-          title="Conversion-focused systems built for the way real estate actually sells."
-          description="We bring performance media, premium creative, and funnel discipline into one operating model so each campaign looks stronger and converts cleaner."
+          title="Conversion-Focused Marketing Services for Real Estate Projects"
+          description="We design marketing systems built for how real estate actually sells — combining branding, performance campaigns, and buyer psychology to move prospects from enquiry to decision."
           tone="light"
         />
 

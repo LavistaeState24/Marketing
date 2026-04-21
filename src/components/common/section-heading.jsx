@@ -8,7 +8,7 @@ export function SectionHeading({ eyebrow, title, description, align = "left", to
       {eyebrow ? (
         <span className={cn("section-eyebrow", isLight && "text-[var(--color-surface-accent)]")}>{eyebrow}</span>
       ) : null}
-      <h3 className={cn("section-heading", isLight && "text-surface-foreground")}>{title}</h3>
+      <h2 className={cn("section-heading", isLight && "text-surface-foreground")}>{title}</h2>
       {description ? (
         <p className={cn("section-copy", isLight && "text-[var(--color-surface-copy)]")}>{description}</p>
       ) : null}

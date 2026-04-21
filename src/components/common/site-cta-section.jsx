@@ -3,9 +3,9 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/common/reveal";
 
-const ctaHeading = "Ready to build a sharper real estate growth system for your next project?";
+const ctaHeading = "We Don’t Just Generate Leads — We Bring Site Visits & Closings";
 const ctaDescription =
-  "Share your project stage, location, and current growth challenge. Lavista will map the right next move.";
+  "If your current marketing is only generating enquiries and not real buyers, it’s time to switch to a system that converts.";
 
 export function SiteCtaSection({ image, imageAlt = "Lavista real estate growth consultation" }) {
   return (
@@ -18,7 +18,7 @@ export function SiteCtaSection({ image, imageAlt = "Lavista real estate growth c
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--color-surface-accent)]">
                   Final CTA
                 </p>
-                <h2 className="mt-5 max-w-3xl font-serif text-2xl leading-tight text-balance text-surface-foreground sm:text-4xl lg:text-4xl">
+                <h2 className="mt-5 max-w-3xl font-serif text-2xl leading-tight text-surface-foreground sm:text-4xl lg:text-4xl">
                   {ctaHeading}
                 </h2>
                 <p className="mt-6 max-w-2xl text-base leading-8 text-[var(--color-surface-copy)] sm:text-lg">
