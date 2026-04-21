@@ -7,7 +7,7 @@ import { Reveal } from "@/components/common/reveal";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative flex min-h-[80svh] items-end overflow-hidden">
       <div className="absolute inset-0">
         <video
           autoPlay
@@ -27,7 +27,7 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(9,8,7,0.45)_0%,rgba(9,8,7,0.72)_52%,rgba(9,8,7,0.92)_100%)]" />
       </div>
 
-      <div className="container-shell relative flex min-h-screen flex-col justify-end pb-12 pt-32 sm:pb-16 lg:pb-20">
+      <div className="container-shell relative flex min-h-[92svh] w-full flex-col justify-end pb-14 pt-32 sm:pb-16 lg:pb-20">
         <div className="grid gap-14 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-end">
           <div className="max-w-4xl">
             <Reveal>

@@ -40,6 +40,12 @@ const FaqPage = lazy(() =>
      })),
 );
 
+const SitemapPage = lazy(() =>
+  import("@/pages/sitemap-page").then((module) => ({
+    default: module.SitemapPage,
+  })),
+);
+
 const PrivacyPolicyPage = lazy(() =>
   import("@/pages/privacy-policy-page").then((module) => ({
     default: module.PrivacyPolicyPage,
@@ -82,6 +88,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/faq" element={<FaqPage />} />
+          <Route path="/sitemap" element={<SitemapPage />} />
           <Route path="/policy" element={<PrivacyPolicyPage />} />
           <Route path="/condition" element={<TermsConditionPage />} />
           <Route path="*" element={<NotFoundPage />} />

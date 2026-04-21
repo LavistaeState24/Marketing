@@ -37,7 +37,6 @@ import {
 } from "lucide-react";
 import {
   AmanImg,
-  AmitImg,
   AnnuImg,
   DevarshImg,
   DeepImg,
@@ -591,7 +590,7 @@ export const teamMembers = [
   //   image: VaishaliImg,
   // },
   {
-    name: "Krunal Patel",
+    name: "Krunal Kapadiya",
     role: " Sr Sales Lead Manager",
     department: "Sales Manager",
     description: "Connects real estate stories with trusted local creator voices.",
@@ -628,22 +627,12 @@ export const teamMembers = [
     image: DharaImg,
   },
   {
-    name: "Amit",
-    role: "Sales Lead Manager",
-    department: "Sales",
-    description: "Aligns marketing demand with site-visit-ready sales conversations",
-    image: AmitImg,
-  },
-  {
     name: "Meet Parmar",
     role: " Jr Sales Executive",
     department: "Sales",
     description: "Aligns marketing demand with site-visit-ready sales conversations.",
     image: MeetImg,
   },
-  
-
-
 ];
 
 export const realEstateBrandingPageContent = {
@@ -1503,3 +1492,34 @@ export const contentPages = {
     ],
   },
 };
+
+export const sitemapGroups = [
+  {
+    title: "Main Pages",
+    icon: Compass,
+    links: [
+      { label: "Home", path: "/", description: "Start with Lavista's real estate marketing system." },
+      { label: "About", path: "/about", description: "Learn how Lavista works with real estate brands." },
+      { label: "Portfolio", path: "/portfolio", description: "Review selected work, results, and campaign examples." },
+      { label: "Contact", path: "/contact", description: "Share your project stage and growth challenge." },
+    ],
+  },
+  {
+    title: "Packages",
+    icon: Layers3,
+    links: [
+      { label: "Packages", path: "/packages", description: "Compare marketing package systems by project need." },
+      { label: "Pricing", path: "/pricing", description: "Review plan details, scope, and package inclusions." },
+    ],
+  },
+  {
+    title: "Support",
+    icon: FileText,
+    links: [
+      { label: "FAQ", path: "/faq", description: "Find answers to common project and engagement questions." },
+      { label: "Privacy Policy", path: "/policy", description: "Understand how website and form data is handled." },
+      { label: "Terms & Conditions", path: "/condition", description: "Review service and website usage terms." },
+      { label: "XML Sitemap", path: "/sitemap.xml", description: "Crawler-ready XML sitemap for search engines." },
+    ],
+  },
+];
