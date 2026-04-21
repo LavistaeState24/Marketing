@@ -13,7 +13,7 @@ export function TestimonialsSection() {
         <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <SectionHeading
             eyebrow="Market Experience"
-            title="Built from real work across real estate projects."
+            title="Built from Real Experience Across Real Estate Projects"
             description="Our approach is shaped by hands-on work in branding, campaign execution, lead quality improvement, and buyer-focused communication systems."
           />
           <div className="flex gap-3">

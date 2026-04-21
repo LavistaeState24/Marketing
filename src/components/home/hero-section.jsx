@@ -35,13 +35,12 @@ export function HeroSection() {
             </Reveal>
             <Reveal delay={100}>
               <h1 className="max-w-4xl font-serif text-2xl sm:text-4xl md:text-5xl lg:text-5xl leading-[1.1] tracking-tight text-balance text-foreground">
-                Marketing systems that make premium properties feel impossible to ignore.
+                Real Estate Marketing Agency in Ahmedabad That Drives Site Visits & Closings
               </h1>
             </Reveal>
             <Reveal delay={180}>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-secondary sm:text-xl">
-                Lavista helps builders, developers, and brokers drive stronger lead quality, more site visits, and
-                cleaner conversion journeys with luxury-first creative and performance strategy.
+                Lavista Marketing Agency helps real estate developers in Ahmedabad generate high-intent leads, filter serious buyers, and convert them into site visits and actual bookings through a structured marketing system.
               </p>
             </Reveal>
             <Reveal delay={240}>

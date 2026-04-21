@@ -75,7 +75,7 @@ export const siteNavigation = [
     ],
   },
   // { label: "Packages", href: "/packages" },
-  // { label: "Portfolio", href: "/portfolio" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -91,42 +91,42 @@ export const services = [
     icon: Building2,
     slug: "real-estate-branding",
     title: "Real Estate Branding",
-    description: "Premium brand systems that make a project feel credible, aspirational, and sales-ready.",
+    description: "Position your project as premium and trustworthy through strong visual identity, messaging, and storytelling.",
     benefits: ["Positioning clarity", "Luxury visual direction", "Campaign-ready brand language"],
   },
   {
     icon: Megaphone,
     slug: "meta-ads",
-    title: "Meta Ads",
-    description: "High-intent social campaigns built around premium audiences, creative testing, and lead quality.",
+    title: "Meta Ads (Lead Generation)",
+    description: "Target high-intent buyers on Facebook & Instagram with campaigns optimized for quality leads and conversions.",
     benefits: ["Audience segmentation", "Creative testing cadence", "Retargeting for site visits"],
   },
   {
     icon: SearchCheck,
     slug: "google-ads",
-    title: "Google Ads",
-    description: "Search campaigns that capture active real estate demand across location, price, and intent signals.",
+    title: "Google Ads (High Intent)",
+    description: "Capture buyers actively searching for properties with high-conversion search campaigns.",
     benefits: ["Location-led keywords", "Call and form conversion focus", "Budget efficiency for launches"],
   },
   {
     icon: CirclePlay,
     slug: "content-production",
     title: "Content Production",
-    description: "Premium reels, launch films, walkthroughs, and campaign assets tailored for property buyers.",
+    description: "Create premium visuals, reels, and creatives designed to build trust and increase engagement.",
     benefits: ["Script-to-shoot planning", "Project storytelling", "Performance-ready edits"],
   },
   {
     icon: UsersRound,
     slug: "lead-generation",
-    title: "Lead Generation",
-    description: "Lead systems built to reduce weak enquiries and increase serious sales conversations.",
+    title: "Lead Generation System",
+    description: "Generate and filter high-quality leads while eliminating fake and low-budget enquiries.",
     benefits: ["High-intent audience mapping", "Lead quality optimization", "Site visit push"],
   },
   {
     icon: PanelsTopLeft,
     slug: "crm-solutions",
-    title: "CRM Solutions",
-    description: "Routing, follow-up, and nurture workflows that help sales teams respond faster and close cleaner.",
+    title: "Lead Nurturing & CRM",
+    description: "Convert leads into buyers through follow-ups, remarketing, and structured communication.",
     benefits: ["Source attribution clarity", "Automated follow-up logic", "Sales-ready handoff systems"],
   },
 ];
@@ -217,23 +217,23 @@ export const portfolioProjects = [
 export const processSteps = [
   {
     title: "Strategy",
-    description: "Offer definition, market positioning, audience mapping, and channel mix before spend begins.",
+    description: "Understanding your project, audience, and positioning.",
   },
   {
     title: "Creative",
-    description: "Premium visuals, scripts, landing copy, and ad concepts designed around project intent.",
+    description: "Designing high-converting visuals and messaging.",
   },
   {
     title: "Ads",
-    description: "Media deployment across Meta and Google with rapid testing and signal-based iteration.",
+    description: "Running targeted campaigns for quality leads.",
   },
   {
     title: "Leads",
-    description: "Lead capture, qualification logic, CRM routing, and faster response loops with the sales team.",
+    description: "Filtering and managing incoming enquiries.",
   },
   {
     title: "Closing",
-    description: "Retargeting, remarketing, visit reminders, and conversion reporting tied to business outcomes.",
+    description: "Supporting conversion through structured follow-ups.",
   },
 ];
 
