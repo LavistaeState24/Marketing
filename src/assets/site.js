@@ -242,10 +242,26 @@ export const processSteps = [
 ];
 
 export const experienceInsights = [
-  { image: Prof1Img, title: "Campaign Results", category: "Lead Generation" },
-  { image: Prof2Img, title: "Ad Performance", category: "Meta Ads" },
-  { image: Prof3Img, title: "Lead Quality", category: "Buyer Insights" },
-  { image: Prof4Img, title: "Conversion Proof", category: "Real Estate Sales" },
+  {
+    image: Prof1Img,
+    title: "Campaign Results",
+    category: "Lead Generation",
+  },
+  {
+    image: Prof2Img,
+    title: "Ad Performance",
+    category: "Meta Ads",
+  },
+  {
+    image: Prof3Img,
+    title: "Lead Quality",
+    category: "Buyer Insights",
+  },
+  {
+    image: Prof4Img,
+    title: "Conversion Proof",
+    category: "Real Estate Sales",
+  },
 ];
 
 export const serviceDetails = [
