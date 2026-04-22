@@ -19,6 +19,10 @@ import Port3 from "./3.webp";
 import Port4 from "./4.webp";
 import Port5 from "./5.webp";
 import Port6 from "./6.webp";
+import prof1 from "./Prof1.webp";
+import prof2 from "./Prof2.webp";
+import prof3 from "./Prof3.webp";
+import prof4 from "./Prof4.webp";
 
 
 export const AmanImg = aman;
@@ -42,4 +46,8 @@ export const Port3Img = Port3;
 export const Port4Img = Port4;
 export const Port5Img = Port5;
 export const Port6Img = Port6;
+export const Prof1Img = prof1;
+export const Prof2Img = prof2;
+export const Prof3Img = prof3;
+export const Prof4Img = prof4;
 
