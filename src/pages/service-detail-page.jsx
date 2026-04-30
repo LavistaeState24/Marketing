@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { ArrowUpRight, CheckCircle2, KeyRound, Layers3, TrendingUp, UsersRound } from "lucide-react";
 import { realEstateBrandingPageContent, servicePages } from "@/data/site";
@@ -44,7 +44,7 @@ const serviceOutcomeCards = [
 ];
 
 const redesignedServiceSlugs = new Set([
-  "real-estate-branding",
+  "real-estate-marketing-agency-ahmedabad",
   "meta-ads",
   "google-ads",
   "content-production",
@@ -52,16 +52,68 @@ const redesignedServiceSlugs = new Set([
   "crm-solutions",
 ]);
 
+const SITE_URL = "https://lavistamarketingagency.com";
+
+function upsertMeta(selector, attribute, value) {
+  let element = document.head.querySelector(selector);
+
+  if (!element) {
+    element = document.createElement("meta");
+    element.setAttribute(attribute, selector.includes("property=") ? selector.match(/property="([^"]+)"/)[1] : selector.match(/name="([^"]+)"/)[1]);
+    document.head.appendChild(element);
+  }
+
+  element.setAttribute("content", value);
+}
+
+function upsertCanonical(href) {
+  let link = document.head.querySelector('link[rel="canonical"]');
+
+  if (!link) {
+    link = document.createElement("link");
+    link.setAttribute("rel", "canonical");
+    document.head.appendChild(link);
+  }
+
+  link.setAttribute("href", href);
+}
+
+function useServiceSeo(service) {
+  useEffect(() => {
+    if (!service) return;
+
+    const isAhmedabadMarketingPage = service.slug === "real-estate-marketing-agency-ahmedabad";
+    const title = isAhmedabadMarketingPage
+      ? "Real Estate Marketing Agency in Ahmedabad | Lavista"
+      : `${service.navLabel} for Real Estate Projects | Lavista`;
+    const description = isAhmedabadMarketingPage
+      ? "Lavista is a real estate marketing agency in Ahmedabad helping builders and developers improve project positioning, generate qualified leads, and increase site visits."
+      : service.description;
+    const canonical = `${SITE_URL}/services/${service.slug}`;
+
+    document.title = title;
+    upsertMeta('meta[name="description"]', "name", description);
+    upsertMeta('meta[property="og:title"]', "property", title);
+    upsertMeta('meta[property="og:description"]', "property", description);
+    upsertMeta('meta[property="og:url"]', "property", canonical);
+    upsertMeta('meta[name="twitter:title"]', "name", title);
+    upsertMeta('meta[name="twitter:description"]', "name", description);
+    upsertCanonical(canonical);
+  }, [service]);
+}
+
 export function ServiceDetailPage() {
   const { slug } = useParams();
   const service = servicePages.find((item) => item.slug === slug);
 
+  useServiceSeo(service);
+
   if (!service) {
-    return <Navigate to="/services/real-estate-branding" replace />;
+    return <Navigate to="/services/real-estate-marketing-agency-ahmedabad" replace />;
   }
 
   if (redesignedServiceSlugs.has(service.slug)) {
-    return service.slug === "real-estate-branding" ? (
+    return service.slug === "real-estate-marketing-agency-ahmedabad" ? (
       <RealEstateBrandingRedesign service={service} />
     ) : (
       <GenericServiceRedesign service={service} />
@@ -642,19 +694,19 @@ function RedesignHero({ service }) {
           </Reveal>
           <Reveal delay={80}>
             <h1 className="font-serif text-2xl leading-[1.3] text-balance text-foreground sm:text-6xl md:text-4xl lg:text-4xl">
-              Branding that makes premium projects easier to trust and easier to choose.
+              Real estate marketing agency in Ahmedabad for premium projects that need stronger trust, leads, and site visits.
             </h1>
           </Reveal>
           <Reveal delay={160}>
             <p className="mt-7 max-w-2xl text-base leading-8 text-secondary sm:text-lg">
-              Lavista builds real estate brand systems that sharpen positioning, improve buyer confidence, and support cleaner lead quality from first impression to site visit.
+              Lavista is a real estate marketing agency in Ahmedabad that builds positioning, paid-media, creative, and conversion systems for builders and developers who want better lead quality.
             </p>
           </Reveal>
           <Reveal delay={220}>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg" className="rounded-xl">
                 <Link to="/contact">
-                  Build My Brand System
+                  Build My Marketing System
                   <ArrowUpRight className="size-4" />
                 </Link>
               </Button>
@@ -676,10 +728,10 @@ function RedesignWhatIs({ service }) {
         <Reveal>
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[var(--color-surface-accent)]">
-              What Is Real Estate Branding
+              What Is a Real Estate Marketing Agency in Ahmedabad
             </p>
             <h2 className="mt-5 max-w-2xl font-serif text-2xl leading-tight text-balance text-surface-foreground sm:text-5xl lg:text-4xl">
-              It is the perception system that makes a project feel credible before the first call.
+              It is the growth system that helps Ahmedabad projects get discovered, trusted, and shortlisted by serious buyers.
             </h2>
             <p className="mt-6 text-base leading-8 text-[var(--color-surface-copy)] sm:text-lg">{service.what}</p>
           </div>
@@ -687,7 +739,7 @@ function RedesignWhatIs({ service }) {
 
         <Reveal delay={100}>
           <div className="relative overflow-hidden rounded-xl">
-            <img src={redesignImages.strategy} alt="Real estate branding strategy workspace" className="h-[420px] w-full object-cover" />
+            <img src={redesignImages.strategy} alt="Real estate marketing strategy workspace in Ahmedabad" className="h-[420px] w-full object-cover" />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_20%,rgba(13,12,10,0.76)_100%)]" />
           </div>
         </Reveal>
@@ -720,12 +772,12 @@ function RedesignWhyMatters() {
       <div className="container-shell grid gap-12 lg:grid-cols-2  md:grid-cols-2 sm:grid-cols-1 lg:items-center">
         <Reveal>
           <div className="relative overflow-hidden rounded-xl border border-border/80">
-            <img src={redesignImages.skyline} alt="Premium city skyline for real estate branding" className="h-[520px] w-full object-cover" />
+            <img src={redesignImages.skyline} alt="Premium Ahmedabad skyline for real estate marketing" className="h-[520px] w-full object-cover" />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(13,12,10,0.12)_0%,rgba(13,12,10,0.86)_100%)]" />
             <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary/80">Why Branding Matters</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary/80">Why This Marketing Matters</p>
               <h2 className="mt-4 max-w-lg font-serif text-2xl leading-tight text-foreground sm:text-3xl">
-                Premium projects need more than visibility. They need belief.
+                A real estate marketing agency in Ahmedabad should do more than create visibility. It should create buyer belief.
               </h2>
             </div>
           </div>
@@ -764,7 +816,7 @@ function RedesignHowWorks({ service }) {
         <Reveal>
           <SectionHeading
             eyebrow="How Lavista Works"
-            title="We start with the project reality, then turn it into a buyer-facing brand system."
+            title="We start with the Ahmedabad market reality, then turn it into a buyer-facing marketing system."
             description={service.start}
             tone="light"
           />
@@ -800,8 +852,8 @@ function RedesignProcess({ service }) {
         <Reveal>
           <SectionHeading
             eyebrow="Step-by-Step Process"
-            title="A clear process from strategy to launch-ready brand execution."
-            description="Every step is designed to improve buyer trust, project recall, and the quality of sales conversations."
+            title="A clear real estate marketing process for Ahmedabad launches."
+            description="Every step is designed to improve buyer trust, project recall, lead quality, and sales conversation quality."
             align="center"
             className="mx-start max-w-3xl"
           />
@@ -832,8 +884,8 @@ function RedesignDeliverables() {
         <Reveal>
           <SectionHeading
             eyebrow="What We Build For You"
-            title="Brand assets that make the project feel consistent everywhere buyers meet it."
-            description="The output is practical, premium, and shaped for real estate launch journeys."
+            title="Marketing assets that keep your Ahmedabad project consistent everywhere buyers meet it."
+            description="The output is practical, premium, and shaped for real estate launches that need stronger discovery and conversion."
             tone="light"
             align="center"
             className=" max-w-3xl"
@@ -873,10 +925,10 @@ function RedesignProblemSolution() {
               Problem / Solution
             </p>
             <h2 className="mt-5 max-w-2xl font-serif text-2xl leading-tight text-balance text-foreground sm:text-5xl lg:text-4xl">
-              Common brand gaps, translated into clearer buyer movement.
+              Common Ahmedabad real estate marketing gaps, translated into clearer buyer movement.
             </h2>
             <p className="mt-6 text-base leading-8 text-muted-foreground sm:text-lg">
-              Lavista connects each branding problem to a practical solution that improves trust, message clarity, and sales readiness.
+              Lavista connects each marketing problem to a practical solution that improves trust, message clarity, enquiry quality, and sales readiness.
             </p>
           </div>
         </Reveal>
@@ -1058,7 +1110,7 @@ function RedesignWhyLavista() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary/80">Why Lavista</p>
               <h2 className="mt-5 max-w-2xl font-serif text-3xl leading-tight text-balance text-foreground sm:text-5xl lg:text-4xl">
-                Real estate branding built with sales reality in mind.
+                Real estate marketing agency in Ahmedabad built with sales reality in mind.
               </h2>
               <p className="mt-6 text-base leading-8 text-muted-foreground sm:text-lg">
                 The work is designed for launches, buyer trust, lead quality, and sales handoff. Not just a prettier presentation.
@@ -1091,6 +1143,6 @@ function RedesignWhyLavista() {
 
 function RedesignFinalCta() {
   return (
-    <SiteCtaSection image={redesignImages.meeting} imageAlt="Lavista real estate branding consultation" />
+      <SiteCtaSection image={redesignImages.meeting} imageAlt="Lavista real estate marketing consultation in Ahmedabad" />
   );
 }
