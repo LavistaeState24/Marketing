@@ -44,10 +44,10 @@ function Navbar({ navigation }) {
               src={LogoDefault}
               alt="Lavista Logo"
               className="
-                h-10 w-auto object-contain transition-all duration-300
+                h-12 w-auto object-contain transition-all duration-300
                 sm:h-11
                 md:h-12
-                lg:h-12
+                lg:h-14
               "
             />
           </Link>

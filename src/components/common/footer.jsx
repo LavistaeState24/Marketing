@@ -9,17 +9,27 @@ import {
   Youtube,
 } from "lucide-react";
 import { FooterContact, FooterLinks, FooterSocials } from "@/data/site";
+import LogoDefault from "@/assets/Logo.png";
 
 export function Footer() {
   return (
     <footer className="bg-black text-primary-300">
-      <div className="container-shell py-16">
+      <div className="container-shell py-10">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
 
           {/* BRAND */}
           <div className="flex flex-col gap-6">
             <h3 className="font-heading text-2xl font-semibold text-background-light">
-              LAVISTA
+              <img
+              src={LogoDefault}
+              alt="Lavista Logo"
+              className="
+                h-12 w-auto object-contain transition-all duration-300
+                sm:h-11
+                md:h-12
+                lg:h-14
+              "
+            />
             </h3>
 
             <p className="text-[16px] leading-8">
