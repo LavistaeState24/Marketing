@@ -68,9 +68,9 @@ export const siteNavigation = [
   { label: "Home", href: "/" },
   {
     label: "Services",
-    href: "/services/real-estate-branding",
+    href: "/services/real-estate-marketing-agency-ahmedabad",
     children: [
-      { label: "Real Estate Branding", href: "/services/real-estate-branding" },
+      { label: "Real Estate Marketing Agency Ahmedabad", href: "/services/real-estate-marketing-agency-ahmedabad" },
       { label: "Meta Ads", href: "/services/meta-ads" },
       { label: "Google Ads", href: "/services/google-ads" },
       { label: "Content Production", href: "/services/content-production" },
@@ -93,10 +93,10 @@ export const heroMetrics = [
 export const services = [
   {
     icon: Building2,
-    slug: "real-estate-branding",
-    title: "Real Estate Branding",
-    description: "Position your project as premium and trustworthy through strong visual identity, messaging, and storytelling.",
-    benefits: ["Positioning clarity", "Luxury visual direction", "Campaign-ready brand language"],
+    slug: "real-estate-marketing-agency-ahmedabad",
+    title: "Real Estate Marketing Agency Ahmedabad",
+    description: "Grow your real estate project in Ahmedabad with stronger positioning, premium creative direction, paid media strategy, and buyer-focused messaging.",
+    benefits: ["Ahmedabad market positioning", "Premium campaign direction", "Qualified buyer acquisition"],
   },
   {
     icon: Megaphone,
@@ -745,34 +745,34 @@ export const realEstateBrandingPageContent = {
 
 export const servicePages = [
   {
-    slug: "real-estate-branding",
-    navLabel: "Real Estate Branding",
-    eyebrow: "Real Estate Branding",
-    title: "Branding that makes premium projects feel trusted before the first site visit.",
+    slug: "real-estate-marketing-agency-ahmedabad",
+    navLabel: "Real Estate Marketing Agency Ahmedabad",
+    eyebrow: "Real Estate Marketing Agency Ahmedabad",
+    title: "Real estate marketing agency in Ahmedabad for builders, developers, and premium property launches.",
     description:
-      "We shape the positioning, identity direction, campaign language, and buyer-facing presentation that help builders and developers command stronger attention.",
+      "Lavista is a real estate marketing agency in Ahmedabad that helps builders and developers improve project positioning, campaign performance, buyer trust, and site-visit generation.",
     image:
       "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=80",
     what:
-      "Real estate branding is the strategic foundation of how a project is understood, remembered, and trusted. For Lavista, it is not just logos or brochures; it is the full perception system around a property launch.",
+      "A strong real estate marketing agency in Ahmedabad should shape how a project is discovered, understood, remembered, and trusted. Lavista does that by aligning branding, campaign messaging, paid media direction, landing-page structure, and buyer-facing presentation.",
     start:
-      "We begin by understanding the project category, buyer profile, pricing logic, micro-market, inventory pressure, and the emotional reason a buyer should believe in the project.",
+      "We begin by understanding the project category, buyer profile, pricing logic, Ahmedabad micro-market, inventory pressure, and the emotional reason a buyer should believe in the project.",
     process: [
-      "Audit the existing brand, competitor set, and local buyer expectations.",
+      "Audit the current marketing, competitor set, and Ahmedabad buyer expectations.",
       "Define the positioning, promise, project story, and communication hierarchy.",
       "Create the visual direction for campaign assets, landing pages, brochures, and social content.",
-      "Build launch-ready brand messaging for ads, sales teams, and digital touchpoints.",
-      "Refine the brand system using buyer feedback, enquiry quality, and campaign response.",
+      "Build launch-ready marketing messaging for ads, sales teams, and digital touchpoints.",
+      "Refine the marketing system using buyer feedback, enquiry quality, and campaign response.",
     ],
     provides: [
       "Project positioning framework",
       "Campaign messaging direction",
       "Premium creative art direction",
-      "Brochure and landing page copy guidance",
-      "Brand consistency system for launch assets",
+      "Landing page and brochure guidance",
+      "Integrated Ahmedabad launch marketing system",
     ],
     outcome:
-      "Your project enters the market with stronger perceived value, clearer buyer trust, and a premium presentation that supports better lead quality.",
+      "Your project enters the Ahmedabad market with stronger perceived value, clearer buyer trust, and a more complete marketing system that supports better lead quality and more qualified site visits.",
   },
   {
     slug: "meta-ads",
@@ -1063,7 +1063,7 @@ export const FooterLinks = [
   {
     title: "Our Services",
     links: [
-      { label: "Real Estate Branding", href: "/services/real-estate-branding" },
+      { label: "Real Estate Marketing Agency Ahmedabad", href: "/services/real-estate-marketing-agency-ahmedabad" },
       { label: "Meta Ads", href: "/services/meta-ads" },
       { label: "Google Ads", href: "/services/google-ads" },
       { label: "Content Production", href: "/services/content-production" },
@@ -1133,7 +1133,7 @@ export const contentPages = {
       {
         title: "What services does Lavista provide?",
         paragraphs: [
-          "Lavista provides real estate branding, Meta ads, Google ads, content production, lead generation, CRM solutions, and full-funnel marketing systems for builders, developers, and brokers.",
+          "Lavista provides real estate marketing support in Ahmedabad, along with Meta ads, Google ads, content production, lead generation, CRM solutions, and full-funnel systems for builders, developers, and brokers.",
         ],
       },
       {

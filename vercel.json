@@ -1,4 +1,16 @@
 {
+  "redirects": [
+    {
+      "source": "/services",
+      "destination": "/services/real-estate-marketing-agency-ahmedabad",
+      "permanent": true
+    },
+    {
+      "source": "/services/real-estate-branding",
+      "destination": "/services/real-estate-marketing-agency-ahmedabad",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
