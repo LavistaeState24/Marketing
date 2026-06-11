@@ -234,7 +234,7 @@ export function ServiceDetailPage() {
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.22em] text-primary/80">Result / Outcome</p>
                 <h2 className="mt-4 max-w-3xl font-serif text-4xl leading-tight text-balance text-foreground sm:text-5xl">
-                  Outcomes that show up in buyer quality, site visits, and conversion movement.
+                  Meta Ads structured to deliver qualified enquiries and measurable sales opportunities.
                 </h2>
               </div>
             </Reveal>
@@ -515,14 +515,14 @@ function GenericRedesignProcess({ service }) {
         <Reveal>
           <SectionHeading
             eyebrow="Step-by-Step Process"
-            title={`A clear process for ${service.navLabel.toLowerCase()} execution.`}
-            description="Every step is tied to buyer quality, project context, and cleaner handoff to sales."
+            title={`A structured ${service.navLabel.toLowerCase()} framework built for real estate lead generation and sales growth.`}
+            description="Every stage is designed to improve buyer quality, strengthen campaign performance, and create a smoother transition from enquiry to sales conversation."
             align="center"
             className="mx-start max-w-3xl"
           />
         </Reveal>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {service.process.map((step, index) => (
             <Reveal key={step} delay={index * 70}>
               <article className="group min-h-[260px] rounded-xl border border-border/80 bg-card/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30">
@@ -547,7 +547,7 @@ function GenericRedesignDeliverables({ service, deliverables }) {
         <Reveal>
           <SectionHeading
             eyebrow="What We Build For You"
-            title={`Practical ${service.navLabel.toLowerCase()} deliverables shaped for real estate growth.`}
+            title={`The systems, structure, and strategy required to run effective ${service.navLabel.toLowerCase()} Meta Ads for real estate projects.`}
             description="The output is designed for launch pressure, lead quality, and sales follow-through."
             tone="light"
             align="center"
