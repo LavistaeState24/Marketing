@@ -3,9 +3,9 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/common/reveal";
 
-const ctaHeading = "We Don’t Just Generate Leads — We Bring Site Visits & Closings";
+const ctaHeading = "More Qualified Buyers. Better Sales Opportunities.";
 const ctaDescription =
-  "If your current marketing is only generating enquiries and not real buyers, it’s time to switch to a system that converts.";
+  "We help real estate brands build Meta Ads systems designed to improve lead quality, increase site visit potential, and create stronger sales opportunities through strategic targeting, creative testing, and ongoing optimization.";
 
 export function SiteCtaSection({ image, imageAlt = "Lavista real estate growth consultation" }) {
   return (

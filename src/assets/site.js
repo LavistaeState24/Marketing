@@ -811,7 +811,7 @@ export const servicePages = [
       "Scale winning segments while tightening weak enquiries and wasted spend.",
     ],
     provides: [
-      "Meta campaign setup and optimization",
+      "Meta Campaign Setup & Optimization",
       "Audience and retargeting structure",
       "Creative testing plan",
       "Lead form and landing flow recommendations",

@@ -778,7 +778,7 @@ export const servicePages = [
     slug: "meta-ads",
     navLabel: "Meta Ads",
     eyebrow: "Meta Ads",
-    title: "Meta campaigns built to turn attention into qualified real estate enquiries.",
+    title: "Generate High-Quality Real Estate Leads with Strategic Meta Advertising.",
     description:
       "We create and optimize Meta ad systems for builders, brokers, and developers who need premium reach, sharper filtering, and stronger site-visit movement.",
     image:
@@ -788,21 +788,22 @@ export const servicePages = [
     start:
       "We begin with the project stage, buyer ticket size, location radius, creative bank, offer strength, and sales team feedback on what counts as a qualified enquiry.",
     process: [
-      "Map audience groups by location, income intent, lifestyle signals, and project fit.",
-      "Create campaign architecture for awareness, enquiry capture, and retargeting.",
-      "Test premium creatives, hooks, formats, and lead form friction.",
-      "Track lead quality with sales feedback and source-level performance signals.",
-      "Scale winning segments while tightening weak enquiries and wasted spend.",
+      "Map buyer groups based on location, demographics, income profiles, lifestyle interests, and project suitability.",
+      "Build a campaign architecture focused on awareness, lead generation, retargeting, and conversion opportunities.",
+      "Test creatives, messaging, ad formats, offers, and lead forms to identify the highestperforming combinations.",
+      "Track enquiry quality through sales feedback, conversion data, and campaign-level performance signals.",
+      "Scale high-performing audiences and campaigns while reducing wasted spend and filtering lower-quality enquiries.",
     ],
     provides: [
       "Meta campaign setup and optimization",
-      "Audience and retargeting structure",
-      "Creative testing plan",
+      "Audience segmentation and retargeting strategy",
+      "Creative testing and messaging framework",
       "Lead form and landing flow recommendations",
       "Performance reporting tied to lead quality",
+      "Campaign optimization and scaling roadmap"
     ],
     outcome:
-      "You get cleaner campaign learning, stronger lead quality, and better movement from social attention to site visit conversations.",
+      "Through better targeting, creative testing, and ongoing optimization, campaigns are built to improve lead quality, increase project visibility, and support consistent real estate growth.",
   },
   {
     slug: "google-ads",
