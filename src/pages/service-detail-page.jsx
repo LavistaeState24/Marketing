@@ -402,7 +402,7 @@ function GenericRedesignWhat({ service }) {
               What Is {service.navLabel}
             </p>
             <h2 className="mt-5 max-w-2xl font-serif text-2xl leading-tight text-balance text-surface-foreground sm:text-5xl lg:text-4xl">
-              A focused system for turning real estate demand into better buyer movement.
+              Google Ads That Reach Buyers Ready to Take Action.
             </h2>
             <p className="mt-6 text-base leading-8 text-[var(--color-surface-copy)] sm:text-lg">{service.what}</p>
           </div>

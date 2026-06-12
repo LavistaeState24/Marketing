@@ -809,26 +809,26 @@ export const servicePages = [
     slug: "google-ads",
     navLabel: "Google Ads",
     eyebrow: "Google Ads",
-    title: "Search-led campaigns for buyers already looking for property options.",
+    title: "Google Ads Agency in Ahmedabad for Real Estate Lead Generation",
     description:
-      "We structure Google Ads around active demand, local search behavior, project category, and high-intent conversion paths.",
+      "Generate high-quality buyer enquiries with strategic Google Ads campaigns designed for builders, developers, and real estate brands. We help you reach people actively searching for properties, increase qualified leads, and maximize your advertising ROI.",
     image:
       "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1800&q=80",
     what:
-      "Google Ads captures active real estate demand from buyers searching by location, property type, price range, developer name, and purchase intent.",
+      "Google Ads helps your business appear when potential customers are actively searching for your products or services. At Lavista Marketing, we create high-performance Google Ads campaigns that target the right audience, attract qualified enquiries, and maximize your return on ad spend. From keyword research and campaign setup to conversion tracking and ongoing optimization, every strategy is built to generate measurable business growth.",
     start:
       "We start by reviewing the project location, competitor terms, buyer search patterns, budget range, landing page quality, and conversion actions.",
     process: [
-      "Research high-intent keywords, exclusions, and local search demand.",
-      "Build campaigns around project category, location clusters, and buyer urgency.",
-      "Create ad copy that filters casual traffic and attracts serious enquiries.",
+      "Identify high-intent search keywords, competitor strategies, and local search opportunities to reach potential customers actively looking for your products or services. Every campaign starts with data-driven research to maximize visibility and attract qualified leads.",
+      "Create a well-organized Google Ads campaign with targeted ad groups, keyword themes, audience segmentation, and location targeting. A structured campaign improves Quality Score, reduces wasted spend, and increases conversion potential.",
+      "Set up accurate conversion tracking for calls, form submissions, WhatsApp enquiries, and key website actions to measure campaign performance and make informed optimization decisions.",
       "Optimize landing page actions, call tracking, forms, and conversion signals.",
       "Refine bids, search terms, and budgets using quality and visit-readiness feedback.",
     ],
     provides: [
-      "Keyword and competitor search research",
-      "Search campaign structure",
-      "Ad copy and extension planning",
+      "Keyword and competitor research",
+      "Search Campaign Structure",
+      "Conversion Tracking & Analytics",
       "Landing page conversion recommendations",
       "Weekly optimization and quality reporting",
     ],
